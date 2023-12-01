@@ -21,8 +21,7 @@ The creation of this framework owes its gratitude to the amazing work of the fol
 ## Is 'open-source' synonymous with free? 🔣
 
 Quick answer: nope, non, nein, nada, nix, niente 🙅🏿!<br>
-At the end of the day, we all have to put food on the table, right? This project is no exception. While the source code is accessible without any restriction, the documentation? ...<br>
-Well, it has been kept under my pillow by design 🙈🙉🙊.<br>
+At the end of the day, we all have to put food on the table, right? This project is no exception. While the source code is accessible without any restriction, the documentation? ... Well, it has been kept under my pillow by design 🙈🙉🙊.<br>
 #OpenCodeSecretDocs 💻🤐
 
 > **Seasoned astronauts 🧑‍🚀!** Embark on a cosmic adventure by deleting this file and enjoy the thrill of reverse engineering 😄!<br>
@@ -40,9 +39,10 @@ Well, it has been kept under my pillow by design 🙈🙉🙊.<br>
 3. Once the cloning is done, navigate to the newly created environment and run the following commands. 
 	| Command         | Action                                      |
 	| :-------------- | :------------------------------------------ |
-	| `npm install`   | Installs dependencies                       |
-	| `npm run dev`   | Starts local dev server at `localhost:4321` |
-	| `npm run build` | Build your production site to `./dist/`     |
+	| `npm install`   | Install the dependencies.                   |
+	| `npm run dev`   | Start local dev server at `localhost:4321`. |
+	| `npm run build` | Build your production site to `./dist/`.    |
+	| `npm run prod`  | Start the server in production mode.        |
 
 
 ## Live demonstrations await 👀
