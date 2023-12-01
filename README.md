@@ -4,10 +4,12 @@ An open-source framework 🛖 that empowers individuals and small businesses to 
 
 
 ## Acknowledgement 🎉
-The creation of this framework would not have been possible without the amazing work of the following frameworks:
-- [Astro](https://astro.build/): Framework built on [Node.js](https://nodejs.org/) and [Vite.js](https://vitejs.dev/)
-- [Bootstrap](https://getbootstrap.com/): Framework built on CSS and JavaScript
-- [SOLID JS](https://www.solidjs.com/): Framework built on JavaScript
+The creation of this framework owes its gratitude to the amazing work of the following frameworks:
+- [Astro](https://astro.build/): A framework built on [Node.js](https://nodejs.org/) and [Vite.js](https://vitejs.dev/)
+- [Bootstrap](https://getbootstrap.com/): A framework built on CSS and JavaScript
+- [less CSS](https://lesscss.org/): A CSS pre-processor
+- [SOLID JS](https://www.solidjs.com/): A framework built on JavaScript
+- [webpack](https://webpack.js.org/): A script bundler
 
 
 ## Requirements and recommendations 🛠️
@@ -25,7 +27,7 @@ Well, it has been kept under my pillow by design 🙈🙉🙊.<br>
 
 > **Seasoned astronauts 🧑‍🚀!** Embark on a cosmic adventure by deleting this file and enjoy the thrill of reverse engineering 😄!<br>
 > **Junior developers 👩‍💻!** No need to hit delete, but brace yourselves for a coding maze 🕵️‍♂️. Your challenge awaits! I promise, there is no unnecessary overengineering 😈.<br>
->  **To the remaining intrepid readers 🤔!** Feel free to [reach out](https://tapmeppe.work/en/contact#freelancyan), if you are in need of assistance. I would be delighted to listen 👂🏿 to your vision and explore the endless possibilities ✨ together.
+> **To the remaining intrepid readers 🤔!** Feel free to [reach out](https://tapmeppe.work/en/contact#freelancyan), if you are in need of assistance. I would be delighted to listen 👂🏿 to your vision and explore the endless possibilities ✨ together.
 
 
 ## Embark on your digital journey 🚀
