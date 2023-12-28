@@ -258,7 +258,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				badges: ['Git', 'Mockups', 'HTML', 'CSS', 'Sass', 'Tailwind', 'JavaScript', 'React', 'SCRUM',],
 				links: [
 					{
-						label: 'Website',
+						label: 'Site web',
 						href: `https://bergemann-hoehne.com/`,
 					},
 				],
@@ -347,7 +347,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.cyclecomputing,
 				alt: "Une capture d'écran de la page d'accueil.",
 				timeframe: 'Septembre 2022 - Décembre 2022',
-				headline: `VDO cyclecomputing (Relance site web)`,
+				headline: `VDO cyclecomputing (relance site web)`,
 				subline: `SIGMA-ELEKTRO GmbH`,
 				children: [
 					<>
@@ -368,7 +368,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				id: 'sigmasport-website-relaunch',
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.website,
 				timeframe: 'Janvier 2021 - Février 2023',
-				headline: 'SIGMA SPORT (Relance site web)',
+				headline: 'SIGMA SPORT (relance site web)',
 				subline: `SIGMA-ELEKTRO GmbH`,
 				children: [
 					<>
@@ -417,17 +417,6 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					</>,
 				],
 				badges: ['Gestion des exigences', 'Communication', 'Coordination', 'Architecture', 'API', 'Javascript', 'PHP', 'Symfony', 'EDIFACT', 'WordPress', 'WooCommerce'],
-				links: [
-					{
-						label: 'Design actuel',
-						href: 'https://sigmasport.com/',
-					},
-					{
-						label: 'Ancien design',
-						href: `https://more.sigmasport.com/${this.language}/produkte`,
-						title: "L'ancienne page d'accueil est désormais utilisée comme archive, dépourvue de toutes les fonctionnalités complexes.",
-					},
-				],
 			},
 			{
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.sharing,

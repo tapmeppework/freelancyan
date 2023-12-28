@@ -421,17 +421,6 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					</>,
 				],
 				badges: ['Anforderungsmanagement', 'Kommunikation', 'Koordinierung', 'Architektur', 'API', 'Javascript', 'PHP', 'Symfony', 'EDIFACT', 'WordPress', 'WooCommerce'],
-				links: [
-					{
-						label: 'Aktuelles Design',
-						href: 'https://sigmasport.com/',
-					},
-					{
-						label: 'Altes Design',
-						href: `https://more.sigmasport.com/${this.language}/produkte`,
-						title: 'Die ehemalige Startseite wird nun als Archiv verwendet und wurde von allen komplexen Funktionen befreit.',
-					},
-				],
 			},
 			{
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.sharing,
