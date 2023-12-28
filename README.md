@@ -5,11 +5,11 @@ An open-source framework 🛖 that empowers individuals and small businesses to 
 
 ## Acknowledgement 🎉
 The creation of this framework owes its gratitude to the amazing work of the following frameworks:
-- [Astro](https://astro.build/): A framework built on [Node.js](https://nodejs.org/) and [Vite.js](https://vitejs.dev/)
-- [Bootstrap](https://getbootstrap.com/): A framework built on CSS and JavaScript
-- [less CSS](https://lesscss.org/): A CSS pre-processor
-- [SOLID JS](https://www.solidjs.com/): A framework built on JavaScript
-- [webpack](https://webpack.js.org/): A script bundler
+- [Astro](https://astro.build/): A framework built on [Node.js](https://nodejs.org/) and [Vite.js](https://vitejs.dev/).
+- [Bootstrap](https://getbootstrap.com/): A framework built on CSS and JavaScript.
+- [less CSS](https://lesscss.org/): A CSS pre-processor.
+- [SOLID JS](https://www.solidjs.com/): A framework built on JavaScript.
+- [webpack](https://webpack.js.org/): A script bundler.
 
 
 ## Requirements and recommendations 🛠️

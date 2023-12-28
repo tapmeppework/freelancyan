@@ -1,0 +1,29 @@
+@import '../../styles/assets.less';
+@navigation: ~"@{UMBRELLA_CN}navigation";
+
+@{navigation} {
+	@navigationDimLimit: 3rem;
+	color: var(--tapmeppe-scheme-project-navigation-text-basic);
+
+	&- {
+		&logo {
+			width: @navigationDimLimit;
+		}
+
+		&bars {
+
+			.navbar-toggler-icon {
+				--bs-navbar-toggler-icon-bg: none;
+			}
+		}
+
+		&endorsement {
+			mix-blend-mode: difference;
+		}
+
+		&scroller {
+			max-width: @navigationDimLimit;
+			max-height: @navigationDimLimit;
+		}
+	}
+}

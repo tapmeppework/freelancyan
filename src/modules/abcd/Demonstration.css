@@ -1,0 +1,2 @@
+.tapmeppe-demonstration{top:calc(var(--tapmeppe-zyxw-demonstration-offset) - 1.5rem) !important;z-index:9000;transition:opacity .5s}.tapmeppe-demonstration:focus,.tapmeppe-demonstration:hover{opacity:.25;cursor:none}
+/*# sourceMappingURL=./Demonstration.css.map */

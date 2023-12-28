@@ -1,0 +1,23 @@
+---
+import ABCD from "@bloc/ABCD";
+import Admin from "@bloc/Admin";
+import Utils from "@bloc/Utils";
+import Layout from "@layout";
+import type Properties from "@layouts/ABCD.types";
+import Headline from "@abcd/Headline";
+import Tribute, { PAGE } from "@modules/tapmeppe/ABCD";
+
+const path = Admin.ini(
+	Astro as unknown as Properties,
+	(_) => PAGE,
+	Utils.umbrella(ABCD.project),
+);
+if (path) return Astro.redirect(path);
+---
+
+<Layout>
+	<Headline mode="center">
+		<Tribute />
+	</Headline>
+	<!-- <slot /> -->
+</Layout>

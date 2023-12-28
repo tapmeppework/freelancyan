@@ -1,0 +1,17 @@
+@import '../../styles/assets.less';
+@section: ~"@{UMBRELLA_CN}section";
+
+@{section} {
+
+	// &:nth-child(odd) {
+	// 	background-color: var(--tapmeppe-scheme-section-odd-abcd);
+	// }
+	&:nth-child(2n + 3) {
+		//odd numbers starting at 3
+		background-color: var(--tapmeppe-scheme-section-odd-abcd);
+	}
+
+	&:nth-child(even) {
+		background-color: var(--tapmeppe-scheme-section-even-abcd);
+	}
+}

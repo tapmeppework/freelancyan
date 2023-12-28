@@ -1,0 +1,21 @@
+// @see https: //startbootstrap.com/previews/agency
+@import '../../styles/assets.less';
+@import '../../styles/assets.more.less';
+@image: ~"@{UMBRELLA_CN}image";
+
+@{image} {
+	&-profile {
+		.mx_border_thick() !important;
+		border-radius: var(--tapmeppe-global-rounded);
+		// background-color: #fff; //protection measure against transparent images
+		transition-duration: @DURATION_MEDIUM;
+		transition-property: scale;
+		scale: 1;
+
+		&:hover,
+		&:focus {
+			transition-delay: 4 * @DURATION_MEDIUM;
+			scale: 2;
+		}
+	}
+}

@@ -1,0 +1,41 @@
+@import '../../styles/assets.less';
+@columns: ~"@{UMBRELLA_CN}columns";
+@card: ~"@{UMBRELLA_CN}card";
+@cardContent: ~"@{card}-content";
+@ellipsis: ~"@{UMBRELLA_CN}ellipsis";
+@gradientBackground: ~"@{UMBRELLA_CN}gradient-background";
+
+@{columns} {
+	&-card {
+		@{cardContent}:not(.show) {
+			--tapmeppe-global-harmony-height: calc(20 * 1.5rem);
+		}
+
+		@{ellipsis} {
+			text-align: center !important;
+		}
+	}
+
+	&-preamble {
+		--tapmeppe-zyxw-padding: .5rem;
+		--tapmeppe-zyxw-buffer: 2rem;
+
+		padding: var(--tapmeppe-zyxw-padding);
+		padding-bottom: calc(var(--tapmeppe-zyxw-padding) + var(--tapmeppe-zyxw-buffer));
+		margin-bottom: calc(-1 * var(--tapmeppe-zyxw-buffer));
+
+		&:not(@{gradientBackground}) {
+			color: transparent;
+		}
+	}
+
+	&-highlight {
+		@{card} {
+			background-color: var(--tapmeppe-scheme-section-zyxw-abcd);
+
+			.list-group-item {
+				--bs-list-group-bg: var(--tapmeppe-scheme-section-zyxw-abcd);
+			}
+		}
+	}
+}

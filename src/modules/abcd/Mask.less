@@ -1,0 +1,18 @@
+@import '../../styles/assets.less';
+@mask: ~"@{UMBRELLA_CN}mask";
+
+@{mask} {
+	opacity: var(--tapmeppe-zyxw-mask-opacity, .25);
+	background-color: var(--tapmeppe-scheme-project-navigation-background-abcd);
+	transition: opacity @DURATION_MEDIUM;
+	// z-index: 1060; //lower than popover @see https://getbootstrap.com/docs/5.3/layout/z-index/
+
+	&-full {
+		--tapmeppe-zyxw-mask-opacity: .95;
+		z-index: 1060; //lower than popover @see https://getbootstrap.com/docs/5.3/layout/z-index/
+	}
+
+	&:hover {
+		--tapmeppe-zyxw-mask-opacity: .75;
+	}
+}

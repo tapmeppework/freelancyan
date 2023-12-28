@@ -1,0 +1,2 @@
+.tapmeppe-accordion .accordion-button::after{--bs-accordion-btn-icon:var(--tapmeppe-bootstrap-accordion-btn-icon)}.tapmeppe-accordion .accordion-button:not(.collapsed){background:linear-gradient(90deg, var(--tapmeppe-scheme-project-basic-primary-abcd) 0%, var(--tapmeppe-scheme-project-basic-secondary-abcd) 100%);--bs-accordion-active-color:var(--tapmeppe-scheme-project-gradient-text)}.tapmeppe-accordion .accordion-button:not(.collapsed)::after{--bs-accordion-btn-active-icon:var(--tapmeppe-bootstrap-accordion-btn-active-icon)}
+/*# sourceMappingURL=./Accordion.css.map */

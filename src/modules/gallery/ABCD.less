@@ -1,0 +1,20 @@
+@import '../../styles/assets.less';
+@import '../../styles/assets.more.less';
+@gallery: ~"@{UMBRELLA_CN}gallery";
+@carousel: ~"@{UMBRELLA_CN}carousel";
+@video: ~"@{UMBRELLA_CN}video";
+
+@{gallery} {
+	@media (min-width: @BREAKPOINT_SMALL) {
+		grid-template-areas: var(--tapmeppe-zyxw-grid-template-areas);
+
+		&-diashow {
+
+			> @{carousel},
+			> @{video} {
+				.mx_flex_center();
+				// height: 250px; //> used to test the centering
+			}
+		}
+	}
+}

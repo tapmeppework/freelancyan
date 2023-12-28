@@ -1,0 +1,43 @@
+{
+	"editor.detectIndentation": true,
+	"editor.tabSize": 2,
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.expand": false,
+	"explorer.fileNesting.patterns": {
+		"*.tsx": "${capture}.less, ${capture}.css, ${capture}.css.map, ${capture}.*.js, ${capture}.*.ts, ${capture}.wiki.md",
+		"*.ts": "${capture}.less, ${capture}.css, ${capture}.css.map, ${capture}.*.js, ${capture}.wiki.md",
+		"*.jsx": "${capture}.js",
+		"*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts, ${capture}.d.ts.map",
+		"*.model.tsx": "${capture}.*.ts",
+		"*.model.ts": "${capture}.*.ts",
+		"*.model.js": "${capture}.*.ts",
+		"tsconfig.json": "tsconfig.*.json",
+		"package.json": "package-lock.json, yarn.lock",
+		"composer.json": "composer.lock",
+		"*.less": "${capture}.css, ${capture}.css.*",
+		"*.css": "${capture}.css.*",
+		"*.json": "${capture}.json.*",
+		"*.dict": "${capture}.dict.*",
+		".gitignore": ".gitignore.*",
+		"astro.config.mjs": "astro.config.*"
+	},
+	"less.compile": {
+		"compress": true,
+		"sourceMap": true,
+		"relativeUrls": false,
+		"autoprefixer": "> 5%, last 2 versions, Firefox ESR, not ie <= 11, not dead",
+		"ieCompat": false
+	},
+	"less.format.spaceAroundSelectorSeparator": true,
+	"less.lint.duplicateProperties": "warning",
+	"less.lint.idSelector": "warning",
+	"less.lint.ieHack": "error",
+	"less.lint.universalSelector": "warning",
+	"less.lint.zeroUnits": "warning",
+	"search.useIgnoreFiles": false,
+	"search.exclude": {
+		"**/build": true,
+		"**/dist": true,
+		"**/vendor": true
+	},
+}

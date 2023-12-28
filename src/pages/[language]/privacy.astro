@@ -1,0 +1,17 @@
+---
+// TODO @see https://pixel-surfer.de/impressum
+import Admin from "@bloc/Admin";
+import type Properties from "@layouts/ABCD.types";
+import Layout from "@layouts/Titler.astro";
+import Excerpt from "@abcd/Excerpt";
+
+const path = Admin.start(Astro as unknown as Properties, {
+	category: "footer",
+	page: "privacy",
+});
+if (path) return Astro.redirect(path);
+---
+
+<Layout>
+	<Excerpt list={Admin.lexicon.privacy} />
+</Layout>

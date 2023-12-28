@@ -1,0 +1,112 @@
+// main: style.less
+
+// ##### ATTRIBUTES #####
+/**
+ * abcd
+ */
+@umbrella: tapmeppe;
+@UMBRELLA: ~"@{umbrella}-";
+@UMBRELLA_CN: ~".@{UMBRELLA}";
+
+// active
+@ACTIVE: ~"@{UMBRELLA_CN}active";
+
+/**
+ * breakpoints
+ * @see https://getbootstrap.com/docs/5.3/layout/containers/#how-they-work
+ * @example `@media screen and (min-width: (@BREAKPOINT_SMALL))`
+ */
+@BREAKPOINT: @BREAKPOINT_LARGE; //.less magic; the standard breakout point
+@BREAKPOINT_MINISCULE: 320px; //custom; the smallest width supported
+@BREAKPOINT_MINISCULE_MAX: @BREAKPOINT_TINY - 1px; //this works > .less magic :-)
+@BREAKPOINT_TINY: 400px; //custom; value might change in the future
+@BREAKPOINT_TINY_MAX: @BREAKPOINT_SMALL - 1px; //this works > .less magic :-)
+@BREAKPOINT_SMALL: 576px;
+@BREAKPOINT_SMALL_MAX: @BREAKPOINT_MEDIUM - 1px; //this works > .less magic :-)
+@BREAKPOINT_MEDIUM: 768px;
+@BREAKPOINT_MEDIUM_MAX: @BREAKPOINT_LARGE - 1px; //this works > .less magic :-)
+@BREAKPOINT_LARGE: 992px;
+@BREAKPOINT_LARGE_MAX: @BREAKPOINT_HUGE - 1px; //this works > .less magic :-)
+@BREAKPOINT_HUGE: 1200px;
+@BREAKPOINT_HUGE_MAX: @BREAKPOINT_ENORMOUS - 1px; //this works > .less magic :-)
+@BREAKPOINT_ENORMOUS: 1400px;
+
+// cursor
+@CURSOR_TITLE: help;
+
+// data
+@DATA: ~"data-@{UMBRELLA}";
+
+// durations
+@DELAY: 1s;
+@DURATION_TINY: .15s; //bootstrap fade, carousel-control
+@DURATION_SMALL: .25s;
+@DURATION_MEDIUM: .5s;
+@DURATION_LARGE: .75s; //bootstrap animation
+@DURATION_HUGE: 1.5s;
+@DURATION_ENORMOUS: 3s;
+
+// dimensions
+// @see https://www.w3schools.com/cssref/css_units.asp
+@DIM_FONT_SIZE: 1rem; //1rem = 16px
+@DIM_FONT_SIZE_SMALL: .875rem; //fs-7
+@DIM_FONT_SIZE_TINY: .75rem; //fs-8
+@DIM_GAP: 1.5rem; //@source bootstrap
+@DIM_HEIGHT_HARMONY_MORE: calc(3 * 1.5rem); //~ 3 lines
+@DIM_HEIGHT_HARMONY_SCROLL: calc(5.5 * 1.5rem); //~ 4.5 lines
+@DIM_ROUNDED: 50%;
+// @DIM_RADIUS: .25rem; //@source bootstrap
+@DIM_RADIUS_BORDER: .375rem; //@source bootstrap
+@DIM_WIDTH_BORDER: 1px; //.border-1
+@DIM_WIDTH_IMAGE_PROFILE: 15%;
+
+// opacity: custom
+@OPACITY_NONE: 0;
+@OPACITY_LOW: .25;
+@OPACITY_MEDIUM: .50;
+@OPACITY_HIGH: .75;
+@OPACITY_FULL: 1;
+
+/**
+ * scheme
+ * @since PM (15.01.2022)
+ * @see https://getbootstrap.com/docs/5.3/customize/color/
+ */
+@SCHEME_FACTOR: 5%;
+@SCHEME_PROJECT_PRIMARY: #0087A6; //blue
+@SCHEME_PROJECT_SECONDARY: #71BB78; //green
+@SCHEME_PROJECT_TERTIARY: #513314; //brown
+@SCHEME_PROJECT_NAVIGATION_BACKGROUND: #172328; //blueish navy
+@SCHEME_PROJECT_NAVIGATION_TEXT: 240, 240, 240; //MUST BE in RGB #F0F0F0 =: 240,240,240
+@SCHEME_PROJECT_GRADIENT_TEXT: #f0f0f0;
+@SCHEME_PROJECT_GRADIENT_TEXT_ENCODE: "%23f0f0f0"; //https://www.urlencoder.org/
+// #CCC
+
+// company colors
+@SCHEME_DARK_SECTION: #2B2B2B; //dark
+@SCHEME_DARK_TEXT: #F0F0F0;
+@SCHEME_DARK_TEXT_ENCODE: "%23F0F0F0";
+@SCHEME_DARK_TODO: magenta; //company color is used to signalise that there is still something to do
+// ...
+@SCHEME_LIGHT_SECTION: #F2F3F5; //
+@SCHEME_LIGHT_TEXT: #262626; //#333 > dark gray; #001f3f > dark blue
+@SCHEME_LIGHT_TEXT_ENCODE: "%23203138";
+@SCHEME_LIGHT_TODO: darkmagenta; //...
+
+// accordion
+@bootstrapAccordionButtonDark: ~ "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 512 512'%3e%3cstyle%3esvg{fill:@{SCHEME_DARK_TEXT_ENCODE}}%3c/style%3e%3cpath d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'/%3e%3c/svg%3e";
+@bootstrapAccordionButtonLight: ~ "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 512 512'%3e%3cstyle%3esvg{fill:@{SCHEME_LIGHT_TEXT_ENCODE}}%3c/style%3e%3cpath d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'/%3e%3c/svg%3e";
+@bootstrapAccordionButtonActiveIcon: ~"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 512 512'%3e%3cstyle%3esvg{fill:@{SCHEME_PROJECT_GRADIENT_TEXT_ENCODE}}%3c/style%3e%3cpath d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'/%3e%3c/svg%3e";
+// DO NOT MERGE: too much changes between " & '
+@BOOTSTRAP_ACCORDION_BUTTON_ICON_DARK: ~'url("@{bootstrapAccordionButtonDark}")';
+@BOOTSTRAP_ACCORDION_BUTTON_ICON_LIGHT: ~'url("@{bootstrapAccordionButtonLight}")';
+@BOOTSTRAP_ACCORDION_BUTTON_ACTIVE_ICON: ~'url("@{bootstrapAccordionButtonActiveIcon}")';
+
+// texts
+@TEXT_ALIGN: justify;
+
+/**
+ * z-indexes
+ * @see https://getbootstrap.com/docs/5.3/layout/z-index/
+ */
+@Z_INDEX_TOP: 9000;

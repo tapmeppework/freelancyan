@@ -1,0 +1,49 @@
+@import '../../styles/assets.less';
+@carousel: ~"@{UMBRELLA_CN}carousel";
+
+@{carousel} {
+	--tapmeppe-zyxw-carousel-button: var(--tapmeppe-scheme-project-basic-primary-abcd);
+	--tapmeppe-zyxw-carousel-gap: 2em;
+
+	&-secondary {
+		--tapmeppe-zyxw-carousel-button: var(--tapmeppe-scheme-project-basic-secondary-abcd);
+	}
+
+	// [data-bs-theme=dark] .carousel .carousel-indicators [data-bs-target],
+	// 	[data-bs-theme=dark].carousel .carousel-indicators [data-bs-target]
+	&.carousel .carousel-indicators [data-bs-target] {
+		background-color: var(--tapmeppe-zyxw-carousel-button) !important;
+		// mix-blend-mode: difference;
+	}
+
+	&-indicators {
+		bottom: calc(-1 * (var(--tapmeppe-zyxw-carousel-gap) + 1em));
+	}
+
+	&-controls {
+		margin-bottom: var(--tapmeppe-zyxw-carousel-gap);
+	}
+
+	&-button {
+		--bs-bg-opacity: .125;
+	}
+
+	.carousel-control- {
+
+		&next,
+		&prev {
+			width: max(5%, 3rem);
+
+			&:not(:focus):not(:hover) {
+				opacity: .25;
+			}
+
+			&-icon {
+				background: initial;
+				color: var(--tapmeppe-zyxw-carousel-button) !important;
+				display: contents;
+				font-size: 3em;
+			}
+		}
+	}
+}

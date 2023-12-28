@@ -1,0 +1,17 @@
+---
+import Admin from "@bloc/Admin";
+import Layout from "@layouts/Titler.astro";
+import type Properties from "@layouts/ABCD.types";
+import Module from "@modules/gallery/ABCD";
+
+const path = Admin.start(Astro as unknown as Properties, {
+	category: "header",
+	page: "gallery",
+});
+if(path) return Astro.redirect(path)
+const gallery = Admin.lexicon.gallery;
+---
+
+<Layout>
+	<Module gallery={gallery} />
+</Layout>

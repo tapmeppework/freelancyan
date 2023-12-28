@@ -1,0 +1,18 @@
+---
+import ABCD from "@bloc/ABCD";
+import Admin from "@bloc/Admin";
+import type Properties from "@layouts/ABCD.types";
+import Layout from "@layouts/Titler.astro";
+import Module from "@modules/portfolio/ABCD";
+
+const path = Admin.start(Astro as unknown as Properties, {
+	category: "header",
+	page: ABCD.keywords.portfolio,
+});
+if(path) return Astro.redirect(path);
+const portfolio = Admin.lexicon.portfolio;
+---
+
+<Layout>
+	<Module portfolio={portfolio}/>
+</Layout>

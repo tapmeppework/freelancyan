@@ -1,0 +1,33 @@
+---
+// @see https://docs.astro.build/en/recipes/build-forms/ requests in Astro
+// @see https://docs.astro.build/en/guides/data-fetching/ data fetching
+// @see https://docs.astro.build/en/reference/directives-reference/#clientvisible
+
+import ABCD from "@bloc/ABCD";
+import Admin from "@bloc/Admin";
+import Section from "@abcd/Section";
+import type Properties from "@layouts/ABCD.types";
+import Layout from "@layouts/Titler.astro";
+import Basics from "@modules/contact/Basics";
+import Map from "@modules/contact/Map";
+import { H2 } from "@abcd/Headline";
+
+const path = Admin.start(Astro as unknown as Properties, {
+	category: "footer",
+	page: ABCD.keywords.contact,
+});
+if (path) return Astro.redirect(path);
+const lexicon = Admin.lexicon.contact.location;
+---
+
+<Layout>
+	<Basics />
+	{
+		Admin.thirdParty(() => lexicon && (
+			<Section>
+				<H2>{lexicon.headline}</H2>
+				<Map client:visible {...lexicon} />
+			</Section>
+		))
+	}
+</Layout>

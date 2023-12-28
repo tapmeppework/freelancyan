@@ -1,0 +1,69 @@
+---
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@style";
+import { ViewTransitions } from "astro:transitions";
+import ABCD0 from "@bloc/ABCD";
+import Admin from "@bloc/Admin";
+import Utils from "@bloc/Utils";
+import Demonstration from "@abcd/Demonstration";
+import Metas from "@abcd/Metas";
+import Modal, { LanguagesSwitch } from "@abcd/Modal";
+import NavigationHeader from "@abcd/NavigationHeader";
+import NavigationFooter from "@abcd/NavigationFooter";
+import ThirdParty from "@abcd/ThirdParty";
+import Scripts from "@abcd/Scripts";
+
+const { classes, ids, language, scheme, color, demo } = Admin.data,
+	title = ABCD0.config.contact.business || ABCD0.config.contact.name;
+// console.log(Admin.data)
+---
+
+<!doctype html>
+<html
+	class={classes.html}
+	lang={language}
+	{...scheme.attributes}
+	{...Utils.dataset(Admin.astro.props)}
+	transition:animate="slide"
+>
+	<head>
+		<title>
+			{title} &#10148; {Admin.page.headline}
+		</title>
+		<Metas
+			language={language}
+			title={title}
+			page={Admin.page}
+			color={color}
+			astro={Admin.astro}
+		/>
+		<ViewTransitions />
+		<Scripts />
+		<!-- <Wonder client:only="solid"/> -->
+		<link
+			rel="preload"
+			as="image"
+			href={ABCD0.assets.logo.header}
+			fetchpriority="high"
+		/>
+	</head>
+	<body id={ids.body}>
+		<header class={classes.header} transition:animate="none">
+			<NavigationHeader />
+		</header>
+		<main class={classes.main} id={ids.main}>
+			<slot />
+		</main>
+		<footer class={classes.footer} transition:animate="none">
+			<NavigationFooter />
+		</footer>
+		<Demonstration active={demo || Astro.props.demo} />
+		<Modal id={ids.modal} />
+		<LanguagesSwitch />
+		<ThirdParty />
+		{/* @see https://docs.astro.build/en/guides/styling/#css-variables */}
+		<style is:global define:vars={Utils.scheme()}>
+			/* :root {} */
+		</style>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+---
+import Admin from "@bloc/Admin";
+import Utils from "@bloc/Utils";
+import Layout from "@layout";
+import Headline from "@abcd/Headline";
+
+const page = Admin.page;
+---
+
+<Layout identifier={Utils.identifier("titler")} {...Astro.props}>
+	<Headline mode={page.mode} />
+	<slot />
+</Layout>

@@ -1,0 +1,215 @@
+// @see https: //startbootstrap.com/previews/agency
+@import '../../styles/assets.less';
+@import '../../styles/assets.more.less';
+@timeline: ~"@{UMBRELLA_CN}timeline";
+
+@{timeline} {
+	// position: relative;
+	// padding: 0;
+	// list-style: none;
+	--tapmeppe-zyxw-timeline-line-bottom: -25%; //empiric: stretch over the margin bottom: dividing the steps;
+
+
+	//extends &-line
+	&::before {
+		@media (min-width: @BREAKPOINT_MEDIUM) {
+			bottom: 0;
+		}
+
+		@media (max-width: @BREAKPOINT_SMALL_MAX) {
+			.mx_hide();
+		}
+	}
+
+	> li {
+
+		// &::before,
+		// &::after {
+		// 	display: table;
+		// 	content: " ";
+		// }
+
+		// @media (max-width: @BREAKPOINT_SMALL_MAX) {}
+		@media (min-width: @BREAKPOINT_MEDIUM) {
+			&:nth-child(odd) {
+				flex-direction: row; //flex-row
+				text-align: right;
+
+				@{timeline} {
+					&-body > * {
+						margin-left: auto;
+						margin-right: 0;
+					}
+
+					// &-anchors { //PM (07.10.2023) it works perfectly; I just decided not to use it anymore
+					// 	direction: rtl;
+
+					// 	> .btn {
+					// 		//overwrite bootstrap border radius
+					// 		border-radius: 0;
+
+					// 		&:first-child {
+					// 			border-top-right-radius: var(--bs-border-radius);
+					// 			border-bottom-right-radius: var(--bs-border-radius);
+					// 		}
+
+					// 		&:last-child {
+					// 			border-top-left-radius: var(--bs-border-radius);
+					// 			border-bottom-left-radius: var(--bs-border-radius);
+					// 		}
+					// 	}
+					// }
+				}
+			}
+
+			&:nth-child(even) {
+				flex-direction: row-reverse; //flex-row
+
+				// this block is redundant but symmetry is beautiful :-)
+				text-align: left;
+
+				@{timeline} {
+					&-body > * {
+						margin-left: 0;
+						margin-right: auto;
+					}
+				}
+			}
+		}
+	}
+
+	&-line {
+
+		// bug fix on mobile used to hide the line overflow;
+		@media (max-width: @BREAKPOINT_SMALL_MAX) {
+			.mx_section_background()
+		}
+
+		&::before {
+			position: absolute;
+			top: 0;
+			// bottom: 0;
+			left: 50%;
+			width: var(--tapmeppe-global-border-width);
+			content: "";
+			background-color: var(--tapmeppe-scheme-project-basic-primary-abcd);
+			transform: translateX(-50%);
+		}
+	}
+
+	&-center {
+		z-index: 1; //place it on top of the headline
+		width: var(--tapmeppe-global-width-image-profile);
+
+		@media (max-width: @BREAKPOINT_SMALL_MAX) {
+			position: relative !important;
+			left: 0 !important;
+			transform: translateX(0) !important;
+			// width: max(30px, var(--tapmeppe-global-width-image-profile)); //.less is not interpreting this line as it should
+			min-width: var(--tapmeppe-global-gap);
+		}
+
+		@media (min-width: @BREAKPOINT_MEDIUM) {
+			width: var(--tapmeppe-global-width-image-profile);
+		}
+
+		&::before {
+
+			//extends &-line
+			@media (max-width: @BREAKPOINT_SMALL_MAX) {
+				z-index: -1; //necessary in order:  to have the image in front;
+				bottom: var(--tapmeppe-zyxw-timeline-line-bottom);
+			}
+
+			@media (min-width: @BREAKPOINT_MEDIUM) {
+				.mx_hide();
+			}
+		}
+
+		&::after {
+
+			//the trail on mobile
+			li:nth-last-child(2) & {
+				@media (max-width: @BREAKPOINT_SMALL_MAX) {
+					position: absolute;
+					bottom: var(--tapmeppe-zyxw-timeline-line-bottom);
+					left: 50%;
+					width: calc(var(--tapmeppe-global-width-image-profile) * 4);
+					aspect-ratio: 1;
+					content: " ";
+					transform: translateX(-50%);
+					border-radius: var(--tapmeppe-global-rounded);
+					.mx_gradiant();
+				}
+			}
+		}
+	}
+
+	&-body {
+		@media (max-width: @BREAKPOINT_SMALL_MAX) {
+			width: 1%; //used to enforce the growth
+			flex-grow: 1;
+		}
+
+		@media (min-width: @BREAKPOINT_MEDIUM) {
+			width: calc((100% - var(--tapmeppe-global-width-image-profile)) / 2 - var(--tapmeppe-global-gap));
+		}
+	}
+
+	&-content {
+		min-height: var(--tapmeppe-global-harmony-height);
+
+		&.collapse {
+			&:not(.show) {
+				max-height: var(--tapmeppe-global-harmony-height);
+				overflow-y: var(--tapmeppe-global-harmony-overflow, hidden) !important;
+
+				@collapsed: ~"@{timeline}-collapsed";
+				@reader: ~"@{UMBRELLA_CN}reader";
+
+				~ div button@{reader} > :not(@{collapsed}) {
+					.mx_hide()
+				}
+			}
+
+			&.show {
+				+ div {
+					.mx_hide();
+				}
+
+				@show: ~"@{timeline}-show";
+
+				~ div button > :not(@{show}) {
+					.mx_hide()
+				}
+			}
+		}
+
+		&.collapsing {
+			+ div {
+				// .mx_hide();
+			}
+
+			@processing: ~"@{timeline}-processing";
+
+			~ div button > :not(@{processing}) {
+				.mx_hide()
+			}
+		}
+
+		p:last-child {
+			margin-bottom: 0; //-content takes care of the margin now;
+		}
+	}
+
+	&-processing {
+		--bs-spinner-width: 1rem;
+		--bs-spinner-height: 1rem;
+		// --bs-spinner-border-width: .125em;
+	}
+
+	&-tail {
+		//the trail on desktop
+		width: calc(var(--tapmeppe-global-width-image-profile) / 2);
+	}
+}

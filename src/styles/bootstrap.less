@@ -1,0 +1,225 @@
+// main: style.less
+/**
+ * @description this script is used to partially overwrite or extend the bootstrap framework 
+ * @see https://getbootstrap.com/
+ * @alternative https://picocss.com/
+ *							https://unocss.com
+ * @since PM (25.09.2023)
+ */
+:root {
+	--bs-body-bg: var(--tapmeppe-scheme-section-body-abcd) !important;
+	--bs-body-bg-rgb: var(--tapmeppe-scheme-section-body-rgb) !important;
+	--bs-secondary-bg: var(--tapmeppe-scheme-section-body-abcd) !important;
+	--bs-secondary-bg-rgb: var(--tapmeppe-scheme-section-body-rgb) !important;
+
+	// navigation
+	--bs-tertiary-bg: var(--tapmeppe-scheme-project-navigation-background-abcd) !important;
+	--bs-tertiary-bg-rgb: var(--tapmeppe-scheme-project-navigation-background-rgb) !important;
+
+	--bs-body-color: var(--tapmeppe-scheme-text-abcd) !important;
+	--bs-card-color: var(--tapmeppe-scheme-text-abcd) !important;
+	--bs-body-color-rgb: var(--tapmeppe-scheme-text-abcd-rgb) !important;
+	--bs-emphasis-color: var(--tapmeppe-scheme-text-abcd) !important;
+	--bs-emphasis-color-rgb: var(--tapmeppe-scheme-text-rgb) !important;
+	--bs-secondary-color: rgba(var(--tapmeppe-scheme-text-abcd), .75) !important;
+	--bs-secondary-color-rgb: var(--tapmeppe-scheme-text-abcd) !important;
+
+	--bs-primary: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+	--bs-primary-rgb: var(--tapmeppe-scheme-project-basic-primary-rgb) !important;
+	--bs-link-hover-color: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+	--bs-link-hover-color-rgb: var(--tapmeppe-scheme-project-basic-primary-rgb) !important;
+
+	--bs-secondary: var(--tapmeppe-scheme-project-basic-secondary-abcd) !important;
+	--bs-secondary-rgb: var(--tapmeppe-scheme-project-basic-secondary-rgb) !important;
+
+	--bs-tertiary: var(--tapmeppe-scheme-project-basic-tertiary-abcd) !important;
+	--bs-tertiary-rgb: var(--tapmeppe-scheme-project-basic-tertiary-rgb) !important;
+
+	--bs-link-color-rgb: var(--tapmeppe-scheme-project-basic-primary-rgb) !important;
+	--bs-warning-rgb: var(--tapmeppe-scheme-project-basic-tertiary-rgb) !important;
+
+	--bs-border-color: var(--tapmeppe-bootstrap-border-color) !important;
+	--bs-border-color-translucent: var(--tapmeppe-bootstrap-color-translucent) !important;
+	--bs-border-radius: var(--tapmeppe-global-border-radius) !important;
+	--bs-border-width: var(--tapmeppe-global-border-width) !important;
+
+	--bs-highlight-bg: var(--tapmeppe-bootstrap-highlight-bg) !important;
+	--bs-highlight-color: var(--tapmeppe-scheme-project-basic-secondary-abcd) !important;
+
+	--bs-danger-border-subtle: var(--tapmeppe-bootstrap-danger-border-subtle) !important;
+	--bs-danger-bg-subtle: var(--tapmeppe-bootstrap-danger-bg-subtle) !important;
+	--bs-danger-text-emphasis: var(--tapmeppe-bootstrap-danger-text-emphasis) !important;
+
+	--bs-body-font-size: var(--tapmeppe-global-font-size) !important;
+}
+
+[data-bs-original-title] {
+	.mx_title()
+}
+
+.btn- {
+	&primary {
+		--bs-btn-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+		--bs-btn-bg: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+		--bs-btn-border-color: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+		// ...
+		--bs-btn-hover-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+		--bs-btn-hover-bg: var(--tapmeppe-scheme-project-operative-primary-abcd) !important;
+		--bs-btn-hover-border-color: var(--tapmeppe-scheme-project-operative-primary-abcd) !important;
+		// ...
+		--bs-btn-active-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+		--bs-btn-active-bg: var(--tapmeppe-scheme-project-operative-primary-abcd) !important;
+		--bs-btn-active-border-color: var(--tapmeppe-scheme-project-operative-primary-abcd) !important;
+		// ...
+		--bs-btn-disabled-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+		--bs-btn-disabled-bg: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+		--bs-btn-disabled-border-color: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+	}
+
+	&secondary {
+		--bs-btn-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+		--bs-btn-bg: var(--tapmeppe-scheme-project-basic-secondary-abcd) !important;
+		--bs-btn-border-color: var(--tapmeppe-scheme-project-basic-secondary-abcd) !important;
+		// ...
+		--bs-btn-hover-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+		--bs-btn-hover-bg: var(--tapmeppe-scheme-project-operative-secondary-abcd) !important;
+		--bs-btn-hover-border-color: var(--tapmeppe-scheme-project-operative-secondary-abcd) !important;
+		// ...
+		--bs-btn-active-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+		--bs-btn-active-bg: var(--tapmeppe-scheme-project-operative-secondary-abcd) !important;
+		--bs-btn-active-border-color: var(--tapmeppe-scheme-project-operative-secondary-abcd) !important;
+		// ...
+		--bs-btn-disabled-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+		--bs-btn-disabled-bg: var(--tapmeppe-scheme-project-basic-secondary-abcd) !important;
+		--bs-btn-disabled-border-color: var(--tapmeppe-scheme-project-basic-secondary-abcd) !important;
+	}
+
+	&tertiary {
+		--bs-btn-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+		--bs-btn-bg: var(--tapmeppe-scheme-project-basic-tertiary-abcd) !important;
+		--bs-btn-border-color: var(--tapmeppe-scheme-project-basic-tertiary-abcd) !important;
+		// ...
+		--bs-btn-hover-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+		--bs-btn-hover-bg: var(--tapmeppe-scheme-project-operative-tertiary-abcd) !important;
+		--bs-btn-hover-border-color: var(--tapmeppe-scheme-project-operative-tertiary-abcd) !important;
+		// ...
+		--bs-btn-active-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+		--bs-btn-active-bg: var(--tapmeppe-scheme-project-operative-tertiary-abcd) !important;
+		--bs-btn-active-border-color: var(--tapmeppe-scheme-project-operative-tertiary-abcd) !important;
+		// ...
+		--bs-btn-disabled-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+		--bs-btn-disabled-bg: var(--tapmeppe-scheme-project-basic-tertiary-abcd) !important;
+		--bs-btn-disabled-border-color: var(--tapmeppe-scheme-project-basic-tertiary-abcd) !important;
+	}
+
+	// ...
+	&outline- {
+		&primary {
+			--bs-btn-color: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+			--bs-btn-border-color: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+			--bs-btn-hover-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+			// ...
+			--bs-btn-hover-bg: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+			--bs-btn-hover-border-color: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+			// ...
+			--bs-btn-active-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+			--bs-btn-active-bg: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+			--bs-btn-active-border-color: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+			// ...
+			--bs-btn-disabled-color: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+			--bs-btn-disabled-border-color: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+		}
+
+		&secondary {
+			--bs-btn-color: var(--tapmeppe-scheme-project-basic-secondary-abcd) !important;
+			--bs-btn-border-color: var(--tapmeppe-scheme-project-basic-secondary-abcd) !important;
+			--bs-btn-hover-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+			// ...
+			--bs-btn-hover-bg: var(--tapmeppe-scheme-project-basic-secondary-abcd) !important;
+			--bs-btn-hover-border-color: var(--tapmeppe-scheme-project-basic-secondary-abcd) !important;
+			// ...
+			--bs-btn-active-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+			--bs-btn-active-bg: var(--tapmeppe-scheme-project-basic-secondary-abcd) !important;
+			--bs-btn-active-border-color: var(--tapmeppe-scheme-project-basic-secondary-abcd) !important;
+			// ...
+			--bs-btn-disabled-color: var(--tapmeppe-scheme-project-basic-secondary-abcd) !important;
+			--bs-btn-disabled-border-color: var(--tapmeppe-scheme-project-basic-secondary-abcd) !important;
+		}
+
+		&tertiary {
+			--bs-btn-color: var(--tapmeppe-scheme-project-basic-tertiary-abcd) !important;
+			--bs-btn-border-color: var(--tapmeppe-scheme-project-basic-tertiary-abcd) !important;
+			--bs-btn-hover-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+			// ...
+			--bs-btn-hover-bg: var(--tapmeppe-scheme-project-basic-tertiary-abcd) !important;
+			--bs-btn-hover-border-color: var(--tapmeppe-scheme-project-basic-tertiary-abcd) !important;
+			// ...
+			--bs-btn-active-color: var(--tapmeppe-scheme-project-gradient-text) !important;
+			--bs-btn-active-bg: var(--tapmeppe-scheme-project-basic-setertiarycondary-abcd) !important;
+			--bs-btn-active-border-color: var(--tapmeppe-scheme-project-basic-tertiary-abcd) !important;
+			// ...
+			--bs-btn-disabled-color: var(--tapmeppe-scheme-project-basic-tertiary-abcd) !important;
+			--bs-btn-disabled-border-color: var(--tapmeppe-scheme-project-basic-tertiary-abcd) !important;
+		}
+	}
+}
+
+.dropdown- {
+	&menu {
+		--bs-dropdown-link-color: var(--tapmeppe-scheme-text-abcd);
+	}
+
+	&item {
+
+		&:focus,
+		&:hover {
+			--bs-dropdown-link-hover-color: var(--tapmeppe-scheme-project-navigation-text-operative);
+			--bs-dropdown-link-hover-bg: var(--tapmeppe-scheme-project-navigation-background-abcd);
+		}
+	}
+}
+
+.navbar {
+	--bs-navbar-color: var(--tapmeppe-scheme-project-navigation-text-basic) !important;
+
+	&:focus,
+	&:hover {
+		--bs-navbar-hover-color: var(--tapmeppe-scheme-project-navigation-text-operative) !important;
+	}
+
+	&-nav .nav-link {
+
+		&.active,
+		&.show {
+			--bs-navbar-active-color: var(--tapmeppe-scheme-project-navigation-text-operative);
+		}
+	}
+}
+
+.nav-link {
+	--bs-nav-link-color: var(--tapmeppe-scheme-project-navigation-text-basic) !important;
+
+	&:focus,
+	&:hover {
+		--bs-nav-link-hover-color: var(--tapmeppe-scheme-project-navigation-text-operative) !important;
+	}
+}
+
+// @see https://getbootstrap.com/docs/5.3/components/progress/
+.progress {
+	--bs-progress-bg: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+
+	&-stacked {
+		--bs-progress-bg: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
+	}
+
+	&-bar {
+		--bs-progress-bar-bg: var(--tapmeppe-scheme-project-basic-secondary-abcd) !important;
+	}
+}
+
+// @see https://getbootstrap.com/docs/5.3/components/tooltips/#custom-tooltips
+.tooltip {
+	--bs-tooltip-bg: var(--tapmeppe-scheme-project-navigation-background-abcd);
+	--bs-tooltip-color: var(--tapmeppe-scheme-project-navigation-text-operative);
+}

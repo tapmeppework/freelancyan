@@ -1,0 +1,41 @@
+---
+import Admin from "@bloc/Admin";
+import Layout from "@layout";
+import type Properties from "@layouts/ABCD.types";
+import Model from "@modules/index/ABCD.model";
+import About from "@modules/index/About";
+import Top from "@modules/index/Top";
+import Organisations from "@modules/index/Organisations";
+import Testimonials from "@modules/index/Testimonials";
+import Section from "@abcd/Section";
+
+const path = Admin.start(Astro as unknown as Properties, {
+	category: "header",
+	page: "index",
+});
+if (path) return Astro.redirect(path);
+const index = Admin.lexicon.index;
+---
+
+<Layout>
+	<Section block="introduction, profile">
+		<Top />
+	</Section>
+	<Section class={Model.classNames.about} block="about">
+		<About />
+	</Section>
+	{
+		index.organisations && (
+			<Section block="organisations">
+				<Organisations {...index.organisations} />
+			</Section>
+		)
+	}
+	{
+		index.testimonials && (
+			<Section block="testimonials">
+				<Testimonials {...index.testimonials} />
+			</Section>
+		)
+	}
+</Layout>

@@ -1,0 +1,8 @@
+// @ts-nocheck
+import Lexicon0 from '@i18n/Lexicon'
+import type { Snippet } from '@framework'
+
+
+export default class Lexicon extends Lexicon0 {
+	
+}

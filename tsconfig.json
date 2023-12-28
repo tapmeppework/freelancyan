@@ -1,0 +1,89 @@
+// tsc --showConfig
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    //PM (24.09.2023) custom paths
+    "baseUrl": ".", //@see https://stackoverflow.com/a/69514947/2652918
+    "paths": {
+      // uniquians
+      "@abcd/*": [ //the modules directory
+        "src/modules/abcd/*",
+      ],
+      "@bloc/*": [ //the bloc directory
+        "src/bloc/*",
+      ],
+      "@framework": [ //the configuration
+        "src/bloc/framework.tsx",
+        // "src/bloc/framework-solid.tsx",
+        // "src/bloc/framework-preact.tsx",
+        // "src/bloc/framework-react.tsx",
+      ],
+      "@i18n/*": [ //the i18n directory
+        "src/i18n/*",
+      ],
+      "@icon": [ //the icons parent script
+        "src/modules/abcd/Icon",
+      ],
+      "@icons/*": [ //the icons directory
+        "src/modules/abcd-icons/*",
+      ],
+      "@layouts/*": [ //the layouts directory
+        "src/layouts/*",
+      ],
+      "@modules/*": [ //the modules directory
+        "src/modules/*",
+      ],
+      "@theme/*": [ //the theme directory
+        "src/theme/*",
+      ],
+      // ...
+      // theme
+      "@config": [ //the configuration
+        "src/theme/bloc/Config.tsx",
+        "src/bloc/Config.tsx",
+        // webpack with the folowing relative path: ./src/bloc
+        // "../theme/bloc/Config.tsx",
+        // "./Config.tsx",
+      ],
+      "@layout": [ //the root layout; it is extended by all other layouts 
+        "src/theme/layouts/ABCD.astro",
+        "src/layouts/ABCD.astro",
+      ],
+      "@style": [ //s.e.
+        "src/theme/styles/style.css",
+        "src/styles/style.css",
+      ],
+      "@thesaurus": [ //the languages manager
+        "src/theme/i18n/Thesaurus.ts",
+        "src/i18n/Thesaurus.ts",
+      ],
+      "@trackersModule": [ //the third party trackers
+        "src/theme/modules/ThirdPartyTrackers.tsx",
+        "src/modules/abcd/ThirdPartyTrackers.tsx",
+      ],
+      "@trackersModel": [ //the third party trackers
+        "src/theme/modules/ThirdPartyTrackers.model.js?url",
+        "src/modules/abcd/ThirdPartyTrackers.model.js?url",
+      ],
+      "@wonder": [ //the third party trackers
+        "src/theme/models/wonder.js?url",
+        "src/models/abcd/wonder.js?url",
+      ],
+      // ...
+      // "@locales/*": [
+      //   "src/theme/i18n/*",
+      //   "src/i18n/*",
+      //   @see https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping
+      //   - currently not working as described when directories are involved
+      //   - even chatGPT could not figure out what was going wrong @see https://chat.openai.com/share/df291498-775c-4355-858b-ef02c0b88dad
+      //   - hence the work around below
+      // ],
+    }
+  },
+  "exclude": [ // PM (31.10.2023) exclude the templates
+    "zywx",
+    "**/*.template.*",
+  ],
+}

@@ -1,0 +1,38 @@
+@import '../../styles/assets.less';
+@import '../../styles/assets.more.less';
+@progress: ~"@{UMBRELLA_CN}progress";
+@stacked: ~"@{UMBRELLA_CN}stacked";
+@legend: ~"@{UMBRELLA_CN}legend";
+@min: ~"@{DATA}min";
+@max: ~"@{DATA}max";
+
+@{progress} {
+	&::before {
+		.mx_legend(@min, left);
+	}
+
+	&::after {
+		.mx_legend(@max, right);
+	}
+
+	@{stacked} {
+		--tapmeppe-zyxw-progress-height: 2em;
+		height: var(--tapmeppe-zyxw-progress-height);
+
+		.progress,
+		.progress-bar {
+			height: var(--tapmeppe-zyxw-progress-height);
+		}
+	}
+}
+
+.mx_legend(@data, @direction) {
+	content: attr(@data);
+	position: absolute;
+	@{direction}: 0;
+	font-size: var(--tapmeppe-global-font-size-tiny);
+	padding: 0 2px;
+	z-index: 1; //place it on top of the legend in-between
+	bottom: -2px; //place it lower than of the legend in-between
+	.mx_section_background();
+}

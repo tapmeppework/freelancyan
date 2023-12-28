@@ -1,0 +1,19 @@
+import type { Contact } from '@bloc/ABCD.types'
+import Config0 from '@bloc/Config'
+
+export default class Config extends Config0 {
+	/**
+	 * @overridden
+	 */
+	readonly contact: Contact = {
+		business: 't@pm3pp3 w0rk',
+		name: 'Patrick Meppe',
+		address: '69250 Schönau, Germany',
+		email: 'patrick.meppe@tapmeppe.work',
+	}
+
+	/**
+	 * @overridden
+	 */
+	readonly site: string = 'https://tapmeppe.work'
+}

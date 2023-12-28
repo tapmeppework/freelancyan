@@ -1,0 +1,145 @@
+// main: style.less
+
+// the remaining global attributes
+:root {
+	--tapmeppe-global-dim-container: @BREAKPOINT_LARGE;
+	--tapmeppe-global-font-size: @DIM_FONT_SIZE;
+	--tapmeppe-global-font-size-small: @DIM_FONT_SIZE_SMALL;
+	--tapmeppe-global-font-size-tiny: @DIM_FONT_SIZE_TINY;
+	--tapmeppe-global-gap: @DIM_GAP;
+	--tapmeppe-global-harmony-height: @DIM_HEIGHT_HARMONY_MORE;
+	// --tapmeppe-global-harmony-overflow: hidden;
+	--tapmeppe-global-rounded: @DIM_ROUNDED;
+	--tapmeppe-global-border-radius: @DIM_RADIUS_BORDER;
+	// --tapmeppe-global-text-align: @TEXT_ALIGN;
+	--tapmeppe-global-border-width: @DIM_WIDTH_BORDER;
+	--tapmeppe-global-width-image-profile: @DIM_WIDTH_IMAGE_PROFILE;
+}
+
+// scrollbar
+// @see https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+::-webkit-scrollbar {
+	width: calc(12 * var(--tapmeppe-global-border-width));
+	// padding: 10px; //not working
+
+	&-track {
+		background: var(--tapmeppe-scheme-project-basic-primary-abcd);
+		// background: linear-gradient(to bottom, var(--tapmeppe-scheme-project-basic-primary-abcd), var(--tapmeppe-scheme-project-basic-secondary-abcd));
+		// padding: 10px; //not working
+	}
+
+	// &-corner {
+	// 	background-color: var(--tapmeppe-scheme-dark)
+	// }
+
+	&-thumb {
+		background: var(--tapmeppe-scheme-project-basic-secondary-abcd);
+		border-radius: var(--tapmeppe-global-border-radius);
+		border: solid calc(2 * var(--tapmeppe-global-border-width)) var(--tapmeppe-scheme-project-basic-primary-abcd); //work around to simulate a margin
+
+		// not working
+		// opacity: 0;
+		// transition: background-color 1s;
+		// margin: 10px; //not working
+
+		&:hover {
+			background: var(--tapmeppe-scheme-project-operative-secondary-abcd)
+		}
+	}
+}
+
+::selection {
+	background-color: var(--tapmeppe-scheme-project-navigation-background-abcd);
+	color: var(--tapmeppe-scheme-project-navigation-text-operative);
+}
+
+html {
+	.mx_scheme_light();
+	overflow-x: hidden;
+
+	// manual color scheme
+	@light: ~"[@{DATA}scheme=light]";
+	@dark: ~"[@{DATA}scheme=dark]";
+
+	&@{light} {
+		.mx_scheme_light();
+	}
+
+	&@{dark} {
+		.mx_scheme_dark();
+	}
+
+	// browser color scheme
+	@media (prefers-color-scheme: light) {
+		.mx_scheme_light();
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.mx_scheme_dark();
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		//disable all animations & transitions
+		animation: none !important;
+		transition: none !important;
+	}
+
+	// all ready set by bootstrap
+	// @media (prefers-reduced-motion: no-preference) {
+	// 	@see https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+	// 	@see https://caniuse.com/css-scroll-behavior
+	// 	scroll-behavior: smooth;
+	// }
+}
+
+p {
+	text-align: var(--tapmeppe-global-text-align, @TEXT_ALIGN);
+
+	mark {
+		padding-top: 0;
+
+		&::before {
+			content: "\A";
+			// content: "\A(";
+			white-space: pre;
+		}
+
+		&::after {
+			content: ".";
+		}
+	}
+
+	// @see https://matthewjamestaylor.com/custom-tags
+	// span-nowrap {
+	// 	text-wrap: nowrap;
+	// }
+
+	// strong,
+	// span {
+	// 	text-wrap: nowrap;
+	// }
+}
+
+sup {
+	// undoing the changes made by bootstrap
+	position: initial;
+	vertical-align: super;
+}
+
+img {
+	// @see https://youtu.be/345V2MU3E_w?si=xsQGabaiJe9VwbeI
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle; //in case in text
+	font-style: italic; //in case source not found
+	// background-repeat: no-repeat; //blurry loading
+	// background-size: cover; //blurry loading
+	// shape-margin: 1rem; //floating
+
+	// @see https://stackoverflow.com/a/35364179/2652918
+	// image-rendering: -webkit-optimize-contrast;
+}
+
+[data-tapmeppe-title] {
+	.mx_title();
+}

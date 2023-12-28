@@ -1,0 +1,121 @@
+// main: style.less
+
+/**
+ * @description this script is used to set the global colors
+ * @see https://getbootstrap.com/docs/5.3/customize/color/#colors
+ * @since PM (25.09.2023)
+ */
+@schemeProjectPrimaryRGB: red(@SCHEME_PROJECT_PRIMARY), green(@SCHEME_PROJECT_PRIMARY), blue(@SCHEME_PROJECT_PRIMARY);
+@schemeProjectPrimaryOperative: darken(@SCHEME_PROJECT_PRIMARY, @SCHEME_FACTOR);
+@schemeProjectPrimaryOperativeRGB: red(@schemeProjectPrimaryOperative), green(@schemeProjectPrimaryOperative), blue(@schemeProjectPrimaryOperative);
+@schemeProjectSecondaryRGB: red(@SCHEME_PROJECT_SECONDARY), green(@SCHEME_PROJECT_SECONDARY), blue(@SCHEME_PROJECT_SECONDARY);
+@schemeProjectSecondaryOperative: darken(@SCHEME_PROJECT_SECONDARY, @SCHEME_FACTOR);
+@schemeProjectSecondaryOperativeRGB: red(@schemeProjectSecondaryOperative), green(@schemeProjectSecondaryOperative), blue(@schemeProjectSecondaryOperative);
+@schemeProjectTertiaryRGB: red(@SCHEME_PROJECT_TERTIARY), green(@SCHEME_PROJECT_TERTIARY), blue(@SCHEME_PROJECT_TERTIARY);
+@schemeProjectTertiaryOperative: darken(@SCHEME_PROJECT_TERTIARY, @SCHEME_FACTOR);
+@schemeProjectTertiaryOperativeRGB: red(@schemeProjectTertiaryOperative), green(@schemeProjectTertiaryOperative), blue(@schemeProjectTertiaryOperative);
+// ...
+@schemeProjectNavigationBackgroundRGB: red(@SCHEME_PROJECT_NAVIGATION_BACKGROUND), green(@SCHEME_PROJECT_NAVIGATION_BACKGROUND), blue(@SCHEME_PROJECT_NAVIGATION_BACKGROUND);
+// ...
+@schemeDarkSectionBodyRGB: red(@SCHEME_DARK_SECTION), green(@SCHEME_DARK_SECTION), blue(@SCHEME_DARK_SECTION);
+@schemeDarkSectionOdd: lighten(@SCHEME_DARK_SECTION, @SCHEME_FACTOR * .5);
+@schemeDarkSectionOddRGB: red(@schemeDarkSectionOdd), green(@schemeDarkSectionOdd), blue(@schemeDarkSectionOdd);
+@schemeDarkSectionEven: lighten(@SCHEME_DARK_SECTION, @SCHEME_FACTOR);
+@schemeDarkSectionEvenRGB: red(@schemeDarkSectionEven), green(@schemeDarkSectionEven), blue(@schemeDarkSectionEven);
+@schemeDarkSectionTertiary: darken(@SCHEME_DARK_SECTION, @SCHEME_FACTOR * .5);
+@schemeDarkSectionTertiaryRGB: red(@schemeDarkSectionTertiary), green(@schemeDarkSectionTertiary), blue(@schemeDarkSectionTertiary);
+@schemeDarkTextRGB: red(@SCHEME_DARK_TEXT), green(@SCHEME_DARK_TEXT), blue(@SCHEME_DARK_TEXT);
+// ...
+@schemeLightSectionBodyRGB: red(@SCHEME_LIGHT_SECTION), green(@SCHEME_LIGHT_SECTION), blue(@SCHEME_LIGHT_SECTION);
+@schemeLightSectionOdd: darken(@SCHEME_LIGHT_SECTION, @SCHEME_FACTOR * .25);
+@schemeLightSectionOddRGB: red(@schemeLightSectionOdd), green(@schemeLightSectionOdd), blue(@schemeLightSectionOdd);
+@schemeLightSectionEven: darken(@SCHEME_LIGHT_SECTION, @SCHEME_FACTOR * .5);
+@schemeLightSectionEvenRGB: red(@schemeLightSectionEven), green(@schemeLightSectionEven), blue(@schemeLightSectionEven);
+@schemeLightSectionZyxw: darken(@SCHEME_LIGHT_SECTION, @SCHEME_FACTOR);
+@schemeLightSectionZyxwRGB: red(@schemeLightSectionZyxw), green(@schemeLightSectionZyxw), blue(@schemeLightSectionZyxw);
+@schemeLightTextRGB: red(@SCHEME_LIGHT_TEXT), green(@SCHEME_LIGHT_TEXT), blue(@SCHEME_LIGHT_TEXT);
+@schemeLightBootstrapBorder: darken(@SCHEME_LIGHT_SECTION, @SCHEME_FACTOR * 3); //exception
+
+// DO NOT MERGE; the .less color mixins can not be placed next to native CSS code
+
+.mx_scheme {
+	--tapmeppe-scheme-project-basic-primary-abcd: @SCHEME_PROJECT_PRIMARY;
+	--tapmeppe-scheme-project-basic-primary-rgb: @schemeProjectPrimaryRGB;
+	--tapmeppe-scheme-project-operative-primary-abcd: @schemeProjectPrimaryOperative;
+	--tapmeppe-scheme-project-operative-primary-rgb: @schemeProjectPrimaryOperativeRGB;
+
+	--tapmeppe-scheme-project-basic-secondary-abcd: @SCHEME_PROJECT_SECONDARY;
+	--tapmeppe-scheme-project-basic-secondary-rgb: @schemeProjectSecondaryRGB;
+	--tapmeppe-scheme-project-operative-secondary-abcd: @schemeProjectSecondaryOperative;
+	--tapmeppe-scheme-project-operative-secondary-rgb: @schemeProjectSecondaryOperativeRGB;
+
+	--tapmeppe-scheme-project-basic-tertiary-abcd: @SCHEME_PROJECT_TERTIARY;
+	--tapmeppe-scheme-project-basic-tertiary-rgb: @schemeProjectTertiaryRGB;
+	--tapmeppe-scheme-project-operative-tertiary-abcd: @schemeProjectTertiaryOperative;
+	--tapmeppe-scheme-project-operative-tertiary-rgb: @schemeProjectTertiaryOperativeRGB;
+
+	--tapmeppe-scheme-project-navigation-background-abcd: @SCHEME_PROJECT_NAVIGATION_BACKGROUND;
+	--tapmeppe-scheme-project-navigation-background-rgb: @schemeProjectNavigationBackgroundRGB;
+	--tapmeppe-scheme-project-navigation-text-basic: rgba(@SCHEME_PROJECT_NAVIGATION_TEXT, 0.65);
+	--tapmeppe-scheme-project-navigation-text-operative: rgba(@SCHEME_PROJECT_NAVIGATION_TEXT, 1);
+
+	--tapmeppe-scheme-project-gradient-text: @SCHEME_PROJECT_GRADIENT_TEXT;
+
+	// ...
+	--tapmeppe-bootstrap-accordion-btn-active-icon: @BOOTSTRAP_ACCORDION_BUTTON_ACTIVE_ICON;
+	--tapmeppe-bootstrap-highlight-bg: transparent;
+	// --tapmeppe-bootstrap-navbar-color: transparent;
+	// --bs-navbar-color
+}
+
+.mx_scheme_dark {
+	color-scheme: dark;
+	// ...
+	--tapmeppe-scheme-section-body-abcd: @SCHEME_DARK_SECTION;
+	--tapmeppe-scheme-section-body-rgb: @schemeDarkSectionBodyRGB;
+	--tapmeppe-scheme-section-odd-abcd: @schemeDarkSectionOdd;
+	--tapmeppe-scheme-section-odd-rgb: @schemeDarkSectionOddRGB;
+	--tapmeppe-scheme-section-even-abcd: @schemeDarkSectionEven;
+	--tapmeppe-scheme-section-even-rgb: @schemeDarkSectionEvenRGB;
+	--tapmeppe-scheme-section-zyxw-abcd: @schemeDarkSectionTertiary;
+	--tapmeppe-scheme-section-zyxw-rgb: @schemeDarkSectionTertiaryRGB;
+	// ...
+	--tapmeppe-scheme-text-abcd: @SCHEME_DARK_TEXT;
+	--tapmeppe-scheme-text-rgb: @schemeDarkTextRGB;
+	--tapmeppe-scheme-todo: @SCHEME_DARK_TODO;
+	// ...
+	--tapmeppe-bootstrap-accordion-btn-icon: @BOOTSTRAP_ACCORDION_BUTTON_ICON_DARK;
+	--tapmeppe-bootstrap-border-color: #495057;
+	--tapmeppe-bootstrap-color-translucent: rgba(255, 255, 255, 0.15);
+	--tapmeppe-bootstrap-danger-border-subtle: #842029;
+	--tapmeppe-bootstrap-danger-bg-subtle: #2c0b0e;
+	--tapmeppe-bootstrap-danger-text-emphasis: #ea868f;
+	// ...
+	.mx_scheme()
+}
+
+.mx_scheme_light {
+	color-scheme: light;
+	// ...
+	--tapmeppe-scheme-section-body-abcd: @SCHEME_LIGHT_SECTION;
+	--tapmeppe-scheme-section-body-rgb: @schemeLightSectionBodyRGB;
+	--tapmeppe-scheme-section-odd-abcd: @schemeLightSectionOdd;
+	--tapmeppe-scheme-section-odd-rgb: @schemeLightSectionOddRGB;
+	--tapmeppe-scheme-section-even-abcd: @schemeLightSectionEven;
+	--tapmeppe-scheme-section-even-rgb: @schemeLightSectionEvenRGB;
+	--tapmeppe-scheme-section-zyxw-abcd: @schemeLightSectionZyxw;
+	--tapmeppe-scheme-section-zyxw-rgb: @schemeLightSectionZyxwRGB;
+	// ...
+	--tapmeppe-scheme-text-abcd: @SCHEME_LIGHT_TEXT;
+	--tapmeppe-scheme-text-rgb: @schemeLightTextRGB;
+	--tapmeppe-scheme-todo: @SCHEME_LIGHT_TODO;
+	// ...
+	--tapmeppe-bootstrap-accordion-btn-icon: @BOOTSTRAP_ACCORDION_BUTTON_ICON_LIGHT;
+	--tapmeppe-bootstrap-border-color: @schemeLightBootstrapBorder; //#dee2e6;
+	--tapmeppe-bootstrap-color-translucent: rgba(0, 0, 0, 0.175);
+	--tapmeppe-bootstrap-danger-border-subtle: #f1aeb5;
+	--tapmeppe-bootstrap-danger-bg-subtle: #f8d7da;
+	--tapmeppe-bootstrap-danger-text-emphasis: #58151c;
+	// ...
+	.mx_scheme()
+}

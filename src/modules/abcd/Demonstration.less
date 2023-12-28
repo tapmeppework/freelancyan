@@ -1,0 +1,16 @@
+@import '../../styles/assets.less';
+@demonstration: ~"@{UMBRELLA_CN}demonstration";
+
+@{demonstration} {
+	// --tapmeppe-zyxw-demonstration-offset: 100px; > set in solidJS
+	top: calc(var(--tapmeppe-zyxw-demonstration-offset) - 1.5rem) !important;
+	z-index: @Z_INDEX_TOP;
+	transition: opacity @DURATION_MEDIUM;
+
+	&:focus,
+	&:hover {
+		opacity: @OPACITY_LOW;
+		cursor: none;
+		// cursor: wait;
+	}
+}

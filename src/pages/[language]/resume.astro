@@ -1,0 +1,16 @@
+---
+import Admin from "@bloc/Admin";
+import Layout from "@layouts/Titler.astro";
+import type Properties from "@layouts/ABCD.types";
+import Module from "@modules/resume/ABCD";
+
+const path = Admin.start(Astro as unknown as Properties, {
+	category: "header",
+	page: "resume",
+});
+if(path) return Astro.redirect(path)
+---
+
+<Layout>
+	<Module />
+</Layout>

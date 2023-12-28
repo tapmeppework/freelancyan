@@ -1,0 +1,171 @@
+// main: style.less
+
+@{UMBRELLA_CN} {
+	&aspect-ratio- {
+		&1 {
+			aspect-ratio: 1;
+		}
+	}
+
+	&background- {
+		&primary {
+			background-color: var(--tapmeppe-scheme-section-odd-abcd);
+		}
+
+		&secondary {
+			background-color: var(--tapmeppe-scheme-section-even-abcd);
+		}
+	}
+
+	&container {
+		max-width: var(--tapmeppe-global-dim-container) !important;
+	}
+
+	&flip- {
+		&horizontal {
+			//@see https://www.w3schools.com/howto/howto_css_flip_image.asp
+			-webkit-transform: scaleX(-1);
+			transform: scaleX(-1);
+		}
+	}
+
+	&font- {
+		&size- {
+			&7 {
+				font-size: var(--tapmeppe-global-font-size-small) !important; //there is no equivalent in bootstrap
+			}
+
+			&8 {
+				font-size: var(--tapmeppe-global-font-size-tiny) !important; //there is no equivalent in bootstrap
+			}
+		}
+
+		&opacity- {
+			&25 {
+				opacity: .25 !important;
+			}
+
+			&50 {
+				opacity: .50 !important;
+			}
+
+			&75 {
+				opacity: .75 !important;
+			}
+		}
+	}
+
+	&gradient- {
+
+		&background,
+		&text {
+			.mx_gradiant()
+		}
+
+		&background {
+			color: var(--tapmeppe-scheme-project-gradient-text);
+		}
+
+		&text {
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+
+			&::selection,
+			*::selection {
+				-webkit-text-fill-color: initial;
+			}
+		}
+	}
+
+	&line- {
+		&height- {
+			&0 {
+				line-height: 0 !important;
+			}
+		}
+	}
+
+	&margin- {
+		&top- {
+			&negative- {
+				&1 {
+					margin-top: -0.25rem !important;
+				}
+
+				&2 {
+					margin-top: -0.5rem !important;
+				}
+
+				&3 {
+					margin-top: -1rem !important;
+				}
+
+				&4 {
+					margin-top: -2rem !important;
+				}
+			}
+		}
+	}
+
+	// @see https: //developer.mozilla.org/en-US/docs/Web/CSS/@container
+	// @container is not working
+	&paragraph {
+		&&-small {
+			max-width: @BREAKPOINT_SMALL;
+		}
+
+		&:not(&-small) {
+			@media (min-width: @BREAKPOINT_SMALL) {
+				column-count: 2;
+				column-gap: var(--tapmeppe-global-gap);
+				column-rule: solid var(--tapmeppe-global-border-width) currentColor
+			}
+		}
+	}
+
+	&pointer {
+		cursor: pointer;
+	}
+
+	&rounded {
+		border-radius: var(--tapmeppe-global-rounded) !important;
+	}
+
+	&harmony-scroll {
+		--tapmeppe-global-harmony-height: @DIM_HEIGHT_HARMONY_SCROLL;
+		--tapmeppe-global-harmony-overflow: auto;
+
+		&::-webkit-scrollbar {
+			--tapmeppe-global-border-width: @DIM_WIDTH_BORDER * 2 / 3;
+		}
+	}
+
+	&text {
+		&-justify {
+			// @see https://github.com/twbs/bootstrap/pull/29793
+			text-align: justify;
+		}
+	}
+
+	&todo {
+		color: var(--tapmeppe-scheme-todo) !important;
+		border-color: var(--tapmeppe-scheme-todo) !important;
+	}
+
+	// @see https://getbootstrap.com/docs/5.3/components/tooltips/#custom-tooltips
+	// works perfectly but I prefer placing all bootstrap changes in one script > bootstrap.less
+	// &tooltip {
+	// 	--bs-tooltip-bg: var(--tapmeppe-scheme-project-navigation-background-abcd);
+	// 	--bs-tooltip-color: var(--tapmeppe-scheme-text-abcd);
+	// }
+
+	&width- {
+		&content {
+			max-width: fit-content !important;
+			// @media (min-width: @BREAKPOINT_SMALL) {
+			// 	max-width: fit-content !important;
+			// }
+		}
+	}
+}

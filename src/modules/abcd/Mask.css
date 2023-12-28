@@ -1,0 +1,2 @@
+.tapmeppe-mask{opacity:var(--tapmeppe-zyxw-mask-opacity, .25);background-color:var(--tapmeppe-scheme-project-navigation-background-abcd);transition:opacity .5s}.tapmeppe-mask-full{--tapmeppe-zyxw-mask-opacity:.95;z-index:1060}.tapmeppe-mask:hover{--tapmeppe-zyxw-mask-opacity:.75}
+/*# sourceMappingURL=./Mask.css.map */

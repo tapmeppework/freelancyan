@@ -1,0 +1,17 @@
+// tsc --showConfig --project wonder.tsconfig.json
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		// "baseUrl": ".",
+		// astro does not need it but I do when using webpack :-) 
+		// @see https://stackoverflow.com/a/55304691/2652918
+		"noEmit": false,
+		"allowImportingTsExtensions": false,
+	},
+	// limiting the access does not work in the webpack configuration
+	// hence the work around below
+	"include": [
+		"./src/bloc",
+		"./src/theme/bloc",
+	],
+}

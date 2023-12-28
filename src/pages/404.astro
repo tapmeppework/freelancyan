@@ -1,0 +1,47 @@
+---
+import ABCD from "@bloc/ABCD";
+import Admin from "@bloc/Admin";
+import Layout from "@layout";
+import type Properties from "@layouts/ABCD.types";
+import Model from "@abcd/404.model";
+import Headline from "@abcd/Headline";
+import Ban from "@icons/Ban";
+import RoadBarrier from "@icons/RoadBarrier";
+import TriangleExclamation from "@icons/TriangleExclamation";
+import CircleQuestion from "@icons/CircleQuestion";
+import SignsPost from "@icons/SignsPost";
+import Utils from "@bloc/Utils";
+
+const path = Admin.start(Astro as unknown as Properties, {
+	category: "phantom",
+	page: ABCD.keywords._404,
+});
+if (path) return Astro.redirect(path);
+const model = new Model();
+---
+
+<Layout identifier={Utils.identifier(ABCD.keywords._404)}>
+	<Headline mode="center">
+		<div class={Model.classNames.container}>
+			{
+				model.renderAction((className, href, label) => (
+					<a class={className} href={href}>
+						{label}
+					</a>
+				))
+			}
+		</div>
+		<div class={Model.classNames.container}>
+			{
+				model.renderIllustration(
+					(icon) => <Ban {...icon} />,
+					(icon) => <RoadBarrier {...icon} />,
+					(icon) => <TriangleExclamation {...icon} />,
+					(icon) => <CircleQuestion {...icon} />,
+					(icon) => <SignsPost {...icon} />,
+				)
+			}
+		</div>
+	</Headline>
+	<!-- <slot /> -->
+</Layout>

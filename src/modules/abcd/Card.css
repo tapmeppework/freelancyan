@@ -1,0 +1,2 @@
+.tapmeppe-card-content:not(.show){max-height:var(--tapmeppe-global-harmony-height);overflow-y:var(--tapmeppe-global-harmony-overflow, hidden) !important}.tapmeppe-card-content>p:last-child{margin-bottom:0}.tapmeppe-card.tapmeppe-active{border-width:calc(3 * var(--tapmeppe-global-border-width));--bs-border-color-translucent:var(--tapmeppe-scheme-project-basic-primary-abcd)}
+/*# sourceMappingURL=./Card.css.map */

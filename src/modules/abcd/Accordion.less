@@ -1,0 +1,20 @@
+@import '../../styles/assets.less';
+@import '../../styles/assets.more.less';
+@accordion: ~"@{UMBRELLA_CN}accordion";
+
+@{accordion} {
+	.accordion-button {
+		&::after {
+			--bs-accordion-btn-icon: var(--tapmeppe-bootstrap-accordion-btn-icon);
+		}
+
+		&:not(.collapsed) {
+			.mx_gradiant();
+			--bs-accordion-active-color: var(--tapmeppe-scheme-project-gradient-text);
+
+			&::after {
+				--bs-accordion-btn-active-icon: var(--tapmeppe-bootstrap-accordion-btn-active-icon);
+			}
+		}
+	}
+}

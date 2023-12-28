@@ -1,0 +1,15 @@
+// @ts-nocheck
+import Thesaurus0 from '@i18n/Thesaurus'
+import Lexicon from '@i18n/Lexicon'
+// import LexiconEN from '@theme/i18n/LexiconEN'
+
+export default class Thesaurus extends Thesaurus0 {
+	/**
+	 * @overridden
+	 */
+	protected getLexicons(): Lexicon[] {
+		return [
+			// new LexiconEN,
+		]
+	}
+}

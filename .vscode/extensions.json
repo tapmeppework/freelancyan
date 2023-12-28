@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "astro-build.astro-vscode",
+    "mrcrowl.easy-less",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "oderwat.indent-rainbow",
+    "moalamri.inline-fold",
+    "yzhang.markdown-all-in-one",
+  ],
+  "unwantedRecommendations": []
+}

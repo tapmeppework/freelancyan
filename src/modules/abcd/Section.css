@@ -1,0 +1,2 @@
+.tapmeppe-section:nth-child(2n + 3){background-color:var(--tapmeppe-scheme-section-odd-abcd)}.tapmeppe-section:nth-child(even){background-color:var(--tapmeppe-scheme-section-even-abcd)}
+/*# sourceMappingURL=./Section.css.map */
