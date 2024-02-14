@@ -1189,7 +1189,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				project: {
 					// illustration: '',
 					highlight: 'La plus commandée',
-					headline: 'Project',
+					headline: 'Projet',
 					header: <span class='fs-3'>200 €/mois</span>,
 					items: [
 						`Vous opérez dans l'hémisphère nord`,
