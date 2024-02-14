@@ -1,6 +1,7 @@
 import ABCD from '@bloc/ABCD'
 import type { Snippet } from '@framework'
 import Lexicon0 from './LexiconABCD'
+import Utils from '@bloc/Utils'
 
 /**
  * @classdesc this class is used to set the texts in the English language.
@@ -111,6 +112,16 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					`,
 					preamble: `
 						Welcome to my resume page! Here, I offer a glimpse into my career as a web developer. I have compiled my skills, experiences, and qualifications to provide you with an overview of what I bring to the table. Whether you are looking to collaborate on a project or simply want to learn more about my background, this resume is a valuable resource to understand my professional journey in web development.
+					`,
+				},
+				pricing: {
+					href: 'pricing',
+					headline: 'Pricing',
+					description: `
+						Welcome to the gateway of value and excellence. I pride myself on delivering top-notch web services tailored to elevate your digital adventure. My pricing reflects not just affordability, but a commitment to quality and innovation. Explore the possibilities, and let us transform your digital landscape together.
+					`,
+					preamble: `
+						Welcome to the gateway of value and excellence. I pride myself on delivering top-notch web services tailored to elevate your digital adventure. My pricing reflects not just affordability, but a commitment to quality and innovation. Explore the possibilities, and let us transform your digital landscape together.
 					`,
 				},
 				gallery: {
@@ -235,7 +246,6 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 			// },
 		],
 	]
-	privacy = []
 	portfolio = {
 		headline: 'Uncover my innovative projects',
 		mode: Lexicon.utilities.modes.timeline,
@@ -350,7 +360,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.cyclecomputing,
 				alt: 'A screenshot of the homepage.',
 				timeframe: 'September 2022 - December 2022',
-				headline: `VDO cyclecomputing (website relaunch)`,
+				headline: `VDO (website relaunch)`,
 				subline: `SIGMA-ELEKTRO GmbH`,
 				children: [
 					<>
@@ -371,7 +381,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				id: 'sigmasport-website-relaunch',
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.website,
 				timeframe: 'January 2021 - February 2023',
-				headline: 'SIGMA SPORT (website relaunch)',
+				headline: 'SIGMA (website relaunch)',
 				subline: `SIGMA-ELEKTRO GmbH`,
 				children: [
 					<>
@@ -593,7 +603,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				id: 'sigmasport-shop-launch',
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.shop,
 				timeframe: 'January 2018 - February 2023',
-				headline: 'SIGMA SPORT WEBSTORE',
+				headline: <>SIGMA WEBSTORE v1 &#128327;&nbsp;</>,
 				subline: <>Sigma Elektro GmbH</>,
 				children: [
 					<>
@@ -602,16 +612,6 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					<>
 						<strong>This marked my debut in a managerial role in a project from its inception.</strong> I had the opportunity to guide the team while contributing to the project successful completion.
 					</>,
-				],
-				links: [
-					{
-						label: 'Online shop',
-						href: `https://sigmasport-shop.com/${this.language}/`,
-					},
-					{
-						label: 'Online shop: ROX 12.1 EVO',
-						href: `https://sigmasport-shop.com/${this.language}/196-rox-121-evo`,
-					},
 				],
 			},
 			{
@@ -714,12 +714,6 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						I played a role in the development of the solution, starting as an intern and then continuing as a working student throughout my course. This journey allowed me to actively contribute to the project while advancing my skills and knowledge.
 					</>,
 				],
-				links: [
-					{
-						label: 'Website',
-						href: 'https://www.celsius37.com/eng/cancercenter/',
-					}
-				],
 			},
 		],
 	}
@@ -798,6 +792,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				content: [
 					{
 						label: 'Java',
+						title: 'Java, Scala and Maven are mainly used privately to simplify my life. 😂',
 						...Lexicon.tapmeppe.resume,
 					},
 					{
@@ -808,56 +803,44 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					},
 					{
 						label: 'WordPress',
+						...Lexicon.tapmeppe.resume,
 						animated: true,
-						...Lexicon.tapmeppe.resume,
 						offset: {
-							value: 2014
+							value: 2014,
 						},
 						rate: {
-							value: 2022
-						},
-					},
-					{
-						label: 'Typo3',
-						...Lexicon.tapmeppe.resume,
-						offset: {
-							value: 2014
-						},
-						rate: {
-							value: 2020
+							value: Utils.year,
 						},
 					},
 					{
 						label: 'Joomla, Prestashop',
 						title: 'Joomla, Prestashop',
 						...Lexicon.tapmeppe.resume,
-						animated: true,
 						offset: {
-							value: 2017
+							value: 2017,
 						},
 						rate: {
-							value: 2022
+							value: 2022,
 						},
 					},
 					{
-						label: 'NodeJS, TypeScript, Angular, Bootstrap',
-						title: 'NodeJS, TypeScript, Angular, Bootstrap',
+						label: 'NodeJS, TypeScript, React.js, Bootstrap',
+						title: 'NodeJS, TypeScript, React.js, Bootstrap',
 						...Lexicon.tapmeppe.resume,
 						animated: true,
 						offset: {
-							value: 2017
+							value: 2017,
 						},
 					},
 					{
-						label: 'React.js, Next.js',
-						title: 'React.js, Next.js',
+						label: 'Next.js',
+						title: 'Next.js',
 						...Lexicon.tapmeppe.resume,
-						animated: true,
 						offset: {
-							value: 2018
+							value: 2018,
 						},
 						rate: {
-							value: 2023
+							value: 2023,
 						},
 					},
 					{
@@ -866,22 +849,22 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						...Lexicon.tapmeppe.resume,
 						animated: true,
 						offset: {
-							value: 2019
+							value: 2019,
 						},
 						rate: {
-							value: 2022
+							value: Utils.year,
 						},
 					},
 					{
-						label: 'Docker, Playwright, VueJS',
-						title: 'Docker, Playwright, VueJS',
+						label: 'Docker, Playwright',
+						title: 'Docker, Playwright',
 						...Lexicon.tapmeppe.resume,
 						animated: true,
 						offset: {
-							value: 2022
+							value: 2022,
 						},
 						rate: {
-							value: 2023
+							value: Utils.year,
 						},
 					},
 				],
@@ -903,15 +886,11 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					},
 					{
 						label: 'German (Germany): Very good in speaking and writing',
-						title: `
-							After high school, I moved to Germany, where I studied and subsequently made my career in computer sciences.
-						`,
+						title: `After high school, I moved to Germany, where I studied and subsequently made my career in computer sciences.`,
 					},
 					{
 						label: <>Japanese (Japan): Anime level 😅</>,
-						title: `
-							So far I must have watched over 10000 Anime in Japanese. So now and then I capable of picking up the meaning of some sentences &#128526.;
-						`,
+						title: `So far I must have watched over 10000 Anime in Japanese. So now and then I capable of picking up the meaning of some sentences &#128526.`,
 					},
 				],
 			},
@@ -943,7 +922,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					{
 						image: Lexicon.tapmeppe.images.tapmeppe,
 						alt: `Logo of ${Lexicon.utilities.config.contact.business}.`,
-						timeframe: 'August 2023 - today',
+						timeframe: 'July 2023 - today',
 						headline: Lexicon.tapmeppe.resume.faas,
 						subline: Lexicon.utilities.config.contact.business,
 						children: [
@@ -1193,6 +1172,54 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				},
 			},
 			// maintenance: {},
+		},
+		pricing: {
+			headline: 'Pricing strategies',
+			offers: {
+				africa: {
+					// illustration: '',
+					headline: 'Last market',
+					header: <>
+						<span class='fs-3'>60,000</span>
+						<span class='fs-5'>&nbsp;Franc/month</span>
+					</>,
+					items: [
+						`You operate in the sub-Saharan region`,
+						`I implement, you rent`,
+						`Maintenance: 30 min/month`,
+						`Meeting for coordination: 60 min/month`,
+						`Remote work`,
+						Lexicon0.utilities.abcd.keywords.ellipsis.value,
+					],
+				},
+				project: { //user-tie
+					// illustration: '',
+					highlight: 'Most ordered',
+					headline: 'Project',
+					header: <span class='fs-3'>200 €/month</span>,
+					items: [
+						`You operate in the northern hemisphere`,
+						`I implement, you rent`,
+						`Maintenance: 90 min/month`,
+						`Meeting for coordination: 60 min/month`,
+						`Remote work`,
+						Lexicon0.utilities.abcd.keywords.ellipsis.value,
+					],
+				},
+				business: { //building
+					// illustration: '',
+					headline: 'Business',
+					header: <span class='fs-3'>Let us talk</span>,
+					items: [
+						`You can afford more than renting a space`,
+						`I implement, you buy`,
+						`Premium support`,
+						`Meeting for coordination on demand`,
+						`Remote work`,
+						`Occasional on-site operations`,
+					],
+				},
+			},
 		},
 		miscellaneous: {
 			more: 'Learn more',

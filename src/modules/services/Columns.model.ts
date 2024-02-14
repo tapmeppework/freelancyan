@@ -32,16 +32,16 @@ export default class Columns extends Model<Properties, Services.Columns<() => Sn
 		item: (className: string, content: Snippet) => Snippet,
 	): Snippet => {
 		const
-			columns = Object.keys(this.properties.catalogue),
+			columns = Object.keys(this.properties.offers),
 			highlight = columns.find(key =>
-				(this.properties.catalogue[key as keyof Services.Columns] as Services.Column).highlight
+				(this.properties.offers[key as keyof Services.Columns] as Services.Column).highlight
 			),
 			classNameList = `
 				${this.classes.bootstrap.list.group.abcd} 
 				${this.properties.flush && this.classes.bootstrap.list.group.flush}
 			`,
 			getCard = (block: keyof Services.Columns) => {
-				const column = this.properties.catalogue[block] as Services.Column
+				const column = this.properties.offers[block] as Services.Column
 
 				return card(
 					`
@@ -72,7 +72,7 @@ export default class Columns extends Model<Properties, Services.Columns<() => Sn
 				columns.map(key => {
 					const
 						block = key as keyof Services.Columns,
-						column = this.properties.catalogue[block] as Services.Column
+						column = this.properties.offers[block] as Services.Column
 
 					return container(
 						Columns.classNames.column,
@@ -80,7 +80,7 @@ export default class Columns extends Model<Properties, Services.Columns<() => Sn
 							container(
 								`
 										${Columns.classNames.preamble}
-										${column.highlight && this.classes.abcd.gradient.background}
+										${column.highlight && `${this.classes.abcd.gradient.background} ${this.classes.bootstrap.head[5]}`}
 									`,
 								column.highlight || this.abcd.keywords.ellipsis.value
 							),

@@ -11,7 +11,7 @@ import Utils from './Utils.ts'
  * @see https://docs.astro.build/en/guides/client-side-scripts/
  * <script is:inline src={...} defer></script>
  */
-((html) => {
+(html => {
 	// if (!html) return;
 
 	const

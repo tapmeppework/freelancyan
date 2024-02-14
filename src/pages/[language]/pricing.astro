@@ -2,16 +2,20 @@
 import Admin from "@bloc/Admin";
 import Layout from "@layouts/Titler.astro";
 import type Properties from "@layouts/ABCD.types";
-import Grid from "@modules/services/Grid";
+import Columns from "@modules/services/Columns";
 
 const path = Admin.start(Astro as unknown as Properties, {
 	category: "header",
-	page: "services",
+	page: "pricing",
 });
 if (path) return Astro.redirect(path);
-// const services = Admin.lexicon.services;
+const pricing = Admin.lexicon.services.pricing;
 ---
 
 <Layout>
-	<Grid catalogue={Admin.lexicon.services.catalogue} />
+	<Columns
+		headline={pricing.headline}
+		offers={pricing.offers}
+		flush={pricing.flush}
+	/>
 </Layout>

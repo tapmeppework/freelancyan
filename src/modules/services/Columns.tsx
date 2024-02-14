@@ -1,10 +1,9 @@
-import Row, { Col } from '@abcd/Row'
+import Row from '@abcd/Row'
 import Image from '@abcd/Image'
-import CircleCheck from '@icons/CircleCheck'
 import Question from '@icons/Question'
-import HandHolding from '@icons/HandHolding'
-import HandHoldingMedical from '@icons/HandHoldingMedical'
-import HandHoldingDroplet from '@icons/HandHoldingDroplet'
+import EarthAfrica from '@icons/EarthAfrica'
+import Briefcase from '@icons/Briefcase'
+import Building from '@icons/Building'
 import Card from './Card'
 import './Columns.css'
 import type Properties from './Columns.properties'
@@ -17,9 +16,9 @@ export default (props: Properties) => <Section>
 		props,
 		className => <Question class={className} style={Model.design['7.5']} />,
 		{
-			bronze: () => <HandHolding />,
-			silver: () => <HandHoldingMedical />,
-			gold: () => <HandHoldingDroplet />,
+			africa: () => <EarthAfrica />,
+			project: () => <Briefcase />,
+			business: () => <Building style={{ padding: '0 5px' }} />,
 		}
 	).render(
 		headline => <H2>{headline}</H2>,

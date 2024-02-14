@@ -324,12 +324,6 @@ export default abstract class Lexicon<Miscellaneous = any> {
 	legal: ABCD.Excerpt = []
 
 	/**
-	 * @property {ABCD.Excerpt} legal
-	 * @description This object is used on the privacy page.
-	 */
-	privacy: ABCD.Excerpt = []
-
-	/**
 	 * @property {Portfolio} portfolio
 	 * @description This object is used on the portfolio page.
 	 */
@@ -338,6 +332,12 @@ export default abstract class Lexicon<Miscellaneous = any> {
 		mode: Lexicon.utilities.modes.grid,
 		content: [],
 	}
+
+	/**
+	 * @property {ABCD.Excerpt} legal
+	 * @description This object is used on the privacy page.
+	 */
+	privacy: ABCD.Excerpt = []
 
 	/**
 	 * @property {Resume.ABCD} resume
@@ -350,8 +350,11 @@ export default abstract class Lexicon<Miscellaneous = any> {
 	 * @alias Services.ABCD
 	 */
 	services: Services.ABCD = {
-		mode: Lexicon.utilities.modes.grid,
 		catalogue: {},
+		pricing: {
+			headline: '',
+			offers: {},
+		},
 		miscellaneous: {
 			more: '',
 			message: (service: string) => ({

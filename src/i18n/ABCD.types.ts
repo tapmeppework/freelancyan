@@ -25,6 +25,11 @@ export namespace ABCD {
 		 */
 		portfolio?: Page
 		/**
+		 * @property {Page} pricing
+		 * @description The page used to showcase your pricing.
+		 */
+		pricing?: Page
+		/**
 		 * @property {Page} resume
 		 * @description The page used to present your career.
 		 */
@@ -628,7 +633,26 @@ export namespace Services {
 	 * 	It used the exclusive [OR] operator in its structure definition.
 	 * 	This means either the grid or the columns is defined; not both at the same time
 	 */
-	export type ABCD = Light & {
+	export type ABCD = {
+		/**
+		 * @property {Grid} catalogue
+		 * @description @see Grid
+		 */
+		catalogue: Grid
+		pricing: {
+			/**
+			 * @property {'columns'} mode
+			 * @description This property is used to signalise the columns mode.
+			 */
+			headline?: Snippet
+			/**
+			 * @property {Columns} catalogue
+			 * @description @see Columns
+			 */
+			offers: Columns
+			flush?: boolean
+		}
+
 		/**
 		 * @property {Object} miscellaneous
 		 * @description ...
@@ -649,32 +673,6 @@ export namespace Services {
 		}
 	}
 
-	export type Light = {
-		/**
-		 * @property {'grid'} mode
-		 * @description This property is used to signalise the grid mode.
-		 */
-		mode: 'grid'
-		/**
-		 * @property {Grid} catalogue
-		 * @description @see Grid
-		 */
-		catalogue: Grid
-	} | {
-		/**
-		 * @property {'columns'} mode
-		 * @description This property is used to signalise the columns mode.
-		 */
-		mode: 'columns'
-		headline?: Snippet
-		/**
-		 * @property {Columns} catalogue
-		 * @description @see Columns
-		 */
-		catalogue: Columns
-		flush?: boolean
-	}
-
 	export type Grid<Segment = Category> = Data<Segment> //DO NOT REMOVE the type parameter
 	export type Category = {
 		headline: Snippet
@@ -683,7 +681,7 @@ export namespace Services {
 	export type Details = Representative & {
 		description: Snippet
 	}
-	// ...
+
 	export type Columns<Segment = Column> = Data<Segment>
 	export type Column = Representative & {
 		highlight?: string
@@ -691,15 +689,13 @@ export namespace Services {
 		items: Snippet[]
 		footer?: Snippet
 	}
-
 	export type Representative = {
 		/**
 		 * @property illustration
 		 * @description an image src as a string or <svg>, <image>, <video>
 		 */
-		illustration?: Illustration
+		illustration?: string | ((className?: string) => Snippet)
 		alt?: string
 		headline: Snippet
 	}
-	export type Illustration = string | ((className?: string) => Snippet)
 }

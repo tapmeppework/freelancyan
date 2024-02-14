@@ -1,5 +1,6 @@
 import type { Snippet } from '@framework'
 import Lexicon0 from './LexiconABCD'
+import Utils from '@bloc/Utils'
 
 export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous> {
 	private static readonly zyxw = {
@@ -106,6 +107,16 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					`,
 					preamble: `
 						Bienvenue sur ma page de curriculum vitae! Ici, je vous offre un aperçu de ma carrière en tant que développeur web. J'ai compilé mes compétences, mes expériences et mes qualifications pour vous donner une vue d'ensemble de ce que j'apporte. Que vous souhaitiez collaborer sur un projet ou simplement en savoir plus sur mon parcours, ce curriculum vitae est une ressource précieuse pour comprendre mon parcours professionnel dans le développement web.
+					`,
+				},
+				pricing: {
+					href: 'pricing',
+					headline: 'Tarifs',
+					description: `
+						Bienvenue sur la passerelle de la valeur et de l'excellence. Je suis fier de fournir des services web de première classe, conçus pour rehausser votre présence en ligne. Ma tarification reflète non seulement la rentabilité, mais aussi un engagement envers la qualité et l'innovation. Explorez les possibilités et permettez-nous de transformer ensemble votre paysage numérique.
+					`,
+					preamble: `
+						Bienvenue sur la passerelle de la valeur et de l'excellence. Je suis fier de fournir des services web de première classe, conçus pour rehausser votre présence en ligne. Ma tarification reflète non seulement la rentabilité, mais aussi un engagement envers la qualité et l'innovation. Explorez les possibilités et permettez-nous de transformer ensemble votre paysage numérique.
 					`,
 				},
 				gallery: {
@@ -266,7 +277,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 			{
 				image: Lexicon.tapmeppe.images.portfolio.freelancyan,
 				alt: 't@pm3pp3 w0rk logo in gray.',
-				timeframe: 'August 2023 - today',
+				timeframe: 'Août 2023 - today',
 				headline: `Freelancyan`,
 				subline: Lexicon.utilities.config.contact.business,
 				children: [
@@ -347,7 +358,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.cyclecomputing,
 				alt: "Une capture d'écran de la page d'accueil.",
 				timeframe: 'Septembre 2022 - Décembre 2022',
-				headline: `VDO cyclecomputing (relance site web)`,
+				headline: `VDO (relance site web)`,
 				subline: `SIGMA-ELEKTRO GmbH`,
 				children: [
 					<>
@@ -368,7 +379,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				id: 'sigmasport-website-relaunch',
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.website,
 				timeframe: 'Janvier 2021 - Février 2023',
-				headline: 'SIGMA SPORT (relance site web)',
+				headline: 'SIGMA (relance site web)',
 				subline: `SIGMA-ELEKTRO GmbH`,
 				children: [
 					<>
@@ -590,7 +601,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				id: 'sigmasport-shop-launch',
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.shop,
 				timeframe: 'Janvier 2018 - Février 2023',
-				headline: 'SIGMA SPORT WEBSTORE',
+				headline: <>SIGMA WEBSTORE v1 &#128327;&nbsp;</>,
 				subline: <>Sigma Elektro GmbH</>,
 				children: [
 					<>
@@ -599,16 +610,6 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					<>
 						<strong>Cela a marqué mes débuts dans un rôle de gestionnaire dans un projet depuis son lancement.</strong> J'ai eu l'opportunité de guider l'équipe tout en contribuant à la réussite du projet.
 					</>,
-				],
-				links: [
-					{
-						label: 'Boutique en ligne',
-						href: `https://sigmasport-shop.com/${this.language}/`,
-					},
-					{
-						label: 'Boutique en ligne: ROX 12.1 EVO',
-						href: `https://sigmasport-shop.com/${this.language}/196-rox-121-evo`,
-					},
 				],
 			},
 			{
@@ -707,12 +708,6 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						J'ai joué un rôle dans le développement de la solution, d'abord en tant que stagiaire, puis en tant qu'étudiant en alternance tout au long de mon cursus. Ce parcours m'a permis de contribuer activement au projet tout en développant mes compétences et mes connaissances."
 					</>,
 				],
-				links: [
-					{
-						label: 'Site Web',
-						href: 'https://www.celsius37.com/eng/cancercenter/',
-					}
-				],
 			},
 		],
 	}
@@ -791,6 +786,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				content: [
 					{
 						label: 'Java',
+						title: "Java, Scala and Maven sont principalement utilisés en privé pour me simplifier la vie. 😂",
 						...Lexicon.tapmeppe.resume,
 					},
 					{
@@ -801,56 +797,44 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					},
 					{
 						label: 'WordPress',
+						...Lexicon.tapmeppe.resume,
 						animated: true,
-						...Lexicon.tapmeppe.resume,
 						offset: {
-							value: 2014
+							value: 2014,
 						},
 						rate: {
-							value: 2022
-						},
-					},
-					{
-						label: 'Typo3',
-						...Lexicon.tapmeppe.resume,
-						offset: {
-							value: 2014
-						},
-						rate: {
-							value: 2020
+							value: Utils.year,
 						},
 					},
 					{
 						label: 'Joomla, Prestashop',
 						title: 'Joomla, Prestashop',
 						...Lexicon.tapmeppe.resume,
-						animated: true,
 						offset: {
-							value: 2017
+							value: 2017,
 						},
 						rate: {
-							value: 2022
+							value: 2022,
 						},
 					},
 					{
-						label: 'NodeJS, TypeScript, Angular, Bootstrap',
-						title: 'NodeJS, TypeScript, Angular, Bootstrap',
+						label: 'NodeJS, TypeScript, React.js, Bootstrap',
+						title: 'NodeJS, TypeScript, React.js, Bootstrap',
 						...Lexicon.tapmeppe.resume,
 						animated: true,
 						offset: {
-							value: 2017
+							value: 2017,
 						},
 					},
 					{
-						label: 'React.js, Next.js',
-						title: 'React.js, Next.js',
+						label: 'Next.js',
+						title: 'Next.js',
 						...Lexicon.tapmeppe.resume,
-						animated: true,
 						offset: {
-							value: 2018
+							value: 2018,
 						},
 						rate: {
-							value: 2023
+							value: 2023,
 						},
 					},
 					{
@@ -859,22 +843,22 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						...Lexicon.tapmeppe.resume,
 						animated: true,
 						offset: {
-							value: 2019
+							value: 2019,
 						},
 						rate: {
-							value: 2022
+							value: Utils.year,
 						},
 					},
 					{
-						label: 'Docker, Playwright, VueJS',
-						title: 'Docker, Playwright, VueJS',
+						label: 'Docker, Playwright',
+						title: 'Docker, Playwright',
 						...Lexicon.tapmeppe.resume,
 						animated: true,
 						offset: {
-							value: 2022
+							value: 2022,
 						},
 						rate: {
-							value: 2023
+							value: Utils.year,
 						},
 					},
 				],
@@ -887,24 +871,20 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				mode: Lexicon.utilities.modes.list,
 				content: [
 					{
-						label: 'Anglais (Cameroun): Langue maternelle',
+						label: 'Anglais (Cameroun): Langue officielle',
 						title: "J'ai grandi dans un foyer anglophone.",
 					},
 					{
-						label: 'Français (Cameroun): Langue maternelle',
+						label: 'Français (Cameroun): Langue officielle',
 						title: "J'ai fréquenté dans une école francophone.",
 					},
 					{
 						label: 'Allemand (Allemagne): Très bon en expression orale et écrite',
-						title: `
-							Après le lycée, je suis allé en Allemagne, où j'ai -étudié l'informatique et -ensuite fait carrière dans ce domaine.
-						`,
+						title: `Après le lycée, je suis allé en Allemagne, où j'ai -étudié l'informatique et -ensuite fait carrière dans ce domaine.`,
 					},
 					{
 						label: <>Japonais (Japon): Niveau animé 😅</>,
-						title: `
-							Jusqu'à présent, j'ai dû regarder plus de 10 000 animés en japonais. De temps en temps, je suis capable de comprendre le sens de certaines phrases &#128526.
-						`,
+						title: `Jusqu'à présent, j'ai dû regarder plus de 10 000 animés en japonais. De temps en temps, je suis capable de comprendre le sens de certaines phrases &#128526.`,
 					},
 				],
 			},
@@ -936,7 +916,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					{
 						image: Lexicon.tapmeppe.images.tapmeppe,
 						alt: `Logo de ${Lexicon.utilities.config.contact.business}.`,
-						timeframe: "August 2023 - aujourd'hui",
+						timeframe: "Juillet 2023 - aujourd'hui",
 						headline: Lexicon.tapmeppe.resume.faas,
 						subline: Lexicon.utilities.config.contact.business,
 						children: [
@@ -948,7 +928,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					{
 						image: Lexicon.tapmeppe.images.intera,
 						alt: `Logo of Intera GmbH.`,
-						timeframe: 'July 2023 - Août 2023',
+						timeframe: 'Juillet 2023 - Août 2023',
 						headline: `Conseiller technique`,
 						subline: `Intera GmbH`,
 						children: [
@@ -1187,8 +1167,56 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 			},
 			// maintenance: {},
 		},
+		pricing: {
+			headline: 'Stratégies de prix',
+			offers: {
+				africa: {
+					// illustration: '',
+					headline: 'Venez me tromper',
+					header: <>
+						<span class='fs-3'>60.000</span>
+						<span class='fs-5'>&nbsp;Franc/mois</span>
+					</>,
+					items: [
+						`Vous opérez dans la région subsaharienne`,
+						`Je mets en œuvre, vous louez`,
+						`Maintenance: 30 min/mois`,
+						`Réunion de coordination: 60 min/mois`,
+						`Travail à distance`,
+						Lexicon0.utilities.abcd.keywords.ellipsis.value,
+					],
+				},
+				project: {
+					// illustration: '',
+					highlight: 'La plus commandée',
+					headline: 'Project',
+					header: <span class='fs-3'>200 €/mois</span>,
+					items: [
+						`Vous opérez dans l'hémisphère nord`,
+						`Je mets en œuvre, vous louez`,
+						`Maintenance: 90 min/mois`,
+						`Réunion de coordination: 60 min/mois`,
+						`Travail à distance`,
+						Lexicon0.utilities.abcd.keywords.ellipsis.value,
+					],
+				},
+				business: { //building
+					// illustration: '',
+					headline: 'Business',
+					header: <span class='fs-3'>Discutons</span>,
+					items: [
+						`Vous pouvez vous permettre plus que la location d'un espace`,
+						`Je mets en œuvre, vous achetez`,
+						`Assistance premium`,
+						`Réunion de coordination on demand`,
+						`Travail à distance`,
+						`Travail sur site par occasion`,
+					],
+				},
+			},
+		},
 		miscellaneous: {
-			more: 'Learn more',
+			more: 'Apprendre plus',
 			message: (service: string) => ({
 				subject: `Demande de renseignements "${service}"`,
 				body: `Bonjour. Je suis intéressé par le service suivant: "${service}".`,
