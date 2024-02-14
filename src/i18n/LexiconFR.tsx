@@ -1175,7 +1175,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					headline: 'Venez me tromper',
 					header: <>
 						<span class='fs-3'>60.000</span>
-						<span class='fs-5'>&nbsp;Franc/mois</span>
+						<span class='fs-5'>&nbsp;FCFA/mois</span>
 					</>,
 					items: [
 						`Vous opérez dans la région subsaharienne`,

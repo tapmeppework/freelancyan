@@ -1183,7 +1183,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					headline: 'Finales Angebot',
 					header: <>
 						<span class='fs-3'>60.000</span>
-						<span class='fs-5'>&nbsp;Franc/Monat</span>
+						<span class='fs-5'>&nbsp;FCFA/Monat</span>
 					</>,
 					items: [
 						`Sie befinden sich in der Subsahara-Region`,

@@ -1181,7 +1181,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					headline: 'Last market',
 					header: <>
 						<span class='fs-3'>60,000</span>
-						<span class='fs-5'>&nbsp;Franc/month</span>
+						<span class='fs-5'>&nbsp;FCFA/month</span>
 					</>,
 					items: [
 						`You operate in the sub-Saharan region`,
