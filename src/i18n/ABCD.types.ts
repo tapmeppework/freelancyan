@@ -649,7 +649,7 @@ export namespace Services {
 			 * @property {Columns} catalogue
 			 * @description @see Columns
 			 */
-			offers: Columns
+			strategies: Columns
 			flush?: boolean
 		}
 

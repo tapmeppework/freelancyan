@@ -1169,7 +1169,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 		},
 		pricing: {
 			headline: 'Stratégies de prix',
-			offers: {
+			strategies: {
 				africa: {
 					// illustration: '',
 					headline: 'Venez me tromper',
@@ -1207,7 +1207,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					items: [
 						`Vous pouvez vous permettre plus que la location d'un espace`,
 						`Je mets en œuvre, vous achetez`,
-						`Assistance premium`,
+						`Maintenance and assistance`,
 						`Réunion de coordination on demand`,
 						`Travail à distance`,
 						`Travail sur site par occasion`,
@@ -1216,7 +1216,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 			},
 		},
 		miscellaneous: {
-			more: 'Apprendre plus',
+			more: 'Contactez moi',
 			message: (service: string) => ({
 				subject: `Demande de renseignements "${service}"`,
 				body: `Bonjour. Je suis intéressé par le service suivant: "${service}".`,

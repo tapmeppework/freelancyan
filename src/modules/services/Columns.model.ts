@@ -32,16 +32,16 @@ export default class Columns extends Model<Properties, Services.Columns<() => Sn
 		item: (className: string, content: Snippet) => Snippet,
 	): Snippet => {
 		const
-			columns = Object.keys(this.properties.offers),
+			columns = Object.keys(this.properties.strategies),
 			highlight = columns.find(key =>
-				(this.properties.offers[key as keyof Services.Columns] as Services.Column).highlight
+				(this.properties.strategies[key as keyof Services.Columns] as Services.Column).highlight
 			),
 			classNameList = `
 				${this.classes.bootstrap.list.group.abcd} 
 				${this.properties.flush && this.classes.bootstrap.list.group.flush}
 			`,
 			getCard = (block: keyof Services.Columns) => {
-				const column = this.properties.offers[block] as Services.Column
+				const column = this.properties.strategies[block] as Services.Column
 
 				return card(
 					`
@@ -72,7 +72,7 @@ export default class Columns extends Model<Properties, Services.Columns<() => Sn
 				columns.map(key => {
 					const
 						block = key as keyof Services.Columns,
-						column = this.properties.offers[block] as Services.Column
+						column = this.properties.strategies[block] as Services.Column
 
 					return container(
 						Columns.classNames.column,

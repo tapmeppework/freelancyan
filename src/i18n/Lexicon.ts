@@ -353,7 +353,7 @@ export default abstract class Lexicon<Miscellaneous = any> {
 		catalogue: {},
 		pricing: {
 			headline: '',
-			offers: {},
+			strategies: {},
 		},
 		miscellaneous: {
 			more: '',

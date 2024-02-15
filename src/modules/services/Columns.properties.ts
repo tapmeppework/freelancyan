@@ -4,6 +4,6 @@ import type Properties from '@modules/ABCD.properties'
 
 export default interface Columns extends Properties {
 	headline?: Snippet
-	offers: Services.Columns
+	strategies: Services.Columns
 	flush?: boolean
 }
