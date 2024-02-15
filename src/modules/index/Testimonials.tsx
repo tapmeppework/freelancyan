@@ -9,7 +9,7 @@ import Model from './Testimonials.model'
 export default (props: Properties) => new Model(props).render(
 	headline => <H2>{headline}</H2>,
 	(mode, body) => <P mode={mode}>{body}</P>,
-	(className, flow, secondary, items) => <Carousel class={className} flow={flow} secondary={secondary} controls>
+	(className, flow, items) => <Carousel class={className} flow={flow} controls>
 		{items}
 	</Carousel>,
 	(classNames, active, testimonial) => <Item class={classNames.item} active={active} duration={testimonial.duration}>

@@ -3,7 +3,7 @@ import Admin from '@bloc/Admin'
 import type { Snippet } from '@framework'
 import Model from '@modules/ABCD.model'
 import type Properties from './Modal.properties'
-// TODO @ts-ignore '@trackersModel'
+// @ts-ignore '@trackersModel'
 import trackersModel from '@trackersModel'
 
 export default class ThirdParty extends Model {

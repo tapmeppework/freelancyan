@@ -31,7 +31,7 @@ export default class Testimonials extends Model<Properties> {
 	readonly render = (
 		headline: (headline: Snippet) => Snippet,
 		body: (mode: Mode, body: Snippet) => Snippet,
-		carousel: (className: string, flow: Flow, secondary: Anonymous<boolean>, items: Snippet[]) => Snippet,
+		carousel: (className: string, flow: Flow, items: Snippet[]) => Snippet,
 		item: (
 			classNames: { item: string, profile: string, image: string, headline: string, body: string },
 			active: boolean,
@@ -43,7 +43,6 @@ export default class Testimonials extends Model<Properties> {
 			carousel(
 				this.classes.bootstrap.margin.top.zyxw,
 				'auto',
-				this.properties.secondary,
 				this.properties.list.map((testimonial, index) => item(
 					Testimonials.classNames,
 					index == 0,

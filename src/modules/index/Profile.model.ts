@@ -1,10 +1,9 @@
-import ABCD from '@bloc/ABCD'
 import type { Index } from '@i18n/ABCD.types'
 import Model from './ABCD.model'
 
 export default class Profile extends Model<Index.Profile> {
 	static readonly slug = 'profile'
-	static readonly classNames = {
+	static readonly classifications = {
 		abcd: `
 			${this.classes.bootstrap.col[12]}
 			${this.classes.bootstrap.col[this.proportion][7]} 

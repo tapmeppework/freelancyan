@@ -7,9 +7,9 @@ import Model from './Profile.model'
 export default () => {
 	const model = new Model
 
-	return <Col class={Model.classNames.abcd}>
-		<div class={Model.classNames.container}>
-			<Image class={Model.classNames.image} src={ABCD.assets.profile} {...model.texts} />
+	return <Col class={Model.classifications.abcd}>
+		<div class={Model.classifications.container}>
+			<Image class={Model.classifications.image} src={ABCD.assets.profile} {...model.texts} />
 		</div>
 	</Col>
 }
