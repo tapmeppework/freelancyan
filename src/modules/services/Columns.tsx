@@ -1,6 +1,7 @@
 import Row from '@abcd/Row'
 import Image from '@abcd/Image'
 import Question from '@icons/Question'
+import Briefcase from '@icons/Briefcase'
 import EarthAfrica from '@icons/EarthAfrica'
 import EarthEurope from '@icons/EarthEurope'
 import Building from '@icons/Building'
@@ -18,6 +19,7 @@ export default (props: Properties) => <Section>
 		{
 			africa: () => <EarthAfrica />,
 			europe: () => <EarthEurope />,
+			project: () => <Briefcase />,
 			business: () => <Building style={{ padding: '0 5px' }} />,
 		}
 	).render(

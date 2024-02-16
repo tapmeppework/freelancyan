@@ -1197,7 +1197,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						// Lexicon0.utilities.abcd.keywords.ellipsis.value,
 					],
 				},
-				europe: {
+				project: {
 					// illustration: '',
 					highlight: 'Am Meisten verwendet',
 					headline: 'Kleines Budget',
