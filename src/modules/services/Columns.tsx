@@ -2,7 +2,7 @@ import Row from '@abcd/Row'
 import Image from '@abcd/Image'
 import Question from '@icons/Question'
 import EarthAfrica from '@icons/EarthAfrica'
-import Briefcase from '@icons/Briefcase'
+import EarthEurope from '@icons/EarthEurope'
 import Building from '@icons/Building'
 import Card from './Card'
 import './Columns.css'
@@ -17,7 +17,7 @@ export default (props: Properties) => <Section>
 		className => <Question class={className} style={Model.design['7.5']} />,
 		{
 			africa: () => <EarthAfrica />,
-			project: () => <Briefcase />,
+			europe: () => <EarthEurope />,
 			business: () => <Building style={{ padding: '0 5px' }} />,
 		}
 	).render(
