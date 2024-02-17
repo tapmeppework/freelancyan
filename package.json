@@ -1,7 +1,7 @@
 {
   "name": "@tapmeppe/freelancyan",
   "type": "module",
-  "version": "0.21.13",
+  "version": "0.21.14",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -12,8 +12,8 @@
     "preview": "astro preview",
     "prod": "node starter.cjs",
     "test": "cls && node maintenance.cjs test",
-    "maintain": "cls && node maintenance.cjs maintain",
     "deploy": "cls && node maintenance.cjs deploy",
+    "publish": "cls && node maintenance.cjs publish",
     "zyxw": "npm run dist && node maintenance.cjs zyxw",
     "astro": "astro"
   },

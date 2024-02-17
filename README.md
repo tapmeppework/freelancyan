@@ -7,6 +7,7 @@ An open-source framework 🛖 that empowers individuals and small businesses to 
 The creation of this framework owes its gratitude to the amazing work of the following frameworks:
 - [Astro](https://astro.build/): A framework built on [Node.js](https://nodejs.org/) and [Vite.js](https://vitejs.dev/).
 - [Bootstrap](https://getbootstrap.com/): A framework built on CSS and JavaScript.
+- [Font Awesome](https://fontawesome.com/): An icon library and toolkit.
 - [less CSS](https://lesscss.org/): A CSS pre-processor.
 - [SOLID JS](https://www.solidjs.com/): A framework built on JavaScript.
 - [webpack](https://webpack.js.org/): A script bundler.
