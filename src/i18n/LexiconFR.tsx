@@ -424,7 +424,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						N'hésitez pas à <a href={Lexicon.utilities.contact}>nous contacter</a> si vous souhaitez savoir comment nous avons résolu le problème &#128520;.
 					</>,
 					<>
-						Il est à noter que mon implication s'est achevée juste avant le lancement de la nouvelle boutique en ligne et le développement d'un nouveau concept de newsletter.
+						Il est à noter que mon implication s'est achevée après le lancement de la nouvelle boutique en ligne et juste avant le développement d'un nouveau concept de newsletter.
 					</>,
 				],
 				badges: ['Gestion des exigences', 'Communication', 'Coordination', 'Architecture', 'API', 'Javascript', 'PHP', 'Symfony', 'EDIFACT', 'WordPress', 'WooCommerce'],

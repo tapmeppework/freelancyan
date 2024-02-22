@@ -428,7 +428,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						Fühlen Sie sich frei, <a href={Lexicon.utilities.contact}>Kontakt aufzunehmen</a>, wenn Sie wissen möchten, wie wir das Problem gelöst haben &#128520;.
 					</>,
 					<>
-						Es ist erwähnenswert, dass mein Engagement kurz vor dem Start des neuen Online-Shops und der Entwicklung eines neuen Newsletter-Konzepts zu Ende gegangen ist.
+						Es ist erwähnenswert, dass mein Engagement nach dem Start des neuen Online-Shops und kurz vor der Entwicklung eines neuen Newsletter-Konzepts zu Ende gegangen ist.
 					</>,
 				],
 				badges: ['Anforderungsmanagement', 'Kommunikation', 'Koordinierung', 'Architektur', 'API', 'Javascript', 'PHP', 'Symfony', 'EDIFACT', 'WordPress', 'WooCommerce'],
