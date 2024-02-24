@@ -850,8 +850,8 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						},
 					},
 					{
-						label: 'Docker, Playwright',
-						title: 'Docker, Playwright',
+						label: 'Playwright',
+						title: 'Playwright',
 						...Lexicon.tapmeppe.resume,
 						animated: true,
 						offset: {
