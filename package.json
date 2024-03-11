@@ -1,7 +1,7 @@
 {
   "name": "@tapmeppe/freelancyan",
   "type": "module",
-  "version": "0.21.16",
+  "version": "0.21.18",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

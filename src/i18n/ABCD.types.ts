@@ -370,9 +370,10 @@ export namespace ABCD {
 	export type Diashow = Dimensions & (
 		{
 			mode: 'carousel',
+			thumbnail?: string,
 			images: (string | DiashowImage)[]
 		} |
-		({ mode: 'video' } & DiashowVideo)
+		({ mode: 'video', thumbnail?: string, } & DiashowVideo)
 	)
 	export type DiashowImage = {
 		src: string,

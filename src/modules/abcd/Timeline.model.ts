@@ -134,7 +134,7 @@ export class Step extends ModelHarmony {
 					threshold && dropdown(
 						Timeline.classNames.dropdown,
 						this.abcd.keywords.ellipsis.value,
-						links.map(link => item(this.sanitiseLink(link)))
+						links.map(link => item(this.sanitiseLink(link))),
 					)
 				] : [
 					links.length > (this.properties.threshold as number) ?

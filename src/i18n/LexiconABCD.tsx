@@ -14,10 +14,20 @@ export default abstract class Lexicon<Miscellaneous = any> extends Lexicon0<Misc
 				longitude: 8.8090874,
 			},
 		},
+		diashow: {
+			sigmasport: {
+				aura: `sigmasport/aura-series.mp4`,
+				compatibility: `sigmasport/compatibility.mp4`,
+				eox: `sigmasport/eox-series.mp4`,
+				gpx: `sigmasport/gpx.mp4`,
+				reviews: `sigmasport/rox12-reviews.mp4`,
+				sharing: `sigmasport/sharing.mp4`,
+			},
+		},
 		images: {
 			tapmeppe: Lexicon.utilities.image('tapmeppe-work.png', 470, 180),
 			intera: Lexicon.utilities.image('intera-gmbh.png', 470, 180),
-			sigma: Lexicon.utilities.image('sigma-elektro-gmbh.png', 470, 180),
+			sigmasport: Lexicon.utilities.image('sigma-elektro-gmbh.png', 470, 180),
 			pagecon: Lexicon.utilities.image('pagecon-gmbh.png', 470, 180),
 			alpha: Lexicon.utilities.image('alpha-test-gmbh.png', 470, 180),
 			celsius37: Lexicon.utilities.image('celsius37-ag.png', 470, 180),
@@ -50,6 +60,7 @@ export default abstract class Lexicon<Miscellaneous = any> extends Lexicon0<Misc
 				alpha: Lexicon.utilities.image('alpha-test-logo.png', 500),
 				celsius37: Lexicon.utilities.image('celsius37-logo.png', 500),
 				bergemann: Lexicon.utilities.image('bergemann-hoehne-logo.png', 370),
+				kemitnsure: Lexicon.utilities.image('kemit-n-sure-sarl-logo.png', 256),
 			},
 		},
 		legal: {
@@ -76,7 +87,7 @@ export default abstract class Lexicon<Miscellaneous = any> extends Lexicon0<Misc
 					'Vue.js',
 					'Symfony',
 				],
-				sigma: [
+				sigmasport: [
 					'e-Commerce',
 					'MySQL',
 					'PHP',

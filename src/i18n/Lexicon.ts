@@ -38,6 +38,7 @@ export default abstract class Lexicon<Miscellaneous = any> {
 		 * @description The relative URL to the contact page.
 		 */
 		contact: `./${ABCD0.keywords.contact}`,
+		diashow: (path: string) => `${ABCD0.assets.diashow}/${path}`,
 		portfolio: `./${ABCD0.keywords.portfolio}`,
 
 		/**

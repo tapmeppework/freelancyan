@@ -249,6 +249,25 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 		mode: Lexicon.utilities.modes.timeline,
 		content: [
 			{
+				image: Lexicon.tapmeppe.images.portfolio.kemitnsure,
+				alt: 'Kemit & Sure logo',
+				timeframe: 'Janvier 2024 - Mai 2024',
+				headline: `Relance site web`,
+				subline: 'Kemit & Sure SARL',
+				children: [
+					<>
+						Après une année 2023 de restructuration, l'équipe de Kemit & Sure a eu l'opportunité de mieux comprendre les besoins d'assurance au Cameroun et au sein de la diaspora africaine (camerounaise). L'année 2024 s'annonce prometteuse avec une transformation majeure sur le site internet conçue pour offrir une expérience exceptionnelle.
+					</>,
+				],
+				badges: ['CSS', 'HTML', 'Javascript', 'MySQL', 'PHP', 'WordPress',],
+				links: [
+					{
+						label: 'Annonce',
+						href: `https://www.linkedin.com/posts/donald-mekountchou-529378140_kemitandsure-partagezlamour-innovation-activity-7147896260417552384-igoi`,
+					},
+				],
+			},
+			{
 				// @see https://de.indeed.com/viewjob?hl=de&jk=e2610f3603419f46&tk=1hijt6qj8pbqg800
 				image: Lexicon.tapmeppe.images.portfolio.bergemann,
 				alt: 'Bergemann & Höhne GbR logo',
@@ -266,7 +285,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						Amélioration et co-conception des contenus de formation et des processus dans toute l'équipe.
 					</>,
 				],
-				badges: ['Git', 'Mockups', 'HTML', 'CSS', 'Sass', 'Tailwind', 'JavaScript', 'React', 'SCRUM',],
+				badges: ['CSS', 'Git', 'HTML', 'JavaScript', 'Mockups', 'React', 'Sass', 'SCRUM', 'Tailwind',],
 				links: [
 					{
 						label: 'Site web',
@@ -293,12 +312,8 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					{
 						label: 'Code source',
 						href: `${Lexicon.tapmeppe.networks.github}/freelancyan`,
-						title: 'Bientôt disponible! Le travail est actuellement en phase bêta.',
+						title: 'Nouvelles fonctionnalités chaque semaine. 😜',
 					},
-					// {
-					// 	label: 'Demos',
-					// 	href: `--YouTube--`,
-					// },
 				],
 			},
 			{
@@ -358,7 +373,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.cyclecomputing,
 				alt: "Une capture d'écran de la page d'accueil.",
 				timeframe: 'Septembre 2022 - Décembre 2022',
-				headline: `VDO (relance site web)`,
+				headline: `Relance site web (VDO)`,
 				subline: `SIGMA-ELEKTRO GmbH`,
 				children: [
 					<>
@@ -368,6 +383,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						Cependant, notre défi le plus important tout au long de ce processus a été de surmonter les complexités de la gestion de l'information et de créer une stratégie de contenu efficace.
 					</>,
 				],
+				badges: ['CSS', 'HTML', 'Javascript', 'MySQL', 'PHP', 'WordPress',],
 				links: [
 					{
 						label: 'Site Web',
@@ -379,7 +395,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				id: 'sigmasport-website-relaunch',
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.website,
 				timeframe: 'Janvier 2021 - Février 2023',
-				headline: 'SIGMA (relance site web)',
+				headline: `Relance & WEBSTORE v2`,
 				subline: `SIGMA-ELEKTRO GmbH`,
 				children: [
 					<>
@@ -389,7 +405,11 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						Plus d'informations peuvent être trouvées dans la section <a href="#sigmasport-automation-main-processes">Automatisation des processus principaux</a>.
 					</>,
 				],
-				badges: ['Analyse des exigences', 'Communication', 'Coordination', 'Conception', 'Javascript', 'PHP', 'WordPress', 'WooCommerce'],
+				badges: [
+					'Analyse des exigences', 'Communication', 'Conception', 'Coordination',
+					'Javascript', 'PHP',
+					'WordPress', 'WooCommerce'
+				],
 				links: [
 					{
 						label: 'Current design',
@@ -430,6 +450,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				badges: ['Gestion des exigences', 'Communication', 'Coordination', 'Architecture', 'API', 'Javascript', 'PHP', 'Symfony', 'EDIFACT', 'WordPress', 'WooCommerce'],
 			},
 			{
+				id: 'sigmasport-sharing',
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.sharing,
 				timeframe: 'Janvier 2021 - Décembre 2021',
 				headline: <>SIGMA Sharing <strong>v3</strong></>,
@@ -442,18 +463,11 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						Anecdote amusante, l'<span title='La genèse de ce projet en 2018.'>inception de ce projet</span> était en réalité une thèse de bachelor, servant d'étude de faisabilité que j'ai eu l'honneur de superviser.
 					</>,
 				],
-				links: [
-					{
-						label: 'Site Web',
-						href: 'https://sigma-sharing.com/',
-						title: "Il n'y a pas grand-chose à voir à moins d'avoir le bon jeton. <strong>La démo sera bientôt disponible.</strong>",
-					},
-					// {
-					// 	label: 'Demo: coming soon',
-					// 	href: '#',
-					// 	class: Lexicon.utilities.classes.abcd.disabled,
-					// },
-				],
+				diashow: {
+					mode: Lexicon.utilities.modes.video,
+					src: Lexicon.tapmeppe.diashow.sigmasport.sharing,
+					alt: 'Demo',
+				},
 			},
 			{
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.reviews,
@@ -471,17 +485,11 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						L'une des fonctionnalités les plus remarquables du projet était sans aucun doute le comportement de défilement infini, améliorant l'expérience utilisateur.
 					</>,
 				],
-				links: [
-					{
-						label: 'Site Web',
-						href: 'https://sigmasport-review.com/',
-					},
-					// {
-					// 	label: 'Demo: coming soon',
-					// 	href: '#',
-					// 	class: Lexicon.utilities.classes.abcd.todo,
-					// },
-				],
+				diashow: {
+					mode: Lexicon.utilities.modes.video,
+					src: Lexicon.tapmeppe.diashow.sigmasport.reviews,
+					alt: 'Demo',
+				},
 			},
 			{
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.gpx,
@@ -491,17 +499,11 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				children: <>
 					Nous avons introduit une plateforme dynamique pour la communauté de SIGMA SPORT. Ici, les membres pouvaient librement partager leurs aventures à vélo, leurs idées et leurs parcours. Créant ainsi un espace où les passionnés pouvaient savourer des expériences et des émotions similaires.
 				</>,
-				links: [
-					{
-						label: 'Site Web',
-						href: 'https://sigmasport-gpx.com/',
-					},
-					// {
-					// 	label: 'Demo: coming soon',
-					// 	href: '#',
-					// 	class: Lexicon.utilities.classes.abcd.todo,
-					// },
-				],
+				diashow: {
+					mode: Lexicon.utilities.modes.video,
+					src: Lexicon.tapmeppe.diashow.sigmasport.gpx,
+					alt: 'Demo',
+				},
 			},
 			{
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.aura,
@@ -516,17 +518,11 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						Je me souviens avec affection de la fonctionnalité phare du projet, la fonction de Drag & Drop. Un ajout bienvenu à l'arsenal marketing de l'entreprise! &#128513;
 					</>
 				],
-				links: [
-					{
-						label: 'Site Web',
-						href: `https://aura.sigma-lighting.com`,
-					},
-					// {
-					// 	label: 'Demo: coming soon',
-					// 	href: '#',
-					// 	class: Lexicon.utilities.classes.abcd.todo,
-					// },
-				],
+				diashow: {
+					mode: Lexicon.utilities.modes.video,
+					src: Lexicon.tapmeppe.diashow.sigmasport.aura,
+					alt: 'Demo',
+				},
 			},
 			{
 				image: Lexicon.tapmeppe.images.portfolio.sigmasport.eox,
@@ -546,12 +542,12 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						label: 'Site Web',
 						href: 'https://sigmasport-ebike.com/',
 					},
-					// {
-					// 	label: 'Demo: coming soon',
-					// 	href: '#',
-					// 	class: Lexicon.utilities.classes.abcd.todo,
-					// },
 				],
+				diashow: {
+					mode: Lexicon.utilities.modes.video,
+					src: Lexicon.tapmeppe.diashow.sigmasport.eox,
+					alt: 'Demo',
+				},
 			},
 			{
 				image: Lexicon.tapmeppe.images.portfolio.pagecon,
@@ -585,17 +581,11 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						Nous avons développé un micro-site captivant pour à la communauté de SIGMA SPORT.Cette plateforme a servi de ressource précieuse, permettant aux utilisateurs de vérifier la compatibilité de divers appareils SIGMA SPORT, qu'il s'agisse d'ordinateurs de vélo ou de montres intelligentes, avec des appareils mobiles courants tels que des smartphones, des tablettes ou des ordinateurs portables.
 					</>,
 				],
-				links: [
-					{
-						label: 'Site Web',
-						href: 'https://sigma-compatibility.com/',
-					},
-					// {
-					// 	label: 'Demo: coming soon',
-					// 	href: '#',
-					// 	class: Lexicon.utilities.classes.abcd.todo,
-					// },
-				],
+				diashow: {
+					mode: Lexicon.utilities.modes.video,
+					src: Lexicon.tapmeppe.diashow.sigmasport.compatibility,
+					alt: 'Demo',
+				},
 			},
 			{
 				id: 'sigmasport-shop-launch',
@@ -679,34 +669,6 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						label: 'Ultra Wheels',
 						href: 'https://www.ultra-wheels.de/',
 					},
-				],
-			},
-			{
-				image: Lexicon.tapmeppe.images.portfolio.alpha,
-				timeframe: 'Janvier 2014 - Février 2017',
-				headline: <>PIAT<sup>&#174;</sup></>,
-				subline: <>alpha-test GmbH</>,
-				children: [ //@see https://www.alpha-test.com/en/solutions/tools/piat
-					<>
-						PIAT<sup>&#174;</sup> signifie Professional Internet Assessment Tool. Il est utilisé pour la mise en œuvre opérationnelle de la gestion des tests. Dans PIAT<sup>&#174;</sup>, les comptes peuvent être créés (ou importés) et gérés, l'état des tests peut être consulté, et les résultats peuvent être examinés et exportés.
-					</>,
-					<>
-						J'ai commencé mon parcours sur ce projet en tant que développeur junior, en évoluant graduellement et prenant progressivement plus de responsabilités. Avec le temps, j'ai accédé au poste de développeur senior, contribuant de manière significative au succès du projet.
-					</>,
-				],
-			},
-			{
-				image: Lexicon.tapmeppe.images.portfolio.celsius37,
-				timeframe: `Mars ${Lexicon.tapmeppe.resume.min.value} - Octobre 2012`,
-				headline: <>celsius37<sup>&trade;</sup> CancerCenter</>,
-				subline: 'celsius37.com AG',
-				children: [ //@see https://www.celsius37.com/eng/cancercenter/
-					<>
-						Le celsius37<sup>&trade;</sup> CancerCenter propose aux médecins une solution pour la documentation interdisciplinaire des patients atteints de cancer de tous types. celsius37<sup>&trade;</sup> développe des solutions basées sur le web pour les systèmes de santé intégrés, adaptées aux besoins spécifiques du client.
-					</>,
-					<>
-						J'ai joué un rôle dans le développement de la solution, d'abord en tant que stagiaire, puis en tant qu'étudiant en alternance tout au long de mon cursus. Ce parcours m'a permis de contribuer activement au projet tout en développant mes compétences et mes connaissances."
-					</>,
 				],
 			},
 		],
@@ -850,8 +812,8 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						},
 					},
 					{
-						label: 'Playwright',
-						title: 'Playwright',
+						label: 'Docker, Playwright',
+						title: 'Docker, Playwright',
 						...Lexicon.tapmeppe.resume,
 						animated: true,
 						offset: {
@@ -944,7 +906,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						],
 					},
 					{
-						image: Lexicon.tapmeppe.images.sigma,
+						image: Lexicon.tapmeppe.images.sigmasport,
 						alt: `Logo de Sigma Elektro GmbH.`,
 						timeframe: 'Août 2019 - Juillet 2023',
 						headline: `Développeur lead`,
@@ -961,7 +923,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 							"Travail d'équipe",
 							'Communication',
 							"Développement web",
-							...Lexicon.tapmeppe.resume.badges.sigma,
+							...Lexicon.tapmeppe.resume.badges.sigmasport,
 						],
 					},
 					{
