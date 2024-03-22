@@ -255,15 +255,20 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 			{
 				image: Lexicon.tapmeppe.images.portfolio.kemitnsure,
 				alt: 'Kemit & Sure logo',
-				timeframe: 'Januar 2024 - Mai 2024',
-				headline: `Website-Relaunch`,
+				timeframe: 'Januar 2024 - heute',
+				headline: `Berater (digitaler Relaunch)`,
 				subline: 'Kemit & Sure SARL',
 				children: [
 					<>
+						<strong>01-03.2024 - Analyse, Konzeption, Planung</strong> - 
 						Nach einem Jahr der Umstrukturierung im Jahr 2023 hatte das Team von Kemit & Sure die Gelegenheit, den Versicherungsbedarf in Kamerun und innerhalb der afrikanischen (kamerunischen) Diaspora besser zu verstehen. Das Jahr 2024 sieht vielversprechend aus, mit einer großen Umgestaltung der Website, die ein außergewöhnliches Erlebnis bieten soll.
 					</>,
+					<>
+						<strong>04.2024-?? - Umsetzung</strong> -
+						Nachdem das erste Quartal 2024 mit der Strategieentwicklung verbracht wurde, übernahm das für die Umsetzung zuständiges Entwicklungsteam. Ich bin weiterhin als Berater tätig und sorge so dafür, dass die Vision des Kunden schließlich zur virtuellen Realität wird.
+					</>,
 				],
-				badges: ['CSS', 'HTML', 'Javascript', 'MySQL', 'PHP', 'WordPress',],
+				badges: ['CSS', 'Docker', 'HTML', 'Javascript', 'MySQL', 'PHP', 'WordPress',],
 				links: [
 					{
 						label: 'Anzeige',
@@ -318,6 +323,24 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						href: `${Lexicon.tapmeppe.networks.github}/freelancyan`,
 						title: 'Jede Woche neue Funktionen. 😜',
 					},
+				],
+			},
+			{
+				image: Lexicon.tapmeppe.images.portfolio.intera,
+				alt: `Logo of Intera GmbH.`,
+				timeframe: 'Juli 2023 - August 2023',
+				headline: `Technischer Berater`,
+				subline: `Intera GmbH`,
+				children: [
+					<>
+						Ich habe eine Rolle bei der Neugestaltung einer Webanwendung gespielt, indem ich eine moderne Architektur entworfen habe. Darüber hinaus habe ich technische Unterstützung durch Aktivitäten wie Codeüberprüfungen und Pair Programming bereitgestellt.
+					</>,
+				],
+				badges: [
+					'Anforderungsmanagement',
+					'Kommunikation',
+					'Webentwicklung',
+					...Lexicon.tapmeppe.resume.badges.intera,
 				],
 			},
 			{
@@ -884,7 +907,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				mode: Lexicon.utilities.modes.grid,
 				content: [
 					{
-						image: Lexicon.tapmeppe.images.tapmeppe,
+						image: Lexicon.tapmeppe.images.resume.tapmeppe,
 						alt: `Logo von ${Lexicon.utilities.config.contact.business}.`,
 						timeframe: 'Juli 2023 - heute',
 						headline: Lexicon.tapmeppe.resume.faas,
@@ -896,25 +919,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						]
 					},
 					{
-						image: Lexicon.tapmeppe.images.intera,
-						alt: `Logo of Intera GmbH.`,
-						timeframe: 'Juli 2023 - August 2023',
-						headline: `Technischer Berater`,
-						subline: `Intera GmbH`,
-						children: [
-							<>
-								Ich habe eine Rolle bei der Neugestaltung einer Webanwendung gespielt, indem ich eine moderne Architektur entworfen habe. Darüber hinaus habe ich technische Unterstützung durch Aktivitäten wie Codeüberprüfungen und Pair Programming bereitgestellt.
-							</>,
-						],
-						badges: [
-							'Anforderungsmanagement',
-							'Kommunikation',
-							'Webentwicklung',
-							...Lexicon.tapmeppe.resume.badges.intera,
-						],
-					},
-					{
-						image: Lexicon.tapmeppe.images.sigmasport,
+						image: Lexicon.tapmeppe.images.resume.sigmasport,
 						alt: `Logo von Sigma Elektro GmbH.`,
 						timeframe: 'August 2019 - Juli 2023',
 						headline: `Lead Entwickler`,
@@ -935,7 +940,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						],
 					},
 					{
-						image: Lexicon.tapmeppe.images.pagecon,
+						image: Lexicon.tapmeppe.images.resume.pagecon,
 						alt: `Logo von PageCon GmbH.`,
 						timeframe: 'März 2017 - Juli 2019',
 						headline: `Senior Full-Stack Entwickler`,
@@ -954,7 +959,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						],
 					},
 					{
-						image: Lexicon.tapmeppe.images.alpha,
+						image: Lexicon.tapmeppe.images.resume.alpha,
 						alt: `Logo von alpha-test GmbH.`,
 						timeframe: 'Januar 2014 - Februar 2017',
 						headline: `Webentwickler`,
@@ -973,7 +978,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						],
 					},
 					{
-						image: Lexicon.tapmeppe.images.celsius37,
+						image: Lexicon.tapmeppe.images.resume.celsius37,
 						alt: `Logo of celsius37.com AG.`,
 						timeframe: 'März 2010 - Oktober 2012',
 						headline: `Webentwickler (Werkstudent)`,
@@ -1161,7 +1166,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				},
 				project: {
 					// illustration: '',
-					highlight: 'Am Meisten verwendet',
+					// highlight: 'Am Meisten verwendet',
 					headline: 'Kleines Budget',
 					header: <span class='fs-3'>200 €/Monat</span>,
 					items: [

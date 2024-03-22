@@ -25,13 +25,6 @@ export default abstract class Lexicon<Miscellaneous = any> extends Lexicon0<Misc
 			},
 		},
 		images: {
-			tapmeppe: Lexicon.utilities.image('tapmeppe-work.png', 470, 180),
-			intera: Lexicon.utilities.image('intera-gmbh.png', 470, 180),
-			sigmasport: Lexicon.utilities.image('sigma-elektro-gmbh.png', 470, 180),
-			pagecon: Lexicon.utilities.image('pagecon-gmbh.png', 470, 180),
-			alpha: Lexicon.utilities.image('alpha-test-gmbh.png', 470, 180),
-			celsius37: Lexicon.utilities.image('celsius37-ag.png', 470, 180),
-
 			demo1: Lexicon.utilities.image('demo-1.png', 422),
 			demo2: Lexicon.utilities.image('demo-2.png', 422),
 			demo3: Lexicon.utilities.image('demo-3.png', 422),
@@ -59,8 +52,17 @@ export default abstract class Lexicon<Miscellaneous = any> extends Lexicon0<Misc
 				motec: Lexicon.utilities.image(`motec-wheels.png`, 500),
 				alpha: Lexicon.utilities.image('alpha-test-logo.png', 500),
 				celsius37: Lexicon.utilities.image('celsius37-logo.png', 500),
+				intera: Lexicon.utilities.image('intera-logo.jpg', 200),
 				bergemann: Lexicon.utilities.image('bergemann-hoehne-logo.png', 370),
 				kemitnsure: Lexicon.utilities.image('kemit-n-sure-sarl-logo.png', 256),
+			},
+			resume: {
+				tapmeppe: Lexicon.utilities.image('tapmeppe-work.png', 470, 180),
+				intera: Lexicon.utilities.image('intera-gmbh.png', 470, 180),
+				sigmasport: Lexicon.utilities.image('sigma-elektro-gmbh.png', 470, 180),
+				pagecon: Lexicon.utilities.image('pagecon-gmbh.png', 470, 180),
+				alpha: Lexicon.utilities.image('alpha-test-gmbh.png', 470, 180),
+				celsius37: Lexicon.utilities.image('celsius37-ag.png', 470, 180),
 			},
 		},
 		legal: {

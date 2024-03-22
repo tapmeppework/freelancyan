@@ -30,8 +30,7 @@ export default class Config {
 
 	/**
 	 * @property {boolean} full
-	 * @description 
-	 * 	TRUE deactivates the collapse & modal functionalities it be can be helpful during the content writing.
+	 * @description TRUE deactivates the collapse & modal functionalities it be can be helpful during the content writing.
 	 */
 	readonly full: boolean = false
 
