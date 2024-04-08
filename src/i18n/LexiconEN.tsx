@@ -201,12 +201,11 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 		preamble: {
 			badge: <>Digitally wizarding since {Lexicon.tapmeppe.resume.min.value}</>,
 			body: [
-				'Freelance web developer',
-				'Building web solutions',
-				'Transforming ideas into digital products',
-				'In short...',
+				'Freelance Full-Stack Developer 💻',
+				'Transforming ideas 💡 into digital products ​🚀',
+				'In short…',
 			],
-			headline: 'Your online solution partner',
+			headline: 'Your digital solution partner',
 			pages: Lexicon.zyxw.pages,
 		},
 		profile: Lexicon.tapmeppe.profile('The profile image.'),
@@ -272,12 +271,12 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				subline: 'Kemit & Sure SARL',
 				children: [
 					<>
-						<strong>01-03.2024 - analysis, conception, planning</strong> -
-						After a year of restructuring in 2023, the Kemit n Sure team had the opportunity to better understand the insurance needs in Cameroon and within the African (Cameroonian) diaspora. The year 2024 looks promising with a major transformation on the website designed to offer an exceptional experience.
+						<strong>04.2024-??.???? - implementation</strong> -
+						After spending the first quarter of 2024 strategising, the development team in charge of implementation took over. I continue in a consulting capacity, thus ensuring that the customer's vision eventually becomes virtual reality.
 					</>,
 					<>
-						<strong>04.2024-?? - implementation</strong> -
-						After spending the first quarter of 2024 strategising, the development team in charge of implementation took over. I continue in a consulting capacity, thus ensuring that the customer's vision eventually becomes virtual reality.
+						<strong>01-03.2024 - analysis, conception, planning</strong> -
+						After a year of restructuring in 2023, the Kemit n Sure team had the opportunity to better understand the insurance needs in Cameroon and within the African (Cameroonian) diaspora. The year 2024 looks promising with a major transformation on the website designed to offer an exceptional experience.
 					</>,
 				],
 				badges: ['CSS', 'Docker', 'HTML', 'Javascript', 'MySQL', 'PHP', 'WordPress',],
@@ -860,7 +859,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						...Lexicon.tapmeppe.resume,
 						animated: true,
 						offset: {
-							value: 2022,
+							value: 2023,
 						},
 						rate: {
 							value: Utils.year,

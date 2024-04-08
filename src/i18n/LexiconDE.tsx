@@ -202,12 +202,11 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 		preamble: {
 			badge: <>Digitale Zauberei seit {Lexicon.tapmeppe.resume.min.value}</>,
 			body: [
-				'Freiberuflicher Webentwickler',
-				'Umsetzung von Web-Lösungen',
-				'Verwandlung von Ideen in digitale Produkte',
-				'Kurz gesagt...',
+				'Freiberuflicher Full-Stack-Entwickler 💻',
+				'Verwandlung von Ideen 💡 in digitale Produkte ​🚀',
+				'Kurz gesagt…',
 			],
-			headline: 'Ihr Partner für Online-Lösungen.',
+			headline: 'Ihr Partner für Digital-Lösungen.',
 			pages: Lexicon.zyxw.pages,
 		},
 		profile: Lexicon.tapmeppe.profile('Das Profilbild.'),
@@ -260,12 +259,12 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				subline: 'Kemit & Sure SARL',
 				children: [
 					<>
-						<strong>01-03.2024 - Analyse, Konzeption, Planung</strong> - 
-						Nach einem Jahr der Umstrukturierung im Jahr 2023 hatte das Team von Kemit & Sure die Gelegenheit, den Versicherungsbedarf in Kamerun und innerhalb der afrikanischen (kamerunischen) Diaspora besser zu verstehen. Das Jahr 2024 sieht vielversprechend aus, mit einer großen Umgestaltung der Website, die ein außergewöhnliches Erlebnis bieten soll.
+						<strong>04.2024-??.???? - Umsetzung</strong> -
+						Nachdem das erste Quartal 2024 mit der Strategieentwicklung verbracht wurde, übernahm das für die Umsetzung zuständiges Entwicklungsteam. Ich bin weiterhin als Berater tätig und sorge so dafür, dass die Vision des Kunden schließlich zur virtuellen Realität wird.
 					</>,
 					<>
-						<strong>04.2024-?? - Umsetzung</strong> -
-						Nachdem das erste Quartal 2024 mit der Strategieentwicklung verbracht wurde, übernahm das für die Umsetzung zuständiges Entwicklungsteam. Ich bin weiterhin als Berater tätig und sorge so dafür, dass die Vision des Kunden schließlich zur virtuellen Realität wird.
+						<strong>01-03.2024 - Analyse, Konzeption, Planung</strong> - 
+						Nach einem Jahr der Umstrukturierung im Jahr 2023 hatte das Team von Kemit & Sure die Gelegenheit, den Versicherungsbedarf in Kamerun und innerhalb der afrikanischen (kamerunischen) Diaspora besser zu verstehen. Das Jahr 2024 sieht vielversprechend aus, mit einer großen Umgestaltung der Website, die ein außergewöhnliches Erlebnis bieten soll.
 					</>,
 				],
 				badges: ['CSS', 'Docker', 'HTML', 'Javascript', 'MySQL', 'PHP', 'WordPress',],
@@ -844,7 +843,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						...Lexicon.tapmeppe.resume,
 						animated: true,
 						offset: {
-							value: 2022,
+							value: 2023,
 						},
 						rate: {
 							value: Utils.year,
