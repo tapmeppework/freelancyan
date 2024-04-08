@@ -267,7 +267,10 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						Nach einem Jahr der Umstrukturierung im Jahr 2023 hatte das Team von Kemit & Sure die Gelegenheit, den Versicherungsbedarf in Kamerun und innerhalb der afrikanischen (kamerunischen) Diaspora besser zu verstehen. Das Jahr 2024 sieht vielversprechend aus, mit einer großen Umgestaltung der Website, die ein außergewöhnliches Erlebnis bieten soll.
 					</>,
 				],
-				badges: ['CSS', 'Docker', 'HTML', 'Javascript', 'MySQL', 'PHP', 'WordPress',],
+				badges: [
+					'Anforderungsmanagement', 'Docker', 'Jira', 'Kommunikation', 'Planung', 
+					'WordPress',
+				],
 				links: [
 					{
 						label: 'Anzeige',

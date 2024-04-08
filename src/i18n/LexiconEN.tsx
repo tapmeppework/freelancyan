@@ -279,7 +279,10 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						After a year of restructuring in 2023, the Kemit n Sure team had the opportunity to better understand the insurance needs in Cameroon and within the African (Cameroonian) diaspora. The year 2024 looks promising with a major transformation on the website designed to offer an exceptional experience.
 					</>,
 				],
-				badges: ['CSS', 'Docker', 'HTML', 'Javascript', 'MySQL', 'PHP', 'WordPress',],
+				badges: [
+					'Communication', 'Docker', 'Jira', 'Planning', 
+					'Requirements management', 'WordPress',
+				],
 				links: [
 					{
 						label: 'Announcement',

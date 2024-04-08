@@ -85,7 +85,6 @@ export default abstract class Lexicon<Miscellaneous = any> extends Lexicon0<Misc
 				intera: [
 					'Docker',
 					'Gitlab',
-					'Nuxt.js',
 					'Vue.js',
 					'Symfony',
 				],
