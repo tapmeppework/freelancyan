@@ -1,2 +1,2 @@
-.tapmeppe-image-profile{border-width:calc(3 * var(--tapmeppe-global-border-width)) !important;border-radius:var(--tapmeppe-global-rounded);transition-duration:.5s;transition-property:scale;scale:1}.tapmeppe-image-profile:hover,.tapmeppe-image-profile:focus{transition-delay:2s;scale:2}
+.tapmeppe-image-profile{border-width:calc(3 * var(--tapmeppe-global-border-width)) !important;border-radius:var(--tapmeppe-global-rounded);background-color:#fff;transition-duration:.5s;transition-property:scale;scale:1}.tapmeppe-image-profile:hover,.tapmeppe-image-profile:focus{transition-delay:2s;scale:2}
 /*# sourceMappingURL=./Image.css.map */

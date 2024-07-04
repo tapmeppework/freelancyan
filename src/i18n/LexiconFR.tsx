@@ -7,7 +7,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 		index: {
 			description: `
 				Bienvenue chez ${Lexicon.utilities.config.contact.business} 👋🏿.\n
-				Je m'appelle ${Lexicon.utilities.config.contact.name} 🙋🏿‍♂️ et je suis un développeur web expérimenté 🤘🏿.
+				Je m'appelle ${Lexicon.utilities.config.contact.name} 🙋🏿‍♂️ et je suis consultant technique et développeur full-stack 🤘🏿.
 			`,
 		},
 		pages: {
@@ -15,20 +15,20 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				href: 'services',
 				headline: 'Services',
 				description: `
-					Découvrez mes services complets de développement web en tant que développeur web indépendant, comprenant la gestion de projet, l'analyse des besoins, le développement et bien plus encore. Associez-vous à moi pour un parcours en ligne fluide.
+					Mes services complets en tant que développeur web indépendant, comprenant la gestion de projet, l'analyse des besoins, le développement et bien plus encore.
 				`,
 				preamble: `
-					En tant que développeur web indépendant, je suis votre partenaire dévoué pour la création de solutions web exceptionnelles. Explorez une gamme de services experts conçus pour rehausser votre présence en ligne et donner vie à vos visions numériques. De la gestion de projet au développement, je suis là pour transformer vos idées en réalité. Découvrez davantage sur mes offres ci-dessous et embarquez avec moi dans une passionnante aventure d'excellence en développement web.
+					En tant que développeur web indépendant, je suis ton partenaire dévoué pour la création de solutions web exceptionnelles. Explores une gamme de services experts conçus pour donner vie à tes visions numériques. De l'analyse des besoins au développement, je suis là pour transformer tes idées en réalité.
 				`,
 			},
 			portfolio: {
 				href: 'portfolio',
 				headline: 'Portfolio',
 				description: `
-					Explorez une vitrine de mes projets de développement web en tant que développeur web. Plongez dans une collection de sites web et d'applications web qui reflètent mon expertise dans la création d'expériences en ligne attrayantes, fonctionnelles et visuellement attrayantes.
+					Une vitrine de mes projets en tant que développeur web. Plonges dans une collection d'applications qui reflètent mon expertise dans la création d'expériences fonctionnelles et visuellement attrayantes.
 				`,
 				preamble: `
-					Bienvenue dans mon portfolio! Ici, je présente fièrement une sélection soigneusement choisie de mes projets de développement web, chacun représentant le fruit de mon dévouement, de ma créativité et de mes compétences techniques en tant que développeur web. Parcourez ces exemples pour découvrir de première main la diversité de sites web et d'applications web que j'ai eu le privilège de faire naître. Que vous recherchiez de l'inspiration ou que vous souhaitiez collaborer avec moi, ce portfolio témoigne de mon engagement à fournir des solutions en ligne exceptionnelles.
+					Bienvenue dans mon portfolio! Ici, je présente fièrement une sélection soigneusement choisie de mes projets de développement web, chacun représentant le fruit de mon dévouement, de ma créativité et de mes compétences techniques en tant que développeur web. Parcoures ces exemples pour découvrir de première main la diversité d'applications web que j'ai eu le privilège de faire naître. Que tu recherches de l'inspiration ou que tz souhaites collaborer avec moi, ce portfolio témoigne de mon engagement à fournir des solutions exceptionnelles.
 				`,
 			},
 		},
@@ -39,7 +39,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 	}
 	abcd = {
 		harmony: {
-			error: `Une erreur s'est produite. Veuillez <a href='${Lexicon.utilities.contact}'>contacter l'administrateur</a>.`,
+			error: `Une erreur s'est produite. Stp <a href='${Lexicon.utilities.contact}'>contactes l'administrateur</a>.`,
 			more: 'Lire la suite',
 			less: 'Lire moins',
 			others: 'Autres',
@@ -48,7 +48,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 		},
 		navigation: {
 			header: {
-				logo: Lexicon.tapmeppe.logo('Le logo de mon entreprise en freelance.'),
+				logo: Lexicon.tapmeppe.logo("Le logo de l'entreprise"),
 				aria: 'Navigation en-tête mobile.'
 			},
 			footer: {
@@ -63,12 +63,12 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				close: 'Fermer',
 				languages: {
 					headline: 'Détection de la langue',
-					body: `Le site Web est actuellement présenté en '${this.label}'. Souhaitez-vous plutôt passer à l’une des langues suivantes?`,
+					body: `Le site Web est actuellement présenté en '${this.label}'. Souhaites-tu plutôt passer à l’une des langues suivantes?`,
 				},
 				third: {
 					party: {
-						headline: `J'apprécie votre vie privée`,
-						body: <>J'utilise des cookies 🍪 pour améliorer votre expérience de navigation et analyser le trafic. En cliquant sur 'Accepter', vous consentez à l'utilisation de cookies tiers.</>,
+						headline: `J'apprécie ta vie privée`,
+						body: <>J'utilise des cookies 🍪 pour améliorer ton expérience de navigation et analyser le trafic. En cliquant sur 'Accepter', tu consentes à l'utilisation de cookies tiers.</>,
 						accept: 'Accepter',
 					},
 				},
@@ -79,16 +79,12 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				light: 'Éclairé',
 			},
 			scroll: {
-				top: 'Faites défiler vers le haut.',
+				top: 'Défiler vers le haut.',
 			},
 		},
 		networks: {
-			linkedin: { href: 'https://www.linkedin.com/company/tapmeppe-work' },
+			linkedin: { href: Lexicon.tapmeppe.networks.linkedin },
 			github: { href: Lexicon.tapmeppe.networks.github },
-			youtube: {
-				href: '',
-				title: 'Bientôt disponible!',
-			},
 		},
 		pages: {
 			header: {
@@ -96,27 +92,17 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					href: 'index',
 					headline: 'Accueil',
 					...Lexicon.zyxw.index,
-					preamble: <>Je m'appelle {Lexicon.utilities.config.contact.name} 🙋🏿‍♂️ et je suis un développeur web expérimenté 🤘🏿.</>,
+					preamble: <>Je m'appelle {Lexicon.utilities.config.contact.name} 🙋🏿‍♂️ et je suis consultant technique et développeur full-stack 🤘🏿.</>,
 				},
 				...Lexicon.zyxw.pages,
 				resume: {
 					href: 'resume',
 					headline: 'Curriculum vitae',
 					description: `
-						Découvrez mon parcours professionnel en tant que développeur web à travers mon curriculum vitae. Explorez les compétences, les expériences et les qualifications qui font de moi un choix fiable et compétent pour les projets de développement web.
+						Découvres mon parcours professionnel en tant que développeur web à travers mon curriculum vitae. Explores les compétences, les expériences et les qualifications qui font de moi un choix fiable et compétent pour les projets de développement web.
 					`,
 					preamble: `
-						Bienvenue sur ma page de curriculum vitae! Ici, je vous offre un aperçu de ma carrière en tant que développeur web. J'ai compilé mes compétences, mes expériences et mes qualifications pour vous donner une vue d'ensemble de ce que j'apporte. Que vous souhaitiez collaborer sur un projet ou simplement en savoir plus sur mon parcours, ce curriculum vitae est une ressource précieuse pour comprendre mon parcours professionnel dans le développement web.
-					`,
-				},
-				pricing: {
-					href: 'pricing',
-					headline: 'Tarifs',
-					description: `
-						Bienvenue sur la passerelle de la valeur et de l'excellence. Je suis fier de fournir des services web de première classe, conçus pour rehausser votre présence en ligne. Ma tarification reflète non seulement la rentabilité, mais aussi un engagement envers la qualité et l'innovation. Explorez les possibilités et permettez-nous de transformer ensemble votre paysage numérique.
-					`,
-					preamble: `
-						Bienvenue sur la passerelle de la valeur et de l'excellence. Je suis fier de fournir des services web de première classe, conçus pour rehausser votre présence en ligne. Ma tarification reflète non seulement la rentabilité, mais aussi un engagement envers la qualité et l'innovation. Explorez les possibilités et permettez-nous de transformer ensemble votre paysage numérique.
+						Bienvenue sur ma page de curriculum vitae! Ici, je t'offre un aperçu de ma carrière en tant que développeur web. J'ai compilé mes compétences, mes expériences et mes qualifications pour te donner une vue d'ensemble de ce que j'apporte. Que tu souhaites collaborer sur un projet ou simplement en savoir plus sur mon parcours, ce curriculum vitae est une ressource précieuse pour comprendre mon parcours professionnel dans le développement web.
 					`,
 				},
 				gallery: {
@@ -129,18 +115,18 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					href: 'contact',
 					headline: 'Contact',
 					description: `
-						Connectez-vous avec moi pour découvrir la vie quotidienne passionnante et humoristique d'un polymathe polyvalent, qui jongle avec les aventures propulsées par des fusées 🚀, l'éducation d'un enfant en bas âge précoce 👶 et la programmation informatique tard dans la nuit 💻.
+						Connectes-toi avec moi pour découvrir la vie quotidienne passionnante et humoristique d'un polymathe polyvalent, qui jongle avec les aventures propulsées par des fusées 🚀, l'éducation d'un enfant en bas âge précoce 👶 et la programmation informatique tard dans la nuit 💻.
 					`,
 					preamble: <>
 						Lorsque je ne suis pas en train de conquérir les sommets perfides de l'Himalaya dans ma voiture de course propulsée par des fusées 🚀, tout en déchiffrant en solitaire l'énigme de la fusion à froid pour remporter le tant convoité prix Nodel, je suis de retour à la maison à 3 heures ⏰ du matin, engagé dans la noble tâche d'expliquer des concepts sociaux complexes à mon bambin précoce 👶. Après une petite mais efficace diplomatie basée sur la corruption, je parviens avec succès à convaincre mon petit que 3 heures du matin sont bel et bien l'heure du dodo.<br></br>
-						Mais pensez-vous que je m'endors ensuite dans le pays des rêves? Bien sûr que non 😄! Je suis immédiatement de retour devant mon ordinateur, car il s'avère que le sommeil est surestimé pour un polymathe polyvalent comme moi 😎.<br></br>
-						Si vous êtes curieux de connaître la suite de cette histoire palpitante, n'hésitez pas à me contacter pour découvrir l'épopée grandiose qu'est ma vie quotidienne 😉!
+						Mais penses-tu que je m'endors ensuite dans le pays des rêves? Bien sûr que non 😄! Je suis immédiatement de retour devant mon ordinateur, car il s'avère que le sommeil est surestimé pour un polymathe polyvalent comme moi 😎.<br></br>
+						Si tu es curieux de connaître la suite de cette histoire palpitante, n'hésites pas à me contacter pour découvrir l'épopée grandiose qu'est ma vie quotidienne 😉!
 					</>,
 				},
 				legal: {
 					href: 'legal',
 					headline: 'Mention légale',
-					description: `Découvrez notre page des mentions légales pour des informations sur l'identité légale derrière notre plateforme. Apprenez-en plus sur les détails de notre entreprise, nos coordonnées et nos obligations légales. La transparence et la confiance sont au cœur de notre engagement envers vous.`,
+					description: `Découvres les mentions légales.`,
 				},
 				privacy: {
 					href: 'privacy',
@@ -153,12 +139,9 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					headline: 'Page non trouvée.',
 					...Lexicon.zyxw.index,
 					preamble: <>
-						Oops 😅! Vous vous êtes aventuré dans la jungle numérique et il semble que vous ayez pris un mauvais tournant 🗺️. Ne vous inquiétez pas, je suis sur l'affaire pour vous sortir de ce labyrinthe cybernétique 🦸🏿‍♂️! En attendant, n'hésitez pas à <a href={Lexicon.utilities.portfolio}>explorer certaines de mes merveilles numériques</a> 🚀🌟. Si vous avez besoin d'une assistance immédiate, <a href={Lexicon.utilities.contact}>contactez l'administrateur</a> 📞👨🏿‍💻. D'ici là, profitez de ce petit détour à travers le cosmos virtuel 🌌🌠!
+						Oops 😅! Tu t'es aventuré dans la jungle numérique et il semble que tu as pris un mauvais tournant 🗺️. Ne t'inquiétes pas, je suis sur l'affaire pour te sortir de ce labyrinthe cybernétique 🦸🏿‍♂️! En attendant, n'hésites pas à <a href={Lexicon.utilities.portfolio}>explorer certaines de mes merveilles numériques</a> 🚀🌟. Si tu as besoin d'une assistance immédiate, <a href={Lexicon.utilities.contact}>contactes l'administrateur</a> 📞👨🏿‍💻. D'ici là, profites de ce petit détour à travers le cosmos virtuel 🌌🌠!
 					</>,
 				},
-				// tapmeppe: {
-				// 	headline: "Don't click here",
-				// },
 				gallery: {
 					href: 'gallery',
 					headline: 'Galerie',
@@ -172,10 +155,11 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 			body: `Salut! J'aimerais connaître la suite de l'histoire. 😅`,
 		},
 		me: Lexicon.tapmeppe.contact.me,
-		networks: 'Suivez-moi',
+		networks: 'Réseaux sociaux',
 		office: {
 			headline: `Horaires d'ouverture`,
-			content: <>Veuillez prendre rendez-vous.</>
+			url: Lexicon.tapmeppe.office.url,
+			content: <>Prendre un rendez-vous.</>
 		},
 		location: {
 			headline: 'Veni, vidi, vici',
@@ -189,20 +173,22 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 		about: {
 			headline: Lexicon.tapmeppe.contact.me,
 			body: <>
-				Je me spécialise dans la <strong>création de solutions en ligne sur mesure</strong> qui aident les individus et les petites et moyennes entreprises à prospérer à l'ère du numérique. Que vous souhaitiez établir votre présence en ligne, moderniser votre site web existant ou développer une application web sur mesure; mon objectif est de concrétiser votre vision.<br></br>
+				Je me spécialise dans la <strong>création de solutions en ligne sur mesure</strong> qui aident les individus et les petites entreprises à prospérer à l'ère du numérique. Que tu souhaites développer ou moderniser une application web; mon objectif est de concrétiser ta vision.<br></br>
 				Mon aventure professionnelle dans le développement web a débuté aux alentours de {Lexicon.tapmeppe.resume.min.value} et j'ai personnellement été témoin du pouvoir transformateur du paysage numérique.<br></br>
-				Travaillons ensemble pour donner vie à votre marque unique sur le web.
+				Travaillons ensemble pour donner vie à ta marque unique sur le web.
 			</>,
-			contact: `Contactez-nous 📧.<br/>Discutons 💬!`,
+			contact: `Contactes-moi 📧.<br/>Discutons 💬!`,
 		},
 		preamble: {
-			badge: <>Magie numérique depuis {Lexicon.tapmeppe.resume.min.value}</>,
+			badge: <>Ton MVP 💻 en 2 mois 😎</>,
 			body: [
-				'Développeur Full-Stack indépendant 💻',
-				`Transformation d'idées 💡 en produits numériques ​🚀`,
-				'En bref…',
+				`Transformation d'idées 💡 en produits digitaux ​🚀`,
+				'Ton MVP 💻 en 2 mois 😎 avec JS & PHP',
+				'Analyse, planification, mise en œuvre et suivi',
+				'Tu es un particulier, start-up ou petite entreprise',
+				'…',
 			],
-			headline: 'Votre partenaire de solutions digitales',
+			headline: 'discutons en 💬',
 			pages: Lexicon.zyxw.pages,
 		},
 		profile: Lexicon.tapmeppe.profile(`L'image de profil.`),
@@ -242,20 +228,66 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 			// },
 		],
 	]
-	privacy = []
 	portfolio = {
-		headline: 'Découvrez mes projets innovants',
+		headline: 'Découvres mes projets innovants',
 		mode: Lexicon.utilities.modes.timeline,
 		content: [
 			{
+				image: Lexicon.tapmeppe.images.portfolio.afroshops,
+				alt: 'Afro Shops logo',
+				timeframe: 'Avril 2024 - dato',
+				headline: `Fondateur`,
+				subline: 'Afro Shops 🛒🧺',
+				children: [
+					<>
+						Afro Shops est un marché en ligne 🛒 reliant la diaspora africaine dans la région de DACH (Allemagne, Autriche, Suisse) avec des vendeurs passionnés de produits afrocentriques. Célébrant ainsi la culture et le patrimoine africains à travers des produits authentiques.
+					</>,
+				],
+				badges: [
+					'Management', 'Marketing', 'e-Commerce', 'Bootstrap', 'Git', 'Javascript', 'NodeJS', 'PHP', 'MySQL', 'Playwright',
+				],
+				links: [
+					{
+						label: 'Follow us',
+						href: `https://www.linkedin.com/showcase/afroshops`,
+						// label: 'Website',
+						// href: `https://afro-shops.com`,
+					},
+				],
+			},
+			{
+				image: Lexicon.tapmeppe.images.portfolio.albion,
+				alt: 'Albion Academy logo',
+				timeframe: 'Février 2024 - Avril 2024',
+				headline: `Développeur Web et Consultant`,
+				subline: 'Albion Academy GmbH',
+				children: [
+					<>
+						<strong>03-04.2024 - Analyse, prototypage, conception</strong> -
+						Étude de faisabilité (y compris le développement de prototypes) sur la mise en œuvre d'un système d'information pour une académie de formation.
+					</>,
+					<>
+						<strong>02-03.2024 - Développement plugin WordPress</strong> -
+						Mise en œuvre de nouvelles fonctionnalités pour améliorer l'expérience utilisateur et le processus d'automatisation de l'entreprise.
+					</>,
+				],
+				badges: ['CSS', 'HTML', 'Javascript', 'WordPress'],
+				links: [
+					{
+						label: 'Website',
+						href: `https://albion.eu/`,
+					},
+				],
+			},
+			{
 				image: Lexicon.tapmeppe.images.portfolio.kemitnsure,
 				alt: 'Kemit & Sure logo',
-				timeframe: 'Janvier 2024 - dato',
+				timeframe: 'Janvier 2024 - Mai 2024',
 				headline: `Consultant (relance numérique)`,
 				subline: 'Kemit & Sure SARL',
 				children: [
 					<>
-						<strong>04.2024-??.???? - mise en œuvre</strong> -
+						<strong>04-05.2024 - mise en œuvre</strong> -
 						Après avoir passé le premier trimestre 2024 à élaborer une stratégie, l'équipe de développement en charge de la mise en œuvre a pris le relais. Je continue à titre de consultant, garantissant ainsi que la vision du client devienne évidement une réalité virtuelle.
 					</>,
 					<>
@@ -264,7 +296,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					</>,
 				],
 				badges: [
-					'Communication', 'Docker', 'Gestion des exigences', 
+					'Communication', 'Docker', 'Gestion des exigences',
 					'Jira', 'Planification', 'WordPress',
 				],
 				links: [
@@ -275,7 +307,6 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				],
 			},
 			{
-				// @see https://de.indeed.com/viewjob?hl=de&jk=e2610f3603419f46&tk=1hijt6qj8pbqg800
 				image: Lexicon.tapmeppe.images.portfolio.bergemann,
 				alt: 'Bergemann & Höhne GbR logo',
 				timeframe: 'Novembre 2023 - Février 2024',
@@ -466,7 +497,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						Le défi principal auquel nous avons été confrontés était de construire un système suffisamment robuste pour gérer deux problèmes clés.
 						<mark>1</mark> Un volume substantiel d'images et de vidéos haute définition.
 						<mark>2</mark> Un afflux élevé d'interactions.<br></br>
-						N'hésitez pas à <a href={Lexicon.utilities.contact}>nous contacter</a> si vous souhaitez savoir comment nous avons résolu le problème &#128520;.
+						N'hésites pas à <a href={Lexicon.utilities.contact}>nous contacter</a> si tu souhaites savoir comment nous avons résolu le problème &#128520;.
 					</>,
 					<>
 						Il est à noter que mon implication s'est achevée après le lancement de la nouvelle boutique en ligne et juste avant le développement d'un nouveau concept de newsletter.
@@ -559,7 +590,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						Nous avons créé un micro-site percutant dédié à la promotion de la série SIGMA SPORT EOX<sup>&#174;</sup>. Cet outil marketing a fait des apparitions lors des nombreuses évenements, salons et séminaires au cours des saisons de cyclisme 2019, 2020 et 2021
 					</>,
 					<>
-						Alors que le site web peut sembler modeste, le projet présentait un défi intrigant. À savoir la gestion d'un volume substantiel d'images haute définition. Curieux de savoir comment nous avons abordé ce problème? N'hésitez pas à <a href='./contact'>nous contacter</a> et plongeons dans la solution! &#128520;
+						Alors que le site web peut sembler modeste, le projet présentait un défi intrigant. À savoir la gestion d'un volume substantiel d'images haute définition.
 					</>,
 				],
 				links: [
@@ -698,6 +729,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 			},
 		],
 	}
+	privacy = []
 	resume = [
 		{
 			mode: Lexicon.utilities.modes.double,
@@ -908,7 +940,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						subline: Lexicon.utilities.config.contact.business,
 						children: [
 							<>
-								Salut aux explorateurs du numérique 🙋🏿‍♂️. Je me lance dans une nouvelle aventure. Rejoignez-moi dans mon voyage en tant que freelance du web 💼. Des premiers pas dans le développement web à la création d'expériences en ligne, j'ai embrassé ce monde 🌐 dynamique. Ensemble, nous explorerons les étapes clés, les défis et les projets 🚀 passionnants qui jalonnent mon chemin. Bienvenue dans l'aventure!
+								Salut aux explorateurs du numérique 🙋🏿‍♂️. Je me lance dans une nouvelle aventure. Rejoins-moi dans mon voyage en tant que freelance du web 💼. Des premiers pas dans le développement web à la création d'expériences en ligne, j'ai embrassé ce monde 🌐 dynamique. Ensemble, nous explorerons les étapes clés, les défis et les projets 🚀 passionnants qui jalonnent mon chemin. Bienvenue dans l'aventure!
 							</>,
 						]
 					},
@@ -937,7 +969,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						image: Lexicon.tapmeppe.images.resume.pagecon,
 						alt: `Logo de PageCon GmbH.`,
 						timeframe: 'Mars 2017 - Juillet 2019',
-						headline: `Développeur Full Stack Senior`,
+						headline: `Développeur Full Stack (Senior)`,
 						subline: <>PageCon GmbH &#128327;&nbsp;</>,
 						children: [
 							<>
@@ -996,205 +1028,48 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 	services = {
 		mode: Lexicon.utilities.modes.grid,
 		catalogue: {
-			administration: {
-				headline: 'Administration',
+			consulting: {
+				headline: 'Consulting',
 				list: {
+					requirements: {
+						headline: 'Analyse des exigences',
+						description: "Examiner méticuleusement les besoins et objectifs du projet, travailler en étroite collaboration avec le client pour définir des exigences claires et détaillées qui serviront de base à la réussite du projet de développement web.",
+					},
 					consulting: {
-						headline: 'Conseil et planification',
+						headline: 'Conseils & Planification',
 						description: 'Fournir des compétences et des conseils sur les stratégies de développement web et la planification de projets.',
 					},
 					management: {
 						headline: 'Gestion de projet',
 						description: "Coordonner efficacement et superviser tous les aspects d'un projet de développement web pour garantir qu'il soit livré dans les délais et dans le budget.",
 					},
-					requirements: {
-						headline: 'Analyse des exigences',
-						description: "Examiner méticuleusement les besoins et objectifs du projet, travailler en étroite collaboration avec le client pour définir des exigences claires et détaillées qui serviront de base à la réussite du projet de développement web.",
-					},
-					conceptualising: {
-						headline: 'Conceptualisation',
-						description: 'Transformer des idées et des objectifs en concepts créatifs et innovants, tout en veillant à ce que chaque projet ait une identité visuelle et fonctionnelle forte et unique.',
-					},
-					mentoring: {
-						headline: 'Mentorat',
-						description: [
-							<>
-								<span title="Révisions de code, sessions de pair programmation, etc.">Guider et accompagner</span> les développeurs juniors, favoriser leur croissance et garantir des pratiques de code et de développement de haute qualité.
-							</>,
-						],
-					},
-					documentation: {
-						headline: 'Documentation',
-						description: 'Création de documentation pour les fonctionnalités, les fonctionnalités et les processus du site web.',
-					},
 				},
 			},
 			implementation: {
 				headline: 'Implementation',
 				list: {
-					website: {
-						headline: 'Sites Web',
-						description: "C'est le service de base où les sites web sont créés en fonction des exigences du client.",
+					conceptualising: {
+						headline: 'Conceptualisation',
+						description: 'Transformer des idées et des objectifs en concepts créatifs et innovants, tout en veillant à ce que chaque projet ait une identité visuelle et fonctionnelle forte et unique.',
 					},
 					applications: {
 						headline: 'Applications Web',
-						description: 'Création de solutions web uniques et sur mesure avec des fonctionnalités dynamiques en fonction des exigences du client.',
-					},
-					responsive: {
-						headline: 'Conception web responsive',
-						description: "Veiller à ce que les sites web soient optimisés pour différentes tailles d'écran et dispositif.",
-					},
-					fullstack: {
-						headline: 'Développement full-stack',
-						description: `Offrant à la fois des services de développement front-end et back-end pour créer des solutions web complètes.`,
-					},
-					database: {
-						headline: 'Bases de données',
-						description: 'Création et intégration de bases de données pour stocker et gérer les données de site web.',
-					},
-					boilerplates: {
-						headline: 'Boilerplates',
-						description: [
-							<>
-								Intégration et personnalisation de plateformes <span title="Content Management Systems">CMS</span> comme WordPress, Joomla et de frameworks comme <span title="Fun fact: Ce site web utilise AstroJs comme framework.">AstroJs</span>, NextJs.
-							</>
-						],
-					},
-					ecommerce: {
-						headline: 'e-Commerce',
-						description: "Création de boutiques en ligne et de systèmes de panier d'achat pour la vente de produits ou de services.",
-					},
-					api: {
-						headline: "Développement d'API",
-						description: [
-							<>
-								La création d'<span title="Application Programming Interfaces">APIs</span> robustes et efficaces pour permettre un échange de données fluide et une intégration avec des services tiers, améliorant ainsi la fonctionnalité et la connectivité de vos applications web.
-							</>
-						],
-					},
-				},
-			},
-			optimisation: {
-				headline: 'Optimisation',
-				list: {
-					automation: {
-						headline: `La digitalisation et l'automatisation`,
-						description: `La digitalisation et l'automatisation des processus d'entreprise impliquent l'intégration de la technologie et l'optimisation des flux de travail pour améliorer l'efficacité, réduire les interventions manuelles et propulser l'organisation vers un fonctionnement plus technologiquement avancé et agile.`,
-					},
-					performance: {
-						headline: 'Performance',
-						description: 'Amélioration de la vitesse et des performances du site web grâce à diverses techniques.',
-					},
-					security: {
-						headline: 'Mesures de sécurité',
-						description: "Veiller à ce que les sites web soient sécurisés et mettre en place des certificats SSL pour le cryptage.",
-					},
-					seo: {
-						headline: 'SEO',
-						description: "Optimiser les sites web pour les moteurs de recherche afin d'améliorer leur visibilité dans les résultats de recherche.",
-					},
-					analytics: {
-						headline: 'Analyses',
-						description: "Mise en place d'outils de suivi et d'analyse pour surveiller le trafic sur le site web et le comportement des utilisateurs.",
-					},
-				},
-			},
-			delivery: {
-				headline: 'Produit final',
-				list: {
-					tests: {
-						headline: 'Assurance qualité',
-						description: 'Effectuer des tests approfondis pour garantir que les sites Web sont exempts de bugs et fonctionnent correctement.',
-					},
-					training: {
-						headline: 'Formation et ateliers',
-						description: "Offrir des sessions de formation aux clients sur la manière d'utiliser et de mettre à jour leurs sites web.",
+						description: 'Création de solutions avec des fonctionnalités dynamiques en fonction des exigences du client.',
 					},
 					deployment: {
 						headline: 'Déploiement',
-						description: "Lancement efficace et sécurisé de vos applications web sur des serveurs en direct, garantissant des transitions en douceur de l'environnement de développement à l'environnement de production pour une expérience utilisateur fluide.",
-					},
-					relocation: {
-						headline: 'Transfert',
-						description: "Transférer en toute sécurité et en toute transparence votre site Web ou votre application Web d'un environnement d'hébergement à un autre, en réduisant au minimum les temps d'arrêt et en garantissant l'intégrité des données lors du processus de transfert.",
+						description: "Lancement efficace et sécurisé de des applications web sur des serveurs en direct, garantissant des transitions fluide de l'environnement de développement à l'environnement de production.",
 					},
 				},
 			},
-			miscellaneous: {
-				headline: 'Divers',
-				list: {
-					miscellaneous: {
-						headline: 'Divers',
-						description: [
-							<>
-								Vous n'avez pas trouvé ce que vous cherchiez? Pas de souci!<br></br>
-								Si cela concerne le web, il y a de fortes chances que je puisse vous aider ou du moins vous offrir des conseils. N'hésitez pas à me contacter, je serais ravi d'entendre parler de votre projet.
-							</>
-						],
-					},
-				},
-			},
-			// maintenance: {},
 		},
 		pricing: {
 			headline: 'Stratégies de prix',
 			strategies: {
-				africa: {
-					// illustration: '',
-					headline: 'Venez me tromper',
-					header: <>
-						<span class='fs-3'>60.000</span>
-						<span class='fs-5'>&nbsp;FCFA/mois</span>
-					</>,
-					items: [
-						<em>Vous opérez dans la région subsaharienne</em>,
-						`Analyse et consulting`,
-						`Stratégie et planification`,
-						`Gestion de projet`,
-						<>Je mets le projet en œuvre, <br></br><span class="text-nowrap">vous louez</span></>,
-						<em>Maintenance: <span class="text-nowrap">30 min/mois</span></em>,
-						<>Réunion de coordination: <span class="text-nowrap">60 min/mois</span></>,
-						`Travail à distance`,
-						// Lexicon0.utilities.abcd.keywords.ellipsis.value,
-					],
-				},
-				europe: {
-					// illustration: '',
-					highlight: 'La plus utilisée',
-					headline: 'Mbenguiste',
-					header: <span class='fs-3'>200 €/mois</span>,
-					items: [
-						<em>Vous opérez dans l'hémisphère nord</em>,
-						`Analyse et consulting`,
-						`Stratégie et planification`,
-						`Gestion de projet`,
-						<>Je mets le projet en œuvre, <br></br><span class="text-nowrap">vous louez</span></>,
-						<em>Maintenance: <span class="text-nowrap">90 min/mois</span></em>,
-						<>Réunion de coordination: <span class="text-nowrap">60 min/mois</span></>,
-						`Travail à distance`,
-						// Lexicon0.utilities.abcd.keywords.ellipsis.value,
-					],
-				},
-				business: {
-					// illustration: '',
-					headline: 'Entreprise',
-					header: <span class='fs-3'>Discutons</span>,
-					items: [
-						<strong>Vous voulez posséder vision et produit</strong>,
-						`Analyse et consulting`,
-						`Stratégie et planification`,
-						`Gestion de projet`,
-						<strong>Je mets le projet en œuvre, <br></br><span class="text-nowrap">vous achetez</span></strong>,
-						<strong>Maintenance et assistance</strong>,
-						<strong>Réunion de coordination on demand</strong>,
-						`Travail à distance`,
-						`Travail sur site par occasion`,
-					],
-				},
 			},
 		},
 		miscellaneous: {
-			more: 'Contactez moi',
+			more: 'Me contacter',
 			message: (service: string) => ({
 				subject: `Demande de renseignements "${service}"`,
 				body: `Bonjour. Je suis intéressé par le service suivant: "${service}".`,

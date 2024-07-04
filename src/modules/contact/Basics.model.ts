@@ -85,10 +85,10 @@ export default class Basics extends Model {
 	}
 
 	readonly renderOffice = (
-		office: (className: string, headline: Snippet, content: Snippet) => Snippet
+		office: (className: string, headline: Snippet, url: string, content: Snippet) => Snippet
 	): Snippet => {
 		const lexicon = this.lexicon.contact.office
 
-		return lexicon && office(Basics.classNames.columns, lexicon.headline, lexicon.content)
+		return lexicon && office(Basics.classNames.columns, lexicon.headline, lexicon.url, lexicon.content)
 	}
 }

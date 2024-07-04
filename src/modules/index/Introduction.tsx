@@ -17,7 +17,7 @@ export default () => {
 				</Badge>
 			</div>,
 			(className, snippet) => <div class={className}>{snippet}</div>,
-			headline => <H1 class={model.classNames.headline}>{headline}</H1>,
+			(className, headline) => <H1 class={className}>{headline}</H1>,
 			(className, href: string, headline: Snippet) => <a class={className} href={href}>
 				{headline}
 			</a>

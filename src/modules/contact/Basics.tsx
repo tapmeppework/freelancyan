@@ -36,9 +36,9 @@ export default () => {
 					},
 				)}
 			</Col>
-			{model.renderOffice((className, headline, content) => <Col class={className}>
+			{model.renderOffice((className, headline, url, content) => <Col class={className}>
 				<H2>{headline}</H2>
-				<div>{content}</div>
+				<div><a href={url} target='_blank'>{content}</a></div>
 			</Col>)}
 			<Col class={Model.classNames.columns}>
 				<H2>{model.lexicon.contact.networks}</H2>

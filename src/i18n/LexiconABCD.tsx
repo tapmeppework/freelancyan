@@ -55,6 +55,8 @@ export default abstract class Lexicon<Miscellaneous = any> extends Lexicon0<Misc
 				intera: Lexicon.utilities.image('intera-logo.jpg', 200),
 				bergemann: Lexicon.utilities.image('bergemann-hoehne-logo.png', 370),
 				kemitnsure: Lexicon.utilities.image('kemit-n-sure-sarl-logo.png', 256),
+				albion: Lexicon.utilities.image('albion-academy-logo.png', 512),
+				afroshops: Lexicon.utilities.image('afro-shops-logo.jpeg', 1600),
 			},
 			resume: {
 				tapmeppe: Lexicon.utilities.image('tapmeppe-work.png', 470, 180),
@@ -72,6 +74,10 @@ export default abstract class Lexicon<Miscellaneous = any> extends Lexicon0<Misc
 		profile: (alt: string) => ({alt}),
 		networks: {
 			github: 'https://github.com/tapmeppe-work',
+			linkedin: 'https://www.linkedin.com/in/patrick-meppe',
+		},
+		office: {
+			url: 'https://calendly.com/patrick-meppe-tapmeppe/conference-call',
 		},
 		resume: {
 			min: {

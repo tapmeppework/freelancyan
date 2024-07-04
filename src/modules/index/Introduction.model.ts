@@ -16,10 +16,11 @@ export default class Introduction extends Model<Index.Preamble> {
 			outer: this.classes.bootstrap.margin.bottom.zyxw,
 			inner: this.classes.bootstrap.text.uppercase,
 		},
-		saying: `${this.classes.bootstrap.font.size[5]} ${this.classes.bootstrap.text.muted}`,
+		saying: `${this.classes.bootstrap.font.size[6]} ${this.classes.bootstrap.text.muted}`,
 		headline: `
 			${this.classes.bootstrap.text.wrap}
 			${this.classes.bootstrap.margin.auto}
+			${this.classes.bootstrap.margin.large[0]}
 		`,
 		pages: `
 			${this.classes.bootstrap.margin.top.zyxw} 
@@ -33,14 +34,14 @@ export default class Introduction extends Model<Index.Preamble> {
 	readonly render = (
 		badge: (badge: Snippet) => Snippet,
 		div: (className: string, content: Snippet) => Snippet,
-		headline: (headline: Snippet) => Snippet,
+		headline: (className: string, headline: Snippet) => Snippet,
 		page: (className: string, href: string, headline: Snippet) => Snippet,
 	) => {
 		let className = this.classes.abcd.button.primary
 		return [
 			this.texts.badge && badge(this.texts.badge),
 			this.texts.body?.map(snippet => div(this.classNames.saying, snippet)),
-			headline(this.texts.headline),
+			headline(this.classNames.headline, this.texts.headline),
 			this.texts.pages && div(
 				this.classNames.pages,
 				Object

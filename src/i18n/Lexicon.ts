@@ -249,6 +249,11 @@ export default abstract class Lexicon<Miscellaneous = any> {
 			 */
 			headline: Snippet
 			/**
+			 * @property {string} url
+			 * @description The url to book an appointment.
+			 */
+			url: string
+			/**
 			 * @property {Snippet} content
 			 * @description The office hours content.
 			 */

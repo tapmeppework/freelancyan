@@ -462,6 +462,15 @@ export default class Bootstrap {
 			auto: 'm-auto',
 			zyxw: `m-${this._styles.zyxw}`,
 			// ...
+			large: {
+				0: 'm-lg-0',
+				1: 'm-lg-1',
+				2: 'm-lg-2',
+				3: 'm-lg-3',
+				4: 'm-lg-4',
+				5: 'm-lg-5',
+				auto: 'm-lg-auto',
+			},
 			medium: {
 				0: 'm-md-0',
 				1: 'm-md-1',

@@ -32,7 +32,7 @@ export default () => {
 		</Item>
 		<Item headline="Du bist also ein Rebell, eh!" show={model.show.de}>
 			<p>
-				Sie konnten einfach nicht widerstehen, haben geklickt und sind jetzt hier. Herzlichen Glückwunsch unerschrockener Entdecker 🎉! Sie sind auf das geheime Versteck der digitalen Rebellen 🥷🏿 gestoßen. Machen Sie sich bereit, denn diese Website läuft auf dem heldenhaften Projekt: {model.project} 🚀.
+				Du konntest einfach nicht widerstehen, Du hast geklickt und Du bist jetzt hier. Herzlichen Glückwunsch unerschrockener Entdecker 🎉! Du bist auf das geheime Versteck der digitalen Rebellen 🥷🏿 gestoßen. Mach Dich bereit, denn diese Website läuft auf dem heldenhaften Projekt: {model.project} 🚀.
 			</p>
 			{model.mine ?
 				<>
@@ -43,17 +43,17 @@ export default () => {
 						<mark>3</mark> Es erstellt eine Vorlage, damit Gleichgesinnte schnell ihre eigene grundlegende Website starten können.
 					</p>
 					<p>
-						Bereit, auf der Welle zu reiten und diese Vorlage für Ihr Projekt 💻 zu verwenden? Brauchen Sie eine helfende Hand oder haben Sie eine andere wilde Idee 💡? Seien Sie nicht schüchtern, {model.contact('melden Sie sich bei mir')}, und lassen Sie uns gemeinsam etwas bewegen 🤝.
+						Bereit, auf der Welle zu reiten und diese Vorlage für dein Projekt 💻 zu verwenden? Brauchst Du eine helfende Hand oder hast Du eine andere wilde Idee 💡? {model.contact('Melde Dich bei mir')}, und lass uns gemeinsam etwas bewegen 🤝.
 					</p>
 				</> :
 				<p>
-					Wir haben die Mission, der Tyrannei von Projekten und kleinen Unternehmen ohne elegante Online-Präsenz 🤖 ein Ende zu setzen. Möchten Sie Teil des Widerstands ✊🏿 sein oder benötigen Sie digitale Unterstützung 💻? Seien Sie nicht schüchtern, {model.website('kontaktieren Sie mich')}, und lassen Sie uns gemeinsam etwas bewegen 🤝.
+					Wir haben die Mission, der Tyrannei von Projekten und kleinen Unternehmen ohne elegante Online-Präsenz 🤖 ein Ende zu setzen. Möchtest Du Teil des Widerstands ✊🏿 sein oder benötigst Du digitale Unterstützung 💻? {model.website('Kontaktiere mich')}, und lass uns gemeinsam etwas bewegen 🤝.
 				</p>
 			}
 		</Item>
 		<Item headline="Alors tu es un rebelle, eh!" show={model.show.fr}>
 			<p>
-				Vous n'avez tout simplement pas pu résister, avez cliqué et vous voilà. Eh bien, félicitations intrépide explorateur 🎉! Vous avez découvert la cachette secrète des rebelles numériques 🥷🏿. Attachez-vous, car ce site fonctionne grâce au projet héroïque: {model.project} 🚀.
+				Tu n'as tout simplement pas pu résister, tu as cliqué et te voilà. Eh bien, félicitations intrépide explorateur 🎉! Tu as découvert la cachette secrète des rebelles numériques 🥷🏿. Prepares-toi, car ce site fonctionne grâce au projet héroïque: {model.project} 🚀.
 			</p>
 			{model.mine ?
 				<>
@@ -64,11 +64,11 @@ export default () => {
 						<mark>3</mark> Créer un modèle pour que d'autres pionniers puissent rapidement lancer leur propre site web de base.
 					</p>
 					<p>
-						Prêt à surfer sur la vague et à utiliser ce modèle pour votre projet 💻? Besoin d'un coup de main ou avez-vous une autre idée sauvage 💡? N'hésitez pas, {model.contact('contactez-moi')}, et faisons bouger les choses ensemble 🤝.
+						Prêt à surfer sur la vague et à utiliser ce modèle pour ton projet 💻? Besoin d'un coup de main ou tu as une autre idée géniale 💡? N'hésites pas, {model.contact('contactes-moi')}, et faisons bouger les choses ensemble 🤝.
 					</p>
 				</> :
 				<p>
-					Nous avons pour mission de mettre fin à la tyrannie des projets et des petites entreprises qui fonctionnent sans une présence en ligne élégante 🤖. Vous voulez faire partie de la résistance ✊🏿 ou vous avez besoin d'un soutien numérique 💻 ? N'hésitez pas, {model.website('contactez-moi')}, et faisons bouger les choses ensemble 🤝.
+					Nous avons pour mission de mettre fin à la tyrannie des projets et des petites entreprises qui fonctionnent sans une présence en ligne élégante 🤖. Tu veux faire partie de la résistance ✊🏿 ou tu as besoin d'un soutien numérique 💻 ? N'hésites pas, {model.contact('contactes-moi')}, et faisons bouger les choses ensemble 🤝.
 				</p>
 			}
 		</Item>
