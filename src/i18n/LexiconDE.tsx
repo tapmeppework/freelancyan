@@ -271,7 +271,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						Machbarkeitsstudie (inklusive Entwicklung von Prototypen) über die Umsetzung eines Informationssystems für eine Schulungsakademie.
 					</>,
 					<>
-						<strong>02-03.2024 - WordPress-Plugin-Entwicklung</strong> -
+						<strong>02-03.2024 - WordPress-Entwicklung</strong> -
 						Implementierung neuer Funktionen zur Verbesserung der Benutzererfahrung und des Automatisierungsprozesses des Unternehmens.
 					</>,
 				],
