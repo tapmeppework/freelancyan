@@ -244,7 +244,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					</>,
 				],
 				badges: [
-					'Management', 'Marketing', 'e-Commerce', 'Bootstrap', 'Git', 'Javascript', 'NodeJS', 'PHP', 'MySQL', 'Playwright',
+					'Management', 'Marketing', 'e-Commerce', 'Bootstrap', 'Git', 'Javascript', 'NodeJS', 'PHP', 'WordPress', 'WooCommerce', 'MySQL', 'Playwright',
 				],
 				links: [
 					{
