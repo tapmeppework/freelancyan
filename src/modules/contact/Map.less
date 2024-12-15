@@ -1,4 +1,5 @@
 @import '../../styles/assets.less';
+@import '../../styles/assets.more.less';
 @map: ~"@{UMBRELLA_CN}map";
 
 @{map} {
@@ -8,6 +9,9 @@
 	}
 
 	.leaflet- {
+		&attribution-flag {
+			.mx_hide() !important
+		}
 		&control-zoom {
 			border-color: var(--tapmeppe-scheme-project-basic-primary-abcd) !important;
 

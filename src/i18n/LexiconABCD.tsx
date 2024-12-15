@@ -45,7 +45,7 @@ export default abstract class Lexicon<Miscellaneous = any> extends Lexicon0<Misc
 					eox: Lexicon.utilities.image(`sigmasport-eox-series.png`, 500),
 					compatibility: Lexicon.utilities.image(`sigmasport-compatibility.png`, 500),
 					shop: Lexicon.utilities.image(`sigmasport-shop.png`, 500),
-					
+
 				},
 				pagecon: Lexicon.utilities.image(`pagecon-logo.png`, 500),
 				bloom: Lexicon.utilities.image(`bloom-s.png`, 500),
@@ -56,7 +56,7 @@ export default abstract class Lexicon<Miscellaneous = any> extends Lexicon0<Misc
 				bergemann: Lexicon.utilities.image('bergemann-hoehne-logo.png', 370),
 				kemitnsure: Lexicon.utilities.image('kemit-n-sure-sarl-logo.png', 256),
 				albion: Lexicon.utilities.image('albion-academy-logo.png', 512),
-				afroshops: Lexicon.utilities.image('afro-shops-logo.jpeg', 1600),
+				afroshops: Lexicon.utilities.image('afroshops-logo.png', 500),
 			},
 			resume: {
 				tapmeppe: Lexicon.utilities.image('tapmeppe-work.png', 470, 180),
@@ -70,8 +70,8 @@ export default abstract class Lexicon<Miscellaneous = any> extends Lexicon0<Misc
 		legal: {
 			tax: '',
 		},
-		logo: (alt: string) => ({alt, width: 500,}),
-		profile: (alt: string) => ({alt}),
+		logo: (alt: string) => ({ alt, width: 500, }),
+		profile: (alt: string) => ({ alt }),
 		networks: {
 			github: 'https://github.com/tapmeppe-work',
 			linkedin: 'https://www.linkedin.com/in/patrick-meppe',

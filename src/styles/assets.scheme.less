@@ -6,35 +6,35 @@
  * @since PM (25.09.2023)
  */
 @schemeProjectPrimaryRGB: red(@SCHEME_PROJECT_PRIMARY), green(@SCHEME_PROJECT_PRIMARY), blue(@SCHEME_PROJECT_PRIMARY);
-@schemeProjectPrimaryOperative: darken(@SCHEME_PROJECT_PRIMARY, @SCHEME_FACTOR);
+@schemeProjectPrimaryOperative: darken(@SCHEME_PROJECT_PRIMARY, @SCHEME_DELTA);
 @schemeProjectPrimaryOperativeRGB: red(@schemeProjectPrimaryOperative), green(@schemeProjectPrimaryOperative), blue(@schemeProjectPrimaryOperative);
 @schemeProjectSecondaryRGB: red(@SCHEME_PROJECT_SECONDARY), green(@SCHEME_PROJECT_SECONDARY), blue(@SCHEME_PROJECT_SECONDARY);
-@schemeProjectSecondaryOperative: darken(@SCHEME_PROJECT_SECONDARY, @SCHEME_FACTOR);
+@schemeProjectSecondaryOperative: darken(@SCHEME_PROJECT_SECONDARY, @SCHEME_DELTA);
 @schemeProjectSecondaryOperativeRGB: red(@schemeProjectSecondaryOperative), green(@schemeProjectSecondaryOperative), blue(@schemeProjectSecondaryOperative);
 @schemeProjectTertiaryRGB: red(@SCHEME_PROJECT_TERTIARY), green(@SCHEME_PROJECT_TERTIARY), blue(@SCHEME_PROJECT_TERTIARY);
-@schemeProjectTertiaryOperative: darken(@SCHEME_PROJECT_TERTIARY, @SCHEME_FACTOR);
+@schemeProjectTertiaryOperative: darken(@SCHEME_PROJECT_TERTIARY, @SCHEME_DELTA);
 @schemeProjectTertiaryOperativeRGB: red(@schemeProjectTertiaryOperative), green(@schemeProjectTertiaryOperative), blue(@schemeProjectTertiaryOperative);
 // ...
 @schemeProjectNavigationBackgroundRGB: red(@SCHEME_PROJECT_NAVIGATION_BACKGROUND), green(@SCHEME_PROJECT_NAVIGATION_BACKGROUND), blue(@SCHEME_PROJECT_NAVIGATION_BACKGROUND);
 // ...
 @schemeDarkSectionBodyRGB: red(@SCHEME_DARK_SECTION), green(@SCHEME_DARK_SECTION), blue(@SCHEME_DARK_SECTION);
-@schemeDarkSectionOdd: lighten(@SCHEME_DARK_SECTION, @SCHEME_FACTOR * .5);
+@schemeDarkSectionOdd: lighten(@SCHEME_DARK_SECTION, @SCHEME_DELTA * .5);
 @schemeDarkSectionOddRGB: red(@schemeDarkSectionOdd), green(@schemeDarkSectionOdd), blue(@schemeDarkSectionOdd);
-@schemeDarkSectionEven: lighten(@SCHEME_DARK_SECTION, @SCHEME_FACTOR);
+@schemeDarkSectionEven: lighten(@SCHEME_DARK_SECTION, @SCHEME_DELTA);
 @schemeDarkSectionEvenRGB: red(@schemeDarkSectionEven), green(@schemeDarkSectionEven), blue(@schemeDarkSectionEven);
-@schemeDarkSectionTertiary: darken(@SCHEME_DARK_SECTION, @SCHEME_FACTOR * .5);
+@schemeDarkSectionTertiary: darken(@SCHEME_DARK_SECTION, @SCHEME_DELTA * .5);
 @schemeDarkSectionTertiaryRGB: red(@schemeDarkSectionTertiary), green(@schemeDarkSectionTertiary), blue(@schemeDarkSectionTertiary);
 @schemeDarkTextRGB: red(@SCHEME_DARK_TEXT), green(@SCHEME_DARK_TEXT), blue(@SCHEME_DARK_TEXT);
 // ...
 @schemeLightSectionBodyRGB: red(@SCHEME_LIGHT_SECTION), green(@SCHEME_LIGHT_SECTION), blue(@SCHEME_LIGHT_SECTION);
-@schemeLightSectionOdd: darken(@SCHEME_LIGHT_SECTION, @SCHEME_FACTOR * .25);
+@schemeLightSectionOdd: darken(@SCHEME_LIGHT_SECTION, @SCHEME_DELTA * .25);
 @schemeLightSectionOddRGB: red(@schemeLightSectionOdd), green(@schemeLightSectionOdd), blue(@schemeLightSectionOdd);
-@schemeLightSectionEven: darken(@SCHEME_LIGHT_SECTION, @SCHEME_FACTOR * .5);
+@schemeLightSectionEven: darken(@SCHEME_LIGHT_SECTION, @SCHEME_DELTA * .5);
 @schemeLightSectionEvenRGB: red(@schemeLightSectionEven), green(@schemeLightSectionEven), blue(@schemeLightSectionEven);
-@schemeLightSectionZyxw: darken(@SCHEME_LIGHT_SECTION, @SCHEME_FACTOR);
+@schemeLightSectionZyxw: darken(@SCHEME_LIGHT_SECTION, @SCHEME_DELTA);
 @schemeLightSectionZyxwRGB: red(@schemeLightSectionZyxw), green(@schemeLightSectionZyxw), blue(@schemeLightSectionZyxw);
 @schemeLightTextRGB: red(@SCHEME_LIGHT_TEXT), green(@SCHEME_LIGHT_TEXT), blue(@SCHEME_LIGHT_TEXT);
-@schemeLightBootstrapBorder: darken(@SCHEME_LIGHT_SECTION, @SCHEME_FACTOR * 3); //exception
+@schemeLightBootstrapBorder: darken(@SCHEME_LIGHT_SECTION, @SCHEME_DELTA * 3); //exception
 
 // DO NOT MERGE; the .less color mixins can not be placed next to native CSS code
 

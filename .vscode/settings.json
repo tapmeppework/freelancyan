@@ -14,7 +14,7 @@
 		"tsconfig.json": "tsconfig.*.json",
 		"package.json": "package-lock.json, yarn.lock",
 		"composer.json": "composer.lock",
-		"*.less": "${capture}.css, ${capture}.css.*",
+		"*.less": "${capture}.css, ${capture}.css.*, ${capture}.*.less",
 		"*.css": "${capture}.css.*",
 		"*.json": "${capture}.json.*",
 		"*.dict": "${capture}.dict.*",
@@ -36,7 +36,7 @@
 	"less.lint.zeroUnits": "warning",
 	"search.useIgnoreFiles": false,
 	"search.exclude": {
-		"**/build": true,
+		"**/build*": true,
 		"**/dist": true,
 		"**/vendor": true
 	},

@@ -12,6 +12,7 @@ export default class Map extends Model<Properties> {
 	static readonly id = `${this.slug}_qgH7fRx8ciVM2vgtDnyf`
 	static readonly className = {
 		abcd: Model.umbrella(Map.slug),
+		inner: this.classes.bootstrap.rounded[2],
 		marker: Model.umbrella(`${Map.slug}-marker`),
 		popup: Model.umbrella(`${Map.slug}-popup`),
 	}
@@ -91,7 +92,7 @@ export default class Map extends Model<Properties> {
 			'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
 			{
 				maxZoom: 19,
-				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>'
 			}
 		).addTo(map)
 		const marker = L.marker(location, {

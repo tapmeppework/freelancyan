@@ -10,7 +10,7 @@ export default (props: Properties) => {
 	onMount(() => new Model(props))
 
 	return <div class={Model.className.abcd}>
-		<div id={Model.id}></div>
+		<div id={Model.id} class={Model.className.inner}></div>
 		<Mask full>
 			<Loader>{props.headline}</Loader>
 		</Mask>

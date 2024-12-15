@@ -28,7 +28,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 					Une vitrine de mes projets en tant que développeur web. Plonges dans une collection d'applications qui reflètent mon expertise dans la création d'expériences fonctionnelles et visuellement attrayantes.
 				`,
 				preamble: `
-					Bienvenue dans mon portfolio! Ici, je présente fièrement une sélection soigneusement choisie de mes projets de développement web, chacun représentant le fruit de mon dévouement, de ma créativité et de mes compétences techniques en tant que développeur web. Parcoures ces exemples pour découvrir de première main la diversité d'applications web que j'ai eu le privilège de faire naître. Que tu recherches de l'inspiration ou que tz souhaites collaborer avec moi, ce portfolio témoigne de mon engagement à fournir des solutions exceptionnelles.
+					Bienvenue dans mon portfolio! Ici, je présente fièrement une sélection soigneusement choisie de mes projets de développement web, chacun représentant le fruit de mon dévouement, de ma créativité et de mes compétences techniques en tant que développeur web. Parcoures ces exemples pour découvrir de première main la diversité d'applications web que j'ai eu le privilège de faire naître. Que tu recherches de l'inspiration ou que tu souhaites collaborer avec moi, ce portfolio témoigne de mon engagement à fournir des solutions exceptionnelles.
 				`,
 			},
 		},
@@ -182,10 +182,10 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 		preamble: {
 			badge: <>Ton MVP 💻 en 2 mois 😎</>,
 			body: [
-				`Transformation d'idées 💡 en produits digitaux ​🚀`,
-				'Ton MVP 💻 en 2 mois 😎 avec JS & PHP',
-				'Analyse, planification, mise en œuvre et suivi',
-				'Tu es un particulier, start-up ou petite entreprise',
+				`Transformation d'idées 💡 en produits digitaux ​🚀.`,
+				'Ton MVP 💻 en 2 mois 😎 avec JS & PHP.',
+				'Analyse, planification, mise en œuvre et suivi.',
+				'Tu es un particulier, start-up ou petite entreprise.',
 				'…',
 			],
 			headline: 'discutons en 💬',
@@ -234,13 +234,13 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 		content: [
 			{
 				image: Lexicon.tapmeppe.images.portfolio.afroshops,
-				alt: 'Afro Shops logo',
-				timeframe: 'Avril 2024 - dato',
+				alt: 'AfroShops logo',
+				timeframe: 'Mai 2024 - dato',
 				headline: `Fondateur`,
-				subline: 'Afro Shops 🛒🧺',
+				subline: 'AfroShops 🛒🧺',
 				children: [
 					<>
-						Afro Shops est un marché en ligne 🛒 reliant la diaspora africaine dans la région de DACH (Allemagne, Autriche, Suisse) avec des vendeurs passionnés de produits afrocentriques. Célébrant ainsi la culture et le patrimoine africains à travers des produits authentiques.
+						AfroShops est un marché en ligne 🛒 reliant la diaspora africaine dans la région de DACH (Allemagne, Autriche, Suisse) avec des vendeurs passionnés de produits afrocentriques. Célébrant ainsi la culture et le patrimoine africains à travers des produits authentiques.
 					</>,
 				],
 				badges: [
@@ -248,17 +248,17 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				],
 				links: [
 					{
-						label: 'Follow us',
-						href: `https://www.linkedin.com/showcase/afroshops`,
-						// label: 'Website',
-						// href: `https://afro-shops.com`,
+						label: 'Website',
+						href: `https://afro-shops.com`,
+						// label: 'Follow us',
+						// href: `https://www.linkedin.com/showcase/afroshops`,
 					},
 				],
 			},
 			{
 				image: Lexicon.tapmeppe.images.portfolio.albion,
 				alt: 'Albion Academy logo',
-				timeframe: 'Février 2024 - Avril 2024',
+				timeframe: 'Février 2024 - Mai 2024',
 				headline: `Développeur Web et Consultant`,
 				subline: 'Albion Academy GmbH',
 				children: [
@@ -291,7 +291,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						Après avoir passé le premier trimestre 2024 à élaborer une stratégie, l'équipe de développement en charge de la mise en œuvre a pris le relais. Je continue à titre de consultant, garantissant ainsi que la vision du client devienne évidement une réalité virtuelle.
 					</>,
 					<>
-						<strong>01-03.2024 - analyse, conception, planification</strong> - 
+						<strong>01-03.2024 - analyse, conception, planification</strong> -
 						Après une année 2023 de restructuration, l'équipe de Kemit & Sure a eu l'opportunité de mieux comprendre les besoins d'assurance au Cameroun et au sein de la diaspora africaine (camerounaise). L'année 2024 s'annonce prometteuse avec une transformation majeure sur le site internet conçue pour offrir une expérience exceptionnelle.
 					</>,
 				],
@@ -333,8 +333,8 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 			},
 			{
 				image: Lexicon.tapmeppe.images.portfolio.freelancyan,
-				alt: 't@pm3pp3 w0rk logo in gray.',
-				timeframe: 'Août 2023 - dato',
+				alt: 't@pm3pp3 w0rk logo en gris.',
+				timeframe: 'Août 2023 - Décembre 2024',
 				headline: `Freelancyan`,
 				subline: Lexicon.utilities.config.contact.business,
 				children: [

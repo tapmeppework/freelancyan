@@ -186,10 +186,10 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 		preamble: {
 			badge: <>Dein MVP 💻 in 2 Monaten 😎</>,
 			body: [
-				'Verwandlung von Ideen 💡 in digitale Produkte ​🚀',
-				'Dein MVP 💻 in 2 Monaten 😎 mit JS & PHP',
-				'Analyse, Planung, Umsetzung & Begleitung',
-				'Du bist eine Person, Start-up oder kleine Firma',
+				'Verwandlung von Ideen 💡 in digitale Produkte ​🚀.',
+				'Dein MVP 💻 in 2 Monaten 😎 mit JS & PHP.',
+				'Analyse, Planung, Umsetzung & Begleitung.',
+				'Du bist eine Person, Start-up oder kleine Firma.',
 				'…',
 			],
 			headline: 'lass uns reden 💬',
@@ -238,13 +238,13 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 		content: [
 			{
 				image: Lexicon.tapmeppe.images.portfolio.afroshops,
-				alt: 'Afro Shops logo',
-				timeframe: 'April 2024 - heute',
+				alt: 'AfroShops logo',
+				timeframe: 'Mai 2024 - heute',
 				headline: `Founder`,
-				subline: 'Afro Shops 🛒🧺',
+				subline: 'AfroShops 🛒🧺',
 				children: [
 					<>
-						Afro Shops ist ein Online-Marktplatz, der die afrikanische Diaspora in der DACH-Region (Deutschland, Österreich, Schweiz) mit leidenschaftlichen Verkäufern afrozentrischer Waren verbindet. So werden die afrikanische Kultur und Erbe durch authentische Produkte gefeiert.
+						AfroShops ist ein Online-Marktplatz, der die afrikanische Diaspora in der DACH-Region (Deutschland, Österreich, Schweiz) mit leidenschaftlichen Verkäufern afrozentrischer Waren verbindet. So werden die afrikanische Kultur und Erbe durch authentische Produkte gefeiert.
 					</>,
 				],
 				badges: [
@@ -252,17 +252,17 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				],
 				links: [
 					{
-						label: 'Follow us',
-						href: `https://www.linkedin.com/showcase/afroshops`,
-						// label: 'Website',
-						// href: `https://afro-shops.com`,
+						label: 'Website',
+						href: `https://afro-shops.com`,
+						// label: 'Follow us',
+						// href: `https://www.linkedin.com/showcase/afroshops`,
 					},
 				],
 			},
 			{
 				image: Lexicon.tapmeppe.images.portfolio.albion,
 				alt: 'Albion Academy logo',
-				timeframe: 'Februar 2024 - April 2024',
+				timeframe: 'Februar 2024 - Mai 2024',
 				headline: `Webentwickler & Berater`,
 				subline: 'Albion Academy GmbH',
 				children: [
@@ -298,7 +298,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 						Nachdem das erste Quartal 2024 mit der Strategieentwicklung verbracht wurde, übernahm das für die Umsetzung zuständiges Entwicklungsteam. Ich bin weiterhin als Berater tätig und sorge so dafür, dass die Vision des Kunden schließlich zur virtuellen Realität wird.
 					</>,
 					<>
-						<strong>01-03.2024 - Analyse, Konzeption, Planung</strong> - 
+						<strong>01-03.2024 - Analyse, Konzeption, Planung</strong> -
 						Nach einem Jahr der Umstrukturierung im Jahr 2023 hatte das Team von Kemit & Sure die Gelegenheit, den Versicherungsbedarf in Kamerun und innerhalb der afrikanischen (kamerunischen) Diaspora besser zu verstehen. Das Jahr 2024 sieht vielversprechend aus, mit einer großen Umgestaltung der Website, die ein außergewöhnliches Erlebnis bieten soll.
 					</>,
 				],
@@ -341,7 +341,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 			{
 				image: Lexicon.tapmeppe.images.portfolio.freelancyan,
 				alt: 't@pm3pp3 w0rk logo in grau.',
-				timeframe: 'August 2023 - heute',
+				timeframe: 'August 2023 - Dezember 2024',
 				headline: `Freelancyan`,
 				subline: Lexicon.utilities.config.contact.business,
 				children: [

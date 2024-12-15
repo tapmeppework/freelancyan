@@ -186,10 +186,10 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 		preamble: {
 			badge: <>Your MVP 💻 in 2 months 😎</>,
 			body: [
-				'Transforming ideas 💡 into digital products ​🚀',
-				'Your MVP 💻 in 2 months 😎 with JS & PHP',
-				'Analysis, planning, implementation & follow up',
-				'You are an individual, start-up or small company',
+				'Transforming ideas 💡 into digital products ​🚀.',
+				'Your MVP 💻 in 2 months 😎 with JS & PHP.',
+				'Analysis, planning, implementation & follow up.',
+				'You are an individual, start-up or small company.',
 				'…',
 			],
 			headline: 'let us chat 💬',
@@ -238,13 +238,13 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 		content: [
 			{
 				image: Lexicon.tapmeppe.images.portfolio.afroshops,
-				alt: 'Afro Shops logo',
-				timeframe: 'April 2024 - today',
+				alt: 'AfroShops logo',
+				timeframe: 'May 2024 - today',
 				headline: `Founder`,
-				subline: 'Afro Shops 🛒🧺',
+				subline: 'AfroShops 🛒🧺',
 				children: [
 					<>
-						Afro Shops is an online marketplace 🛒 connecting the African diaspora in the DACH region (Germany, Austria, Switzerland) with passionate sellers of Afrocentric goods. Thus celebrating the African culture and heritage through authentic products.
+						AfroShops is an online marketplace 🛒 connecting the African diaspora in the DACH region (Germany, Austria, Switzerland) with passionate sellers of Afrocentric goods. Thus celebrating the African culture and heritage through authentic products.
 					</>,
 				],
 				badges: [
@@ -252,17 +252,17 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 				],
 				links: [
 					{
-						label: 'Follow us',
-						href: `https://www.linkedin.com/showcase/afroshops`,
-						// label: 'Website',
-						// href: `https://afro-shops.com`,
+						label: 'Website',
+						href: `https://afro-shops.com`,
+						// label: 'Follow us',
+						// href: `https://www.linkedin.com/showcase/afroshops`,
 					},
 				],
 			},
 			{
 				image: Lexicon.tapmeppe.images.portfolio.albion,
 				alt: 'Albion Academy logo',
-				timeframe: 'February 2024 - April 2024',
+				timeframe: 'February 2024 - May 2024',
 				headline: `Web developer & Consultant`,
 				subline: 'Albion Academy GmbH',
 				children: [
@@ -341,7 +341,7 @@ export default class Lexicon<Miscellaneous = any> extends Lexicon0<Miscellaneous
 			{
 				image: Lexicon.tapmeppe.images.portfolio.freelancyan,
 				alt: 't@pm3pp3 w0rk logo in gray.',
-				timeframe: 'August 2023 - today',
+				timeframe: 'August 2023 - December 2024',
 				headline: `Freelancyan`,
 				subline: Lexicon.utilities.config.contact.business,
 				children: [

@@ -84,7 +84,7 @@ export default Object.freeze({
 		resume: `${config.assets}/resume`,
 		gallery: `${config.assets}/gallery`,
 	},
-	version: "1.0.2", //DO NOT update this value; update its package.json equivalent instead
+	version: "1.2.0", //DO NOT update this value; update its package.json equivalent instead
 	wonder: {
 		third: {
 			party: { //the third party consenter modal ids

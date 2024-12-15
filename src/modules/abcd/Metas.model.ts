@@ -29,6 +29,7 @@ export default class Metas extends Model<Properties> {
 				names: {
 					author,
 					description: () => description,
+					keywords: () => 'tapmeppe, t@pm3pp3, tapmeppework, t@pm3pp3 w0rk, founder, freelancer, technical consultant, fullstack, backend, frontend',
 					robots: () => 'index, follow',
 					'theme-color': () => this.properties.color,
 					viewport: () => 'width=device-width, initial-scale=1',
